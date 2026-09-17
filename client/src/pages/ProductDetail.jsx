@@ -34,7 +34,7 @@ export default function ProductDetail(){
       <section className="lg:py-4">
         <p className="text-xs font-bold uppercase tracking-[.22em] text-[#a05247]">{categoryNames[p.category]} · {p.badge}</p>
         <h1 className="mt-4 font-heading text-4xl font-medium text-[#2d201d] sm:text-5xl">{p.name}</h1>
-        <p className="mt-3 text-lg text-[#8a5048]">{p.wash}</p>
+        <p className="mt-3 text-lg text-[#8a5048]">{p.benefit}</p>
         <p className="mt-6 text-lg leading-8 text-[#695751]">{p.description}</p>
         <div className="mt-7 grid grid-cols-2 gap-3 border-y border-[#2d201d]/10 py-5">
           <div><span className="text-xs uppercase tracking-wider text-[#75635d]">Format</span><strong className="mt-1 block">{p.sizes}</strong></div>

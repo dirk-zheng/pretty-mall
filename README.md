@@ -1,37 +1,24 @@
-# Curva Denim Wholesale
+# Aurelia Beauty B2B
 
-Curva Denim 是面向美国零售商的 B2B 大码女装牛仔独立站。网站服务于精品店、独立站零售商、专业大码连锁、百货/Marketplace 买手和分销商，核心产品尺码为美国女装 `14W–34W`。
+Aurelia Beauty 是面向零售商、分销商、精品店、电商渠道与品牌合作方的美妆 B2B 项目。首发系列包含 8 款护肤、彩妆与身体香氛产品，网站以产品展示、样品申请、合作询盘和 RFQ 为核心，不提供面向消费者的购物车或在线支付。
 
-当前系统围绕批发获客和 RFQ 工作流建设，不是 DTC 零售商城：
+## 项目定位
 
-- 不提供公开零售价、消费者购物车或在线支付；
-- 公共商品页展示款式方向、MOQ、尺码段、交期和开发说明；
-- 合格买手可索取 Line Sheet、样品和商业报价；
-- 登录买手可以组合多个款式并提交 Wholesale RFQ；
-- 管理员和销售可管理产品、内容、FAQ、用户及客服会话。
-
-## B2B 定位
-
-- 市场：United States
-- 用户：Boutiques、E-commerce Retailers、Specialty Chains、Department Stores、Distributors
-- 首发组合：5 款 Jeans、3 款 Denim Skirts、2 款 Denim Jackets，共 10 款
-- 尺码：14W–34W
-- 典型 MOQ：牛仔裤约 120 pcs/style/color；半裙和外套约 150 pcs/style/color
-- 典型生产期：PP Sample 批准后约 35–50 天，最终以订单为准
-- 服务：Wholesale、Private Label、Inclusive Grading、Samples、Order-level QC、Export Coordination
-
-所有 MOQ、交期和能力均为项目方向，不构成自动承诺。最终价格、产能、规格、付款、Incoterms 和交期以正式报价及 Proforma Invoice 为准。
+- 品类：Skincare、Makeup、Body & Fragrance
+- 客户：Retailer、E-commerce、Distributor、Hospitality、Corporate Gifting、Private-label Partner
+- 首发组合：3 款护肤、3 款彩妆、2 款身体与香氛产品
+- 合作方式：批发、联名礼赠、定制包装与 Private Label
+- 商务信息：按 SKU 或色号标注参考 MOQ 与生产周期，最终以样品、规格和正式报价为准
 
 ## 技术栈
 
 - React 18、React Router、Vite、Tailwind CSS
 - Node.js、Express、WebSocket
-- MySQL 用户数据存储 + JSON 内容数据存储
-- JWT、bcryptjs
-- Nodemailer SMTP 通知
-- SSR 预渲染、Meta、JSON-LD、sitemap 和 robots
+- MySQL 用户与询盘数据 + JSON 内容数据
+- JWT、bcryptjs、Nodemailer
+- 预渲染、Meta、JSON-LD、sitemap 和 robots
 
-## 运行
+## 本地运行
 
 ```bash
 npm run install:all
@@ -39,7 +26,7 @@ npm run dev:server
 npm run dev
 ```
 
-- 前端开发地址：`http://localhost:5173/`
+- 前端：`http://localhost:5173/`
 - 后端：`http://localhost:3001/`
 - WebSocket：`ws://localhost:3001/ws`
 
@@ -52,65 +39,51 @@ npm run preview
 
 ## 主要页面
 
-- `/`：B2B 首页、供应能力、商业款式和采购流程
-- `/products`：Wholesale Collection
-- `/products/:slug`：MOQ、交期、尺码段、规格、报价/样品入口
-- `/services/wholesale-private-label`：批发与贴牌流程
-- `/services/fit-and-size-guide`：Fit、Grading 和 Size Curve
-- `/services/quality-and-care`：订单级 QC 与交付控制
-- `/about`：供应合作模式
-- `/news-blog/`：美国零售买手资源
-- `/faq`：Buyer Qualification、MOQ、价格、样品、生产、QC 和运输
-- `/contact`：公共 Buyer Inquiry / Line Sheet 表单
-- `/login`：买手账户登录或注册
-- `/quote`：登录后的多款式 RFQ 工作区
+- `/`：品牌与 B2B 合作入口
+- `/products`：8 款美妆产品系列
+- `/products/:slug`：配方亮点、规格、MOQ、周期、图库与样品/报价入口
+- `/services/wholesale-private-label`：批发与贴牌合作
+- `/services/skin-ritual`：护肤仪式与选品思路
+- `/services/quality-and-care`：配方、包材和质量控制
+- `/about`：品牌与合作模式
+- `/news-blog/`：美妆内容与合作方资源
+- `/faq`：样品、MOQ、定制、生产与交付常见问题
+- `/contact`：合作询盘
+- `/login`：合作方账户
+- `/quote`：登录后的多产品 RFQ 工作区
 - `/admin/*`：管理后台
-- `/support/inbox`：销售客服工作区
-
-## Buyer Inquiry 数据
-
-公共询盘 `/api/quotes/public` 收集：
-
-- Buyer name、Company、Business email、Phone/WhatsApp
-- Business type、Sales channels、Website
-- Target retail price、Estimated annual denim units
-- Program interest、Opening units
-- Destination、Target delivery window
-- Styles、Sizes、Washes、Fit、Private Label 和包装要求
-
-提交成功后生成 `WEB-YYYYMMDD-XXXXXX` 编号，保存到 MySQL `quotes` 表。配置 SMTP 后同步通知管理员。
+- `/support/inbox`：合作咨询工作台
 
 ## 产品数据
 
-`server/data/products.json` 主要字段：
+`server/data/products.json` 的主要字段：
 
-- `id`、`name`、`category`、`image`
+- `id`、`name`、`category`
+- `image`、`gallery`
 - `description`、`specs`、`applications`
-- `sizes`、`wash`、`badge`
+- `sizes`（净含量或包装规格）、`benefit`、`badge`
 - `moq`、`leadTime`
-- `price`：当前保持 `0`，因为公开站点不展示未经确认的批发价
-- `stock`：现阶段为后台兼容字段，不代表实时可售库存
+- `price`、`stock`：后台兼容字段，公开 B2B 页面不展示零售价或实时库存
 
-当前首发商品固定为：
+首发 8 款产品：
 
-- Everyday Curve Straight Jean
-- Cloud Wash Wide-Leg Jean
-- Studio High-Rise Flare Jean
-- City Curve Slim Bootcut Jean
-- Weekend Curve Barrel Jean
-- Market Day A-Line Denim Skirt
-- Free Line Denim Maxi Skirt
-- Workday Stretch Denim Pencil Skirt
-- Soft Structure Denim Jacket
-- Curve Balance Cropped Denim Jacket
+1. Golden Dew Barrier Serum
+2. Cloud Veil Ceramide Cream
+3. Pearl Light Milky Essence
+4. Petal Satin Lip Color
+5. Soft Bloom Powder Blush
+6. Second Skin Luminous Tint
+7. Quiet Bloom Eau de Parfum
+8. Amber Silk Body Ritual
 
-## 数据存储边界
+每款产品拥有独立主图和细节图，并按品类补充场景图。概念视觉位于 `client/public/beauty/`，正式上线前应使用经确认的配方、包材、标签和实物样品照片替换或复核。
 
-- MySQL：用户账号与资料、登录/注册等用户行为、RFQ 选品、询盘、客服会话和即时沟通；
-- JSON：`server/data/products.json`、`server/data/faqs.json`、`server/data/articles.json`；
-- SQL 中不建立产品、FAQ 或文章表，避免内容维护出现双数据源。
+## 数据存储
 
-安装数据库结构并迁移已有用户相关 JSON 数据：
+- MySQL：账号、资料、RFQ、询盘、客服会话和即时沟通
+- JSON：产品、FAQ 和文章内容
+
+安装数据库结构并迁移已有用户数据：
 
 ```bash
 cd server
@@ -118,42 +91,28 @@ npm run db:install
 npm run db:migrate-users
 ```
 
-首次部署时，数据库管理员可先执行 `server/sql/create.sql` 创建数据库和项目运行账号，再使用该账号执行上述命令。
-
-迁移脚本不会导入或修改产品、FAQ 和文章 JSON。
+数据库默认名称与运行账号仍沿用历史兼容标识，避免现有环境在未迁移时断连。新环境可通过 `DB_NAME`、`DB_USER` 和 `DB_PASSWORD` 覆盖；如需彻底改名，应先完成数据库迁移和凭据轮换。
 
 ## 环境变量
 
 ```env
-VITE_SITE_URL=https://www.curvadenim.com
+VITE_SITE_URL=https://www.aureliabeauty.com
+SITE_URL=https://www.aureliabeauty.com
+JWT_SECRET=replace-with-a-strong-secret
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_NAME=your_database_name
+DB_USER=your_database_user
+DB_PASSWORD=your_database_password
 LARK_NOTIFICATIONS_ENABLED=true
 LARK_WEBHOOK_URL=https://open.larksuite.com/open-apis/bot/v2/hook/replace-with-your-webhook-id
 LARK_WEBHOOK_SECRET=replace-with-your-signing-secret
-LARK_REQUEST_TIMEOUT_MS=8000
-JWT_SECRET=strong-development-or-production-secret
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_NAME=curva_denim_b2b
-DB_USER=app-user
-DB_PASSWORD=strong-database-password
 ```
 
-不要提交真实密钥。未配置 Lark Webhook 时，询盘仍会保存，但不会发送群通知。公开询价、登录用户 RFQ、人工客服请求和每个客服会话的首次客户消息会通知 Lark；普通机器人聊天不会逐条通知。
+不要提交真实密钥。未配置通知渠道时，询盘仍会保存，但不会发送群通知。
 
-## 固定管理员
+## 管理员与上线边界
 
-管理员账号配置在 `server/config/admin.js`。服务启动时会自动创建或校验该账号，保证工程内配置的固定密码生效。
+管理员账号配置在 `server/config/admin.js`，服务启动时会创建或校验该账号。正式部署前应使用环境化配置或密钥管理替换演示凭据。
 
-- Username: `admin`
-- Password: `CurvaAdmin@2026`
-
-## 当前边界
-
-- 尚未接入 ERP、实时面辅料、产能或库存；
-- 尚未实现样品付款、PO、PI 签署和在线批发支付；
-- 产品、FAQ 和文章继续使用 JSON，适合当前内容规模；用户与询盘数据使用 MySQL；
-- 上线前需要正式公司信息、隐私政策、B2B 条款、Claims Policy、Importer/Compliance 分工和真实产品资料。
-
-## 视觉资产
-
-当前美妆视觉位于 `client/public/beauty/`，包含品牌主视觉、8 个 SKU 的独立产品主图、配方或包装细节图与品类场景图。正式生产前应以确认后的配方、包材、标签和实物样品照片替换概念视觉。
+当前尚未接入 ERP、实时产能、实时库存、样品付款、PO/PI 签署或在线批发支付。上线前还需确认公司主体、隐私与 B2B 条款、成分表、标签规范、宣称依据、测试资料、运输限制及进口合规责任。

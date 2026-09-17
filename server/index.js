@@ -53,7 +53,7 @@ app.use('/api/auth', rateLimit({ windowMs: 15 * 60 * 1000, max: 30 }), authRoute
 app.use('/api/products', productRoutes);  // Product management
 //挂载购物车相关接口路由
 //挂载客服相关接口路由
-app.use('/api/support', rateLimit({ windowMs: 60 * 1000, max: 60 }), supportRoutes); // Wholesale buyer support
+app.use('/api/support', rateLimit({ windowMs: 60 * 1000, max: 60 }), supportRoutes); // Beauty partnership support
 //挂载公开询价相关接口路由
 app.use('/api/quotes', rateLimit({ windowMs: 15 * 60 * 1000, max: 20 }), quoteRoutes); // Public and private quote intake
 app.use('/api/privacy', rateLimit({ windowMs: 60 * 60 * 1000, max: 5 }), privacyRoutes);

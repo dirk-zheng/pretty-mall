@@ -19,7 +19,7 @@ const keywordRules = [
     response: 'Flexible Beauty Partnerships 📦\n\nStart with a focused edit of skincare, color or scent. MOQ, samples, private-label options and timing are confirmed by formula and packaging.'
   },
   {
-    keywords: ['document', 'report', 'customs', 'clearance', 'fabric test', 'care label', 'compliance'],
+    keywords: ['document', 'report', 'customs', 'clearance', 'stability test', 'compatibility test', 'ingredient list', 'compliance'],
     response: 'Product Documents 📄\n\nIngredients, directions, cautions, packaging specifications and available test documents are confirmed by formula and market.'
   },
   {

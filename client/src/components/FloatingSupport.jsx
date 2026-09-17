@@ -7,7 +7,7 @@ import { useAuth } from '../context/AuthContext';
 const quickQuestions = [
   'What is the typical opening MOQ?',
   'How do samples and pricing work?',
-  'Can I choose the wholesale size curve?',
+  'Can I customize shades or packaging?',
   'Which private-label elements are available?',
 ];
 

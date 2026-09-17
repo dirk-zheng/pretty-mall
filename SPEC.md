@@ -1,107 +1,89 @@
-# Curva Denim B2B 产品规格
+# Aurelia Beauty B2B 产品规格
 
 ## 1. 产品目标
 
-建立面向美国零售商的大码女装牛仔 B2B 独立站，以批发获客、买手资格识别、Line Sheet 索取、样品沟通和多款式 RFQ 为核心转化。
+建立面向零售商、分销商、电商渠道、酒店礼赠与品牌合作方的美妆 B2B 网站，以产品评估、样品申请、合作询盘和多 SKU RFQ 为核心转化。
 
-系统不服务消费者直接购买，不应出现公开零售价、消费者购物车、免邮、30 天零售退货或“立即购买”等文案。
+系统不服务消费者直接购买：不显示公开零售价，不提供消费者购物车、促销倒计时、免邮或零售退货承诺。
 
-## 2. 目标用户
+## 2. 用户与价值
 
-合格买手包括 Independent Boutique、E-commerce Retailer、Plus-size Specialty Chain、Department Store / Marketplace 和 Distributor / Wholesaler。
+外部用户包括 Retailer、E-commerce Buyer、Distributor、Hospitality / Gifting Buyer 和 Private-label Partner；内部用户包括 Seller 与 Admin。
 
-内部用户包括承接买手会话和 RFQ 的 Seller，以及管理商品、文章、FAQ、用户、角色和客服的 Admin。
+核心价值：
 
-## 3. 核心价值
+- 护肤、彩妆、身体与香氛的精简首发组合
+- 每款产品独立主图、细节图和品类场景图
+- 清晰展示净含量、配方亮点、典型 MOQ 和生产周期
+- 支持批发、样品、定制包装和 Private Label 沟通
+- 收集目标市场、渠道、数量、包装、合规和交付要求
 
-- 14W–34W plus-size block 与 category-specific grading
-- 商业化 Straight、Wide-leg、Flare、Slim Bootcut、Barrel、A-line Midi Skirt、Maxi Skirt、Pencil Skirt 和两种长度 Denim Jacket
-- 典型 120–150 pcs/style/color 起订方向
-- Wholesale 与 Private Label 两类合作路径
-- 样品、规格、Wash Standard、Labels、Packing 和 QC 连续管理
-- 面向美国零售渠道的买手信息和交付要求收集
+## 3. 商品模型
 
-## 4. 商品模型
+合法分类：`skincare`、`makeup`、`body-fragrance`。
 
-合法分类：`jeans`、`denim-skirts`、`denim-jackets`。
+首发商品固定为 8 款：
 
-首发商品严格控制为 10 款：
+1. Golden Dew Barrier Serum
+2. Cloud Veil Ceramide Cream
+3. Pearl Light Milky Essence
+4. Petal Satin Lip Color
+5. Soft Bloom Powder Blush
+6. Second Skin Luminous Tint
+7. Quiet Bloom Eau de Parfum
+8. Amber Silk Body Ritual
 
-1. Straight Jean
-2. Wide-Leg Jean
-3. Flare Jean
-4. Slim Bootcut Jean
-5. Barrel Jean
-6. A-Line Midi Denim Skirt
-7. Straight Maxi Denim Skirt
-8. Stretch Denim Pencil Skirt
-9. Soft Structure Denim Jacket
-10. Cropped Denim Jacket
+公开商品页展示：名称、品类、主图与图库、产品说明、核心功效、净含量、配方或包装规格、使用方式、典型 MOQ、典型生产周期以及报价和样品入口。
 
-组合比例固定为“5 款牛仔裤 + 3 款牛仔裙 + 2 款外套”。新增商品前必须先确认其是否替换现有角色，避免重新扩张为无重点的大目录。
+`price` 和 `stock` 仅作为后台兼容字段；在没有正式商业条款前，公开页面与 Product JSON-LD 不输出零售价、库存或 Offer。
 
-公开商品页展示：
+## 4. 转化流程
 
-- Style name、Category、Wash、Image
-- 14W–34W 可开发尺码段
-- Typical MOQ
-- Typical production lead time
-- Program specifications
-- Fit development note
-- Request quote & sample
-- 登录买手的 Add to RFQ Assortment
+### 公共合作询盘
 
-不公开显示未经确认的批发价格。价格受面料、水洗、工艺、尺码、数量、辅料、包装和贸易条款影响。
+无需登录即可提交联系人、公司、商务邮箱、业务类型、销售渠道、网站、目标市场、感兴趣产品、预计数量、包装或贴牌要求、目标交付窗口和补充说明。
 
-## 5. 转化流程
-
-### 公共 Buyer Inquiry
-
-无需登录，必填 Buyer name、Company、Business email、Country、Business type、Sales channels、Opening units 和 Specifications。
-
-推荐填写 Website、Target retail price、Estimated annual volume、Destination、Target delivery window 和 Private-label/Packaging/Compliance 要求。后端保存买手画像并发送管理员通知。
+表单只创建合作线索，不创建 PO，也不保证价格、产能、合规状态或交期。
 
 ### 登录 RFQ
 
-1. 买手登录；
-2. 在商品详情添加多个程序；
-3. 填写各款 indicative units；
-4. 填写渠道、客户、尺码、Fit、Wash、Private Label、总数量和交付信息；
-5. 提交后生成 `RFQ-YYYYMMDD-XXXXXX`。
+1. 合作方登录；
+2. 从商品详情添加多个产品；
+3. 填写各 SKU 或色号的参考数量；
+4. 补充渠道、市场、包装、标签、配方偏好、合规与交付要求；
+5. 提交后生成 RFQ 编号，由商务团队确认后续样品和报价。
 
-## 6. 内容体系
+## 5. 内容体系
 
-- Wholesale Program：合作、开发、样品、订单和交付
-- Fit & Grading：Plus-size block、POM、Tolerance、Grade Rules、Size Curve
-- Quality Control：Approved Standard、Inspection、Corrective Action
-- Buyer Resources：Assortment Planning、Fit Review、Private Label Checklist
-- Buyer FAQ：资格、MOQ、价格、样品、尺码曲线、生产、QC、运输
+- Wholesale & Private Label：合作、打样、包材、订单与交付
+- Skin Ritual：护肤步骤、成分搭配和系列选品
+- Formula, Quality & Care：稳定性、包材相容性、标签、批次与质量控制
+- Beauty Journal：护肤、现代彩妆、香氛与渠道合作内容
+- FAQ：资格、样品、MOQ、报价、定制、生产、质量、运输与合规
 
-## 7. B2B 合规表达
+## 6. B2B 合规表达
 
-- “Typical”“Indicative”“Subject to confirmation”必须用于 MOQ 和交期；
-- 网站表单不创建 PO，也不保证价格、产能或交期；
-- Importer of Record、Customs、Duties、U.S. labeling/testing/compliance 责任须在订单中确认；
-- QC 抽样不替代制造商责任或买手的合规审查；
-- 不使用未经验证的认证、可持续性、产地或测试声明。
+- MOQ 和周期使用 “Typical”“Indicative”“Subject to confirmation”等限定语；
+- 成分、功效、测试、认证、纯素、可持续性和产地宣称必须有资料支持；
+- INCI、标签语言、过敏原、香精限制、运输条件和市场准入责任需在订单中确认；
+- 网站图片为概念视觉时应明确标注，不能替代确认样、签样或最终包材标准；
+- 进口商、税费、清关和目的地监管责任以合同与正式订单为准。
 
-## 8. 权限
+## 7. 权限与 SEO
 
-- 公开：首页、Collection、Product、Services、About、Buyer Resources、FAQ、Contact
-- 登录 Buyer：RFQ Workspace、Conversation History
+- 公开：首页、产品、详情、服务、关于、Journal、FAQ、Contact
+- 登录合作方：RFQ Workspace、Conversation History
 - Seller/Admin：Support Inbox
-- Admin：商品、用户、角色、内容和 FAQ
+- Admin：产品、用户、角色、内容和 FAQ
 
-私有页面必须 noindex。
+私有页面必须 `noindex`。商品结构化数据使用 `BusinessAudience` 与业务属性，不输出未经确认的价格 Offer。
 
-## 9. 验收标准
+## 8. 验收标准
 
-- 公开页面无 DTC 购物、公开零售价、免邮或消费者退货语言；
-- 首页第一屏明确 `B2B only` 和 `Serving U.S. retailers`；
-- 商品卡和详情显示 MOQ、交期与 Quote-only；
-- Collection 只显示 10 款首发商品，并正确呈现 5/3/2 的组合关系；
-- Buyer Inquiry 完整收集零售商画像；
-- 登录买手可添加商品并建立 RFQ；
-- FAQ、文章和客服知识均为美国零售采购主题；
-- Product JSON-LD 使用 `BusinessAudience`，不输出虚构价格 Offer；
-- 构建、预渲染、JSON 和服务端语法验证通过。
+- 公开页面无牛仔、服装尺码、面料水洗等旧项目文案；
+- 全站明确为美妆 B2B 合作项目，不出现消费者结账路径；
+- Collection 仅呈现 8 款首发产品及 3/3/2 品类结构；
+- 每款产品拥有独立主图和详情图，资源路径有效；
+- 商品卡与详情展示净含量、核心功效、MOQ、周期和合作 CTA；
+- FAQ、文章、服务与客服知识均围绕美妆采购和合作；
+- 构建、预渲染、JSON 和服务端语法检查通过。

@@ -63,7 +63,7 @@ export default function ArticleDetail({ initialArticles = [] }) {
       <article>
         <header className="bg-slate-950 text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-            <p className="text-orange-300 uppercase tracking-wider font-semibold text-sm mb-5">Retail Buyer Resource</p>
+            <p className="text-orange-300 uppercase tracking-wider font-semibold text-sm mb-5">Beauty Partner Resource</p>
             <h1 className="font-heading text-4xl md:text-6xl font-bold leading-tight mb-6">{article.title}</h1>
             <p className="text-lg text-slate-300 leading-relaxed mb-6">{article.intro || article.summary}</p>
             <div className="flex flex-wrap justify-center gap-5 text-sm text-slate-400">
@@ -86,9 +86,9 @@ export default function ArticleDetail({ initialArticles = [] }) {
             })}
           </div>
           <aside className="mt-14 bg-white border border-slate-200 rounded-3xl p-8">
-            <h2 className="font-heading text-2xl font-bold text-slate-900 mb-3">Ready to refine your beauty ritual?</h2>
-            <p className="text-slate-600 mb-6">Share your U.S. retail channel, target customer, price tier, size range, opening units and delivery window.</p>
-            <Link to="/contact" className="inline-flex items-center gap-2 text-primary font-semibold">Request buyer information <ArrowRight size={18} /></Link>
+            <h2 className="font-heading text-2xl font-bold text-slate-900 mb-3">Planning a beauty assortment or custom program?</h2>
+            <p className="text-slate-600 mb-6">Share your market, sales channel, product category, target positioning, opening quantities, packaging needs and launch window.</p>
+            <Link to="/contact" className="inline-flex items-center gap-2 text-primary font-semibold">Start a partnership inquiry <ArrowRight size={18} /></Link>
           </aside>
         </div>
       </article>
