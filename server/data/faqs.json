@@ -1,0 +1,7 @@
+[
+  {"id":"faq-formulas","category":"Formulas","question":"Are Aurelia products vegan?","answer":"Our core collection is formulated without animal-derived ingredients. Final ingredient lists are provided on each product and may be reviewed again when a formula is updated.","status":"published","sortOrder":10},
+  {"id":"faq-skin","category":"Skincare","question":"How do I build an Aurelia skin ritual?","answer":"Begin with the lightest texture: essence, then serum, then moisturizer. Use broad-spectrum sunscreen every morning and adjust layers based on how your skin feels.","status":"published","sortOrder":20},
+  {"id":"faq-shades","category":"Makeup","question":"How do I choose a shade?","answer":"Product pages describe undertone and finish. For partnership sampling or help with an edited shade assortment, contact our team with your audience profile.","status":"published","sortOrder":30},
+  {"id":"faq-partners","category":"Partnerships","question":"Do you offer wholesale or private label?","answer":"Yes. We work with selected beauty retailers, creators and hospitality partners. Typical private-label minimums begin around 500 units per SKU and vary by formula, shade and packaging.","status":"published","sortOrder":40},
+  {"id":"faq-lead","category":"Partnerships","question":"What is the typical development lead time?","answer":"Existing formula programs typically require 30–50 days after approvals. Custom formulas, compatibility testing and new packaging may require a longer development calendar.","status":"published","sortOrder":50}
+]
