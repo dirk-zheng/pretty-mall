@@ -1,6 +1,6 @@
 module.exports = Object.freeze({
   account: 'admin',
   password: 'CurvaAdmin@2026',
-  name: 'Aurelia Beauty Admin',
+  name: 'Aurelia Ingredients Admin',
   role: 'admin',
 });

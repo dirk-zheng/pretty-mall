@@ -106,7 +106,7 @@ router.get('/:id', (req, res) => {
 //校验管理员提交的数据并新增商品
 router.post('/', authenticateToken, requireAdmin, (req, res) => {
   try {
-    const { name, category, image, gallery = [], description, moq, leadTime, applications, specs = [], qc = [] } = req.body;
+    const { name, category, image, gallery = [], description, moq, leadTime, inci, recommendedUse, solubility, sizes, benefit, badge, applications, specs = [], qc = [] } = req.body;
 
     // Validation
     const errors = [];
@@ -138,6 +138,9 @@ router.post('/', authenticateToken, requireAdmin, (req, res) => {
       gallery: Array.isArray(gallery) ? gallery.map(String).map(item => item.trim()).filter(Boolean) : [image.trim()],
       description: description.trim(),
       moq: String(moq || '').trim(), leadTime: String(leadTime || '').trim(),
+      inci: String(inci || '').trim(), recommendedUse: String(recommendedUse || '').trim(),
+      solubility: String(solubility || '').trim(), sizes: String(sizes || '').trim(),
+      benefit: String(benefit || '').trim(), badge: String(badge || '').trim(),
       applications: String(applications || '').trim(),
       specs: Array.isArray(specs) ? specs.map(String).filter(Boolean) : [],
       qc: Array.isArray(qc) ? qc.map(String).filter(Boolean) : []
@@ -164,7 +167,7 @@ router.put('/:id', authenticateToken, requireAdmin, (req, res) => {
       return res.status(404).json({ code: 404, message: 'Product not found' });
     }
 
-    const { name, category, image, gallery, description, moq, leadTime, applications, specs, qc } = req.body;
+    const { name, category, image, gallery, description, moq, leadTime, inci, recommendedUse, solubility, sizes, benefit, badge, applications, specs, qc } = req.body;
 
     // Validation
     const errors = [];
@@ -193,6 +196,9 @@ router.put('/:id', authenticateToken, requireAdmin, (req, res) => {
       gallery: Array.isArray(gallery) ? gallery.map(String).map(item => item.trim()).filter(Boolean) : products[index].gallery,
       description: description.trim(),
       moq: String(moq || '').trim(), leadTime: String(leadTime || '').trim(),
+      inci: String(inci || '').trim(), recommendedUse: String(recommendedUse || '').trim(),
+      solubility: String(solubility || '').trim(), sizes: String(sizes || '').trim(),
+      benefit: String(benefit || '').trim(), badge: String(badge || '').trim(),
       applications: String(applications || '').trim(),
       specs: Array.isArray(specs) ? specs.map(String).filter(Boolean) : products[index].specs,
       qc: Array.isArray(qc) ? qc.map(String).filter(Boolean) : products[index].qc

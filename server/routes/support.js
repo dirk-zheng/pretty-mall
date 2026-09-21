@@ -31,7 +31,7 @@ const keywordRules = [
     response: 'Order & Delivery Support 🚢\n\nShipment planning, cartons, commercial documents and delivery coordination follow the confirmed order. Market compliance responsibilities are agreed before production.'
   },
   {
-    keywords: ['return', 'refund', 'warranty', 'quality', 'damage', 'defect', 'exchange', 'inspect', 'inspection', 'qc', 'measurement', 'shade', 'stitching', 'hardware'],
+    keywords: ['quality', 'damage', 'contamination', 'off-spec', 'inspect', 'inspection', 'qc', 'assay', 'microbiology', 'coa', 'traceability'],
     response: 'Ingredient Quality Support 🛡️\n\nQualification can cover specification, identity or assay, microbiological limits, representative sample, COA, traceability and change notification.'
   },
   {

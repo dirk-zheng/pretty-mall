@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { BookOpenText, Plus, Trash2 } from 'lucide-react';
 import { adminAPI } from '../api';
 
-const emptyForm = { title: '', slug: '', summary: '', content: '', image: '', category: 'skincare', status: 'draft' };
+const emptyForm = { title: '', slug: '', summary: '', content: '', image: '', category: 'active ingredients', status: 'draft' };
 
 export default function AdminArticles() {
   const [articles, setArticles] = useState([]);
@@ -21,7 +21,7 @@ export default function AdminArticles() {
     try {
       await adminAPI.createArticle(form);
       setForm(emptyForm);
-      setMessage('Beauty resource saved. Rebuild the site to refresh prerendered SEO HTML and the sitemap.');
+      setMessage('Ingredient resource saved. Rebuild the site to refresh prerendered SEO HTML and the sitemap.');
       await load();
     } catch (error) {
       setMessage(error.message);
@@ -30,7 +30,7 @@ export default function AdminArticles() {
     }
   };
   const remove = async (id) => {
-    if (!window.confirm('Delete this beauty resource?')) return;
+    if (!window.confirm('Delete this ingredient resource?')) return;
     await adminAPI.deleteArticle(id);
     await load();
   };
@@ -40,8 +40,8 @@ export default function AdminArticles() {
       <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <header className="mb-8">
           <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-primary">Admin</p>
-          <h1 className="font-heading text-4xl font-bold text-slate-900">Beauty resource publishing</h1>
-          <p className="mt-2 text-slate-500">Prepare skincare, color, fragrance and partnership articles for beauty buyers.</p>
+          <h1 className="font-heading text-4xl font-bold text-slate-900">Ingredient resource publishing</h1>
+          <p className="mt-2 text-slate-500">Prepare formulation, raw-material qualification, processing and documentation articles for technical buyers.</p>
         </header>
         <div className="grid gap-8 lg:grid-cols-[1fr_.9fr]">
           <form onSubmit={submit} className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">

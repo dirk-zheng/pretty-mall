@@ -86,7 +86,7 @@ export default function NewsBlog({ initialArticles = [] }) {
         {featured && (
           <section className="grid lg:grid-cols-[1.3fr_.7fr] gap-8 bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm mb-14">
             <div className="relative min-h-[320px] overflow-hidden">
-              <img src={featured.image || '/beauty/hero-aurelia.png'} alt={featured.title} className="absolute inset-0 w-full h-full object-cover" width="900" height="560" />
+              <img src={featured.image || '/ingredients/hero-ingredients.png'} alt={featured.title} className="absolute inset-0 w-full h-full object-cover" width="900" height="560" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
             </div>
             <div className="p-8 md:p-10 flex flex-col justify-center">
@@ -134,7 +134,7 @@ export default function NewsBlog({ initialArticles = [] }) {
                 return (
                   <article key={article.id} className="group bg-white rounded-2xl border border-slate-200 overflow-hidden hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/70 transition-all duration-300">
                     <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
-                      <img src={article.image || '/beauty/hero-aurelia.png'} alt={article.title} loading="lazy" width="640" height="400" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                      <img src={article.image || '/ingredients/hero-ingredients.png'} alt={article.title} loading="lazy" width="640" height="400" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                       <span className="absolute left-4 top-4 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/95 text-xs font-semibold text-slate-700 shadow-sm"><Tag size={12} className="text-primary" />{category.label}</span>
                     </div>
                     <div className="p-6">

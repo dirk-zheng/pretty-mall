@@ -42,9 +42,9 @@ export default function Login() {
   };
 
   const features = [
-    { icon: Shield, text: 'Save wholesale RFQ assortments' },
-    { icon: Users, text: 'Connect with the sales team' },
-    { icon: Globe, text: 'For qualified U.S. retailers' },
+    { icon: Shield, text: 'Save ingredient sample and RFQ lists' },
+    { icon: Users, text: 'Connect with the technical sales team' },
+    { icon: Globe, text: 'For formulators, manufacturers and distributors' },
   ];
 
   return (

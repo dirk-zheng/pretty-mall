@@ -23,7 +23,7 @@ export default function QuoteRequest() {
   return (
     <div className="min-h-screen bg-[#fbf8f2] pt-24">
       <main className="mx-auto max-w-6xl px-5 py-12">
-        <Link to="/products" className="inline-flex items-center gap-2 text-sm font-semibold"><ArrowLeft size={16} /> Back to collection</Link>
+        <Link to="/products" className="inline-flex items-center gap-2 text-sm font-semibold"><ArrowLeft size={16} /> Back to ingredient portfolio</Link>
         <div className="mt-6 grid gap-8 lg:grid-cols-[.9fr_1.1fr]">
           <section className="rounded-3xl bg-white p-7">
             <div className="flex items-center justify-between">

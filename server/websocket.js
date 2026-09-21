@@ -176,7 +176,7 @@ const keywordRules = [
     response: 'Order & Export Support 🚢\n\nShipment planning, carton marks, packing lists, commercial invoices and standard export coordination follow the confirmed order and Incoterms. The buyer’s importer-of-record, customs, duties and U.S. compliance responsibilities are agreed before shipment.'
   },
   {
-    keywords: ['return', 'refund', 'warranty', 'quality', 'damage', 'defect', 'exchange', 'inspect', 'inspection', 'qc', 'measurement', 'shade', 'stitching', 'hardware'],
+    keywords: ['quality', 'damage', 'contamination', 'off-spec', 'inspect', 'inspection', 'qc', 'assay', 'microbiology', 'coa', 'traceability'],
     response: 'Ingredient Quality Support 🛡️\n\nQualification can cover specification, identity or assay, microbiological limits, representative sample, COA, traceability and change notification.'
   },
   {
@@ -432,6 +432,12 @@ function handleProductCreate(payload, ws) {
     description: payload.description.trim(),
     moq: String(payload.moq || '').trim(),
     leadTime: String(payload.leadTime || '').trim(),
+    inci: String(payload.inci || '').trim(),
+    recommendedUse: String(payload.recommendedUse || '').trim(),
+    solubility: String(payload.solubility || '').trim(),
+    sizes: String(payload.sizes || '').trim(),
+    benefit: String(payload.benefit || '').trim(),
+    badge: String(payload.badge || '').trim(),
     applications: String(payload.applications || '').trim(),
     specs: Array.isArray(payload.specs) ? payload.specs.map(String).filter(Boolean) : [],
     qc: Array.isArray(payload.qc) ? payload.qc.map(String).filter(Boolean) : []
@@ -463,6 +469,12 @@ function handleProductUpdate(payload, ws) {
     description: payload.description.trim(),
     moq: String(payload.moq || '').trim(),
     leadTime: String(payload.leadTime || '').trim(),
+    inci: String(payload.inci || '').trim(),
+    recommendedUse: String(payload.recommendedUse || '').trim(),
+    solubility: String(payload.solubility || '').trim(),
+    sizes: String(payload.sizes || '').trim(),
+    benefit: String(payload.benefit || '').trim(),
+    badge: String(payload.badge || '').trim(),
     applications: String(payload.applications || '').trim(),
     specs: Array.isArray(payload.specs) ? payload.specs.map(String).filter(Boolean) : products[idx].specs,
     qc: Array.isArray(payload.qc) ? payload.qc.map(String).filter(Boolean) : products[idx].qc
@@ -570,12 +582,12 @@ async function handleQuoteSubmit(payload, ws) {
   } = payload || {};
 
   if (!market?.trim()) throw new Error('Target market is required');
-  if (!targetCustomerProfile?.trim()) throw new Error('Target customer and channel details are required');
-  if (!specifications?.trim()) throw new Error('Formula, shade and packaging details are required');
+  if (!targetCustomerProfile?.trim()) throw new Error('Company type, application and target market are required');
+  if (!specifications?.trim()) throw new Error('Ingredient, function, use level and document requirements are required');
   const quantity = Number(estimatedQuantity);
   if (!Number.isInteger(quantity) || quantity < 1) throw new Error('Estimated quantity must be a positive integer');
   const { items } = buildRfqAssortmentItems(ws.visitorId);
-  if (items.length === 0) throw new Error('Add at least one product program to the RFQ assortment');
+  if (items.length === 0) throw new Error('Add at least one cosmetic ingredient to the RFQ list');
 
   const now = new Date();
   const datePart = now.toISOString().slice(0, 10).replace(/-/g, '');
@@ -617,7 +629,7 @@ async function handleQuoteSubmit(payload, ws) {
     reference,
     status: quote.status,
     createdAt: quote.createdAt,
-    message: 'Quote request received. Our team will review the styles, size range, quantity and delivery requirements.'
+    message: 'Ingredient RFQ received. Our team will review the materials, technical requirements, quantity, documents and delivery destination.'
   };
 }
 
@@ -801,7 +813,7 @@ async function handleSupportMessageSend(payload, ws) {
 
     if (ws.user.role === 'guest' && customerMessageCount + 1 === 7) {
       createdMessages.push(appendMessage({
-        senderType: 'system', senderName: 'Aurelia Beauty Support',
+        senderType: 'system', senderName: 'Aurelia Ingredient Support',
         content: 'You have 3 guest messages remaining. Please register to continue chatting after the guest limit.',
       }));
     }
@@ -817,7 +829,7 @@ async function handleSupportMessageSend(payload, ws) {
         conversation.botEnabled = false;
         conversation.priority = 'high';
         createdMessages.push(appendMessage({
-          senderType: 'system', senderName: 'Aurelia Beauty Support',
+          senderType: 'system', senderName: 'Aurelia Ingredient Support',
           content: 'Your request has been added to our sales queue. A team member will join this conversation shortly.',
         }));
         larkNotification = {
@@ -891,7 +903,7 @@ async function handleSupportHandoffRequest(payload, ws) {
     conversation.resolvedAt = null;
     requested = true;
     createdMessages.push(appendMessage({
-      senderType: 'system', senderName: 'Aurelia Beauty Support',
+      senderType: 'system', senderName: 'Aurelia Ingredient Support',
       content: 'A sales representative has been requested. Please keep this window open; your conversation history will be shared with the team.',
     }));
   });
@@ -938,7 +950,7 @@ async function handleSupportClaim(payload, ws) {
     conversation.claimedByAccount = ws.user.account;
     conversation.resolvedAt = null;
     createdMessages.push(appendMessage({
-      senderType: 'system', senderName: 'Aurelia Beauty Support',
+      senderType: 'system', senderName: 'Aurelia Ingredient Support',
       content: `${conversation.assignedName} has joined the conversation as your ${ws.user.role === 'admin' ? 'support administrator' : 'sales representative'}.`,
     }));
   });
@@ -959,7 +971,7 @@ async function handleSupportTransfer(payload, ws) {
     conversation.assignedName = target.name || target.account;
     conversation.claimedByAccount = ws.user.account;
     createdMessages.push(appendMessage({
-      senderType: 'system', senderName: 'Aurelia Beauty Support',
+      senderType: 'system', senderName: 'Aurelia Ingredient Support',
       content: `This conversation has been transferred to ${conversation.assignedName}.`,
     }));
   });
@@ -977,7 +989,7 @@ async function handleSupportResolve(payload, ws) {
     conversation.botEnabled = false;
     conversation.resolvedAt = new Date().toISOString();
     createdMessages.push(appendMessage({
-      senderType: 'system', senderName: 'Aurelia Beauty Support',
+      senderType: 'system', senderName: 'Aurelia Ingredient Support',
       content: 'This conversation has been marked as resolved. Send another message whenever you need further assistance.',
     }));
   });

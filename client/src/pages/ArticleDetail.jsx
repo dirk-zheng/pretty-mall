@@ -74,7 +74,7 @@ export default function ArticleDetail({ initialArticles = [] }) {
           </div>
         </header>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <img src={article.image || '/beauty/hero-aurelia.png'} alt={article.title} className="w-full aspect-[16/9] object-cover rounded-3xl border border-slate-200 mb-12" width="960" height="540" />
+          <img src={article.image || '/ingredients/hero-ingredients.png'} alt={article.title} className="w-full aspect-[16/9] object-cover rounded-3xl border border-slate-200 mb-12" width="960" height="540" />
           <div className="space-y-10">
             {sections.map(([title, body]) => {
               //渲染:渲染结构化文章章节

@@ -1,4 +1,4 @@
--- Aurelia Beauty B2B user-data schema (legacy database identifier retained for compatibility)
+-- Aurelia Ingredients B2B user-data schema (legacy database identifiers retained for compatibility)
 -- Products, FAQs and editorial articles intentionally remain JSON-backed.
 
 CREATE DATABASE IF NOT EXISTS `curva_denim_b2b`
