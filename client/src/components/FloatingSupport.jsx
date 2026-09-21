@@ -5,10 +5,10 @@ import { supportAPI, wsClient } from '../api';
 import { useAuth } from '../context/AuthContext';
 
 const quickQuestions = [
-  'What is the typical opening MOQ?',
-  'How do samples and pricing work?',
-  'Can I customize shades or packaging?',
-  'Which private-label elements are available?',
+  'What are the MOQ and pack sizes?',
+  'How do evaluation samples work?',
+  'Which technical documents are available?',
+  'What use level and processing guidance apply?',
 ];
 
 const statusCopy = {

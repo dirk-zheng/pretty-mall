@@ -1,14 +1,14 @@
 export const categories = [
-  { id: 'all', name: 'All Beauty' },
-  { id: 'skincare', name: 'Skincare' },
-  { id: 'makeup', name: 'Makeup' },
-  { id: 'body-fragrance', name: 'Body & Fragrance' },
+  { id: 'all', name: 'All Ingredients' },
+  { id: 'active-ingredients', name: 'Active Ingredients' },
+  { id: 'botanical-extracts', name: 'Botanical Extracts' },
+  { id: 'functional-materials', name: 'Functional Materials' },
 ];
 
 export const productGroups = [
-  { title: 'Daily Skin Rituals', description: 'Barrier-supporting hydration, brightening care and restorative formulas for everyday routines.', categories: ['skincare'] },
-  { title: 'Modern Color', description: 'Wearable, complexion-friendly color designed to layer, blend and move with real life.', categories: ['makeup'] },
-  { title: 'Body & Scent', description: 'Tactile body care and skin-close fragrance that turn small moments into rituals.', categories: ['body-fragrance'] },
+  { title: 'Performance Actives', description: 'Documented cosmetic actives selected for hydration, barrier, tone and comfort-led formulation briefs.', categories: ['active-ingredients'] },
+  { title: 'Botanical Extracts', description: 'Standardized plant-derived materials supplied with clear INCI, format and handling guidance.', categories: ['botanical-extracts'] },
+  { title: 'Functional Materials', description: 'Emollients, emulsifiers and sensory modifiers that shape stability, texture and finish.', categories: ['functional-materials'] },
 ];
 
 export const categoryNames = Object.fromEntries(categories.filter(({ id }) => id !== 'all').map(({ id, name }) => [id, name]));

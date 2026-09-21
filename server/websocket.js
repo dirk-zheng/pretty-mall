@@ -156,20 +156,20 @@ function buildRfqAssortmentItems(visitorId) {
 // ─── Support (AI) ────────────────────────────────
 const keywordRules = [
   {
-    keywords: ['skin', 'routine', 'ritual', 'dry', 'oily', 'sensitive', 'hydrate'],
-    response: 'Skin Ritual Support ✨\n\nTell us how your skin feels and what finish you enjoy. We can help you layer essence, serum and moisturizer into a simple, flexible ritual.'
+    keywords: ['inci', 'solubility', 'use level', 'dosage', 'disperse', 'formulation', 'formula'],
+    response: 'Formulation Support 🧪\n\nShare the ingredient, dosage form, target function, process and pH range. We can help identify the relevant grade, starting use level and handling guidance.'
   },
   {
-    keywords: ['moq', 'minimum order', 'sample', 'quantity', 'private label', 'assortment', 'opening order', 'trial order'],
-    response: 'Flexible Beauty Partnerships 📦\n\nStart with a focused edit of skincare, color or scent. MOQ, private-label options and delivery timing are confirmed by formula and packaging.'
+    keywords: ['moq', 'minimum order', 'sample', 'quantity', 'pack size', 'trial order'],
+    response: 'Ingredient Samples & Supply 📦\n\nTell us the material, evaluation quantity, annual volume and destination. Sample availability, pack size, MOQ and lead time are confirmed by grade and lot.'
   },
   {
     keywords: ['document', 'report', 'customs', 'clearance', 'stability test', 'compatibility test', 'ingredient list', 'compliance'],
-    response: 'Product & Order Documents 📄\n\nIngredients, directions, cautions, packaging specifications and available test documents are confirmed by formula and market.'
+    response: 'Raw-Material Documents 📄\n\nAvailable files may include TDS, SDS, INCI, representative COA and supporting quality or regulatory statements. Requirements are confirmed by material and market.'
   },
   {
     keywords: ['price', 'cost', 'how much', 'cheap', 'discount', 'promotion', 'pricing', 'quote'],
-    response: 'Beauty Partnership Quotation 💰\n\nPricing depends on formula, shade, component, decoration, packaging and volume. Send the products and quantities you need.'
+    response: 'Ingredient Quotation 💰\n\nShare the material or INCI, grade, target market, estimated volume and destination. Pricing follows the confirmed specification, pack size and quantity.'
   },
   {
     keywords: ['shipping', 'delivery', 'logistics', 'transport', 'how long', 'freight', 'tracking'],
@@ -177,7 +177,7 @@ const keywordRules = [
   },
   {
     keywords: ['return', 'refund', 'warranty', 'quality', 'damage', 'defect', 'exchange', 'inspect', 'inspection', 'qc', 'measurement', 'shade', 'stitching', 'hardware'],
-    response: 'Beauty Quality Support 🛡️\n\nQuality review can cover formula stability, shade, fill weight, packaging compatibility, labels, batch coding and packing.'
+    response: 'Ingredient Quality Support 🛡️\n\nQualification can cover specification, identity or assay, microbiological limits, representative sample, COA, traceability and change notification.'
   },
   {
     keywords: ['payment', 'pay', 'method', 'wire', 'bank', 'credit', 'terms', 'TT', 'LC'],
@@ -186,9 +186,9 @@ const keywordRules = [
 ];
 
 const defaultReplies = [
-  'Thank you for contacting Aurelia Beauty. Ask about products, samples, pricing, rituals or private label.',
-  'Hello! Share your beauty goals, audience, target price and desired launch window.',
-  'Welcome to Aurelia Beauty. How can we help with your ritual or partnership?'
+  'Thank you for contacting Aurelia Ingredients. Ask about INCI, use levels, samples, documentation, MOQ or pricing.',
+  'Hello! Share your formulation brief, target market, required documents and expected volume.',
+  'Welcome to Aurelia Ingredients. How can we support your raw-material evaluation?'
 ];
 
 //根据用户消息关键词生成客服回复
@@ -211,7 +211,7 @@ function validateProduct(body) {
   const errors = [];
   if (!body.name || body.name.length < 2 || body.name.length > 100)
     errors.push('Product name must be 2-100 characters');
-  if (!body.category || !['skincare', 'makeup', 'body-fragrance'].includes(body.category))
+  if (!body.category || !['active-ingredients', 'botanical-extracts', 'functional-materials'].includes(body.category))
     errors.push('Please select a valid product category');
   if (!body.image)
     errors.push('Please provide a product image URL');
@@ -994,12 +994,12 @@ function handleSupportStaffList(payload, ws) {
 //返回WebSocket客服常见问题列表
 function handleSupportFAQ() {
   return [
-    { id: 1, question: 'What is the typical opening MOQ?', category: 'MOQ' },
-    { id: 2, question: 'How do samples and pricing work?', category: 'Commercial' },
-    { id: 3, question: 'Which formulas and shades can be sampled?', category: 'Products' },
-    { id: 4, question: 'Which private-label elements can be customized?', category: 'Private Label' },
-    { id: 5, question: 'What is the typical production lead time?', category: 'Production' },
-    { id: 6, question: 'What can pre-shipment QC include?', category: 'Quality' }
+    { id: 1, question: 'What are the MOQ and commercial pack sizes?', category: 'MOQ' },
+    { id: 2, question: 'How do evaluation samples and pricing work?', category: 'Commercial' },
+    { id: 3, question: 'Which grades and formats can be sampled?', category: 'Materials' },
+    { id: 4, question: 'Which technical documents are available?', category: 'Documentation' },
+    { id: 5, question: 'What is the typical supply lead time?', category: 'Supply' },
+    { id: 6, question: 'What does raw-material qualification include?', category: 'Quality' }
   ];
 }
 
