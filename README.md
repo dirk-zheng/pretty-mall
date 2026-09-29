@@ -91,7 +91,7 @@ npm run db:install
 npm run db:migrate-users
 ```
 
-数据库默认名称与运行账号仍沿用历史兼容标识，避免现有环境在未迁移时断连。新环境可通过 `DB_NAME`、`DB_USER` 和 `DB_PASSWORD` 覆盖；如需彻底改名，应先完成数据库迁移和凭据轮换。
+新环境默认使用 `aurelia_beauty_b2b` 数据库。已有环境如果仍使用历史数据库名，可暂时通过 `DB_NAME` 指向旧库，完成数据迁移后再切换；数据库账号和密码必须通过环境变量提供。
 
 ## 环境变量
 
@@ -104,6 +104,9 @@ DB_PORT=3306
 DB_NAME=your_database_name
 DB_USER=your_database_user
 DB_PASSWORD=your_database_password
+ADMIN_ACCOUNT=admin
+ADMIN_PASSWORD=replace-with-a-strong-admin-password
+ADMIN_NAME=Aurelia Beauty Admin
 LARK_NOTIFICATIONS_ENABLED=true
 LARK_WEBHOOK_URL=https://open.larksuite.com/open-apis/bot/v2/hook/replace-with-your-webhook-id
 LARK_WEBHOOK_SECRET=replace-with-your-signing-secret

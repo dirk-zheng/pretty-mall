@@ -71,7 +71,7 @@ git ls-files | grep -E '(^|/)\.env($|\.)'
 
 输出中只应出现 `.env.example`。如果真实 `.env` 曾上传到远程仓库，应立即更换其中的数据库密码、JWT 密钥和 Webhook 密钥。
 
-### 2.2 修改固定管理员凭据
+### 2.2 配置管理员凭据
 
 当前管理员配置位于：
 
@@ -79,17 +79,11 @@ git ls-files | grep -E '(^|/)\.env($|\.)'
 server/config/admin.js
 ```
 
-服务每次启动都会创建或同步这里配置的管理员。正式部署前必须修改默认密码，推荐进一步改为从环境变量或密钥管理服务中读取管理员账号和密码。
+服务每次启动都会创建或同步固定管理员。生产环境必须通过 `ADMIN_ACCOUNT`、`ADMIN_PASSWORD` 和 `ADMIN_NAME` 环境变量提供管理员信息，其中密码至少 12 个字符。
 
-### 2.3 不执行旧的示例建库文件
+### 2.3 单独创建数据库账号
 
-不要在生产环境直接执行：
-
-```text
-server/sql/create.sql
-```
-
-该文件保留了历史数据库用户和示例密码。生产环境应按照本文第 5 节手动创建独立数据库用户。
+仓库不提供包含固定密码的建库脚本。生产环境应按照本文第 5 节手动创建权限受限的独立数据库用户，不要复用 MySQL 管理员账号。
 
 ## 3. 上传代码
 
@@ -175,17 +169,17 @@ sudo systemctl status mysql
 sudo mysql
 ```
 
-创建数据库和专用用户。为了兼容当前代码和 SQL 文件，数据库暂时沿用历史名称 `curva_denim_b2b`：
+创建 Aurelia Beauty 数据库和专用用户：
 
 ```sql
-CREATE DATABASE curva_denim_b2b
+CREATE DATABASE aurelia_beauty_b2b
   CHARACTER SET utf8mb4
   COLLATE utf8mb4_0900_ai_ci;
 
 CREATE USER 'aurelia_app'@'localhost'
   IDENTIFIED BY '替换成很长的随机数据库密码';
 
-GRANT ALL PRIVILEGES ON curva_denim_b2b.* TO 'aurelia_app'@'localhost';
+GRANT ALL PRIVILEGES ON aurelia_beauty_b2b.* TO 'aurelia_app'@'localhost';
 FLUSH PRIVILEGES;
 EXIT;
 ```
@@ -199,7 +193,7 @@ sudo mysql < /var/www/aurelia-beauty/server/sql/schema.sql
 检查表是否创建成功：
 
 ```bash
-sudo mysql -e "USE curva_denim_b2b; SHOW TABLES;"
+sudo mysql -e "USE aurelia_beauty_b2b; SHOW TABLES;"
 ```
 
 应该能看到用户、访客事件、RFQ、询盘、客服会话、即时通信和隐私请求等数据表。
@@ -225,7 +219,7 @@ NODE_ENV=production
 
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_NAME=curva_denim_b2b
+DB_NAME=aurelia_beauty_b2b
 DB_USER=aurelia_app
 DB_PASSWORD=替换成数据库密码
 DB_POOL_SIZE=10
@@ -234,6 +228,10 @@ DB_AUTO_SCHEMA=false
 JWT_SECRET=替换成至少32字符的随机字符串
 CORS_ORIGINS=https://example.com,https://www.example.com
 TRUST_PROXY=loopback
+
+ADMIN_ACCOUNT=admin
+ADMIN_PASSWORD=替换成至少12字符的强管理员密码
+ADMIN_NAME=Aurelia Beauty Admin
 
 LEGAL_BUSINESS_NAME="你的公司法定名称"
 BUSINESS_POSTAL_ADDRESS="你的业务邮寄地址"
@@ -265,6 +263,7 @@ chmod 600 /var/www/aurelia-beauty/server/.env
 - `PORT=3001`：Node.js 内部端口，不应直接暴露公网。
 - `DB_AUTO_SCHEMA=false`：生产环境通过明确的 SQL 步骤管理表结构。
 - `JWT_SECRET`：必须是唯一且至少 32 个字符的随机值。
+- `ADMIN_PASSWORD`：必须至少 12 个字符，且不能使用开发环境默认值。
 - `CORS_ORIGINS`：填写实际 HTTPS 域名，多个域名用英文逗号分隔，不能填写 `*`。
 - `TRUST_PROXY=loopback`：信任本机 Nginx 转发的客户端地址。
 - Lark 未配置时，询盘仍会写入 MySQL，只是不发送群通知。
@@ -600,7 +599,7 @@ sudo chown "$USER":"$USER" /var/backups/aurelia-beauty
 备份 MySQL：
 
 ```bash
-mysqldump -u aurelia_app -p curva_denim_b2b | gzip > /var/backups/aurelia-beauty/mysql-$(date +%F-%H%M%S).sql.gz
+mysqldump -u aurelia_app -p aurelia_beauty_b2b | gzip > /var/backups/aurelia-beauty/mysql-$(date +%F-%H%M%S).sql.gz
 ```
 
 备份 JSON 内容：
@@ -613,7 +612,7 @@ tar -czf /var/backups/aurelia-beauty/content-$(date +%F-%H%M%S).tar.gz \
 恢复 MySQL 示例：
 
 ```bash
-gunzip -c /var/backups/aurelia-beauty/备份文件.sql.gz | mysql -u aurelia_app -p curva_denim_b2b
+gunzip -c /var/backups/aurelia-beauty/备份文件.sql.gz | mysql -u aurelia_app -p aurelia_beauty_b2b
 ```
 
 生产环境应配置定时备份，并定期验证备份能否成功恢复。
@@ -666,7 +665,7 @@ sudo tail -f /var/log/nginx/access.log /var/log/nginx/error.log
 测试数据库账号：
 
 ```bash
-mysql -h 127.0.0.1 -u aurelia_app -p curva_denim_b2b
+mysql -h 127.0.0.1 -u aurelia_app -p aurelia_beauty_b2b
 ```
 
 进入后检查：

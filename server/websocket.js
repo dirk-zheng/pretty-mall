@@ -176,7 +176,7 @@ const keywordRules = [
     response: 'Order & Export Support 🚢\n\nShipment planning, carton marks, packing lists, commercial invoices and standard export coordination follow the confirmed order and Incoterms. The buyer’s importer-of-record, customs, duties and U.S. compliance responsibilities are agreed before shipment.'
   },
   {
-    keywords: ['return', 'refund', 'warranty', 'quality', 'damage', 'defect', 'exchange', 'inspect', 'inspection', 'qc', 'measurement', 'shade', 'stitching', 'hardware'],
+    keywords: ['return', 'refund', 'warranty', 'quality', 'damage', 'defect', 'exchange', 'inspect', 'inspection', 'qc', 'fill weight', 'shade', 'packaging'],
     response: 'Beauty Quality Support 🛡️\n\nQuality review can cover formula stability, shade, fill weight, packaging compatibility, labels, batch coding and packing.'
   },
   {
@@ -617,7 +617,7 @@ async function handleQuoteSubmit(payload, ws) {
     reference,
     status: quote.status,
     createdAt: quote.createdAt,
-    message: 'Quote request received. Our team will review the styles, size range, quantity and delivery requirements.'
+    message: 'Quote request received. Our team will review the products, shades, packaging, quantity and delivery requirements.'
   };
 }
 

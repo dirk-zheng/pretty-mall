@@ -32,7 +32,7 @@ export default function QuoteModal({ product = '', onClose }) {
             <div>
               <p className="mb-1 text-xs font-semibold uppercase tracking-[0.18em] text-orange-300">No account required</p>
               <h2 id="quote-modal-title" className="font-heading text-2xl font-bold">Request line sheet &amp; wholesale quote</h2>
-              <p className="mt-1 text-sm text-slate-300">Share your retail profile, styles, size range, quantity and delivery window.</p>
+              <p className="mt-1 text-sm text-slate-300">Share your retail profile, products, shades, packaging, quantity and delivery window.</p>
             </div>
           </div>
           <button ref={closeButtonRef} type="button" onClick={onClose} aria-label="Close" className="rounded-xl border border-white/10 p-2 text-slate-300 hover:bg-white/10 hover:text-white">
