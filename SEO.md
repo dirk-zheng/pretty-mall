@@ -1,8 +1,8 @@
-# Aurelia Beauty B2B SEO Strategy
+# Aurelia Pretty B2B SEO Strategy
 
 ## Positioning
 
-Aurelia Beauty is a B2B beauty supply and product-development partner for retailers, distributors, e-commerce operators, gifting teams and private-label buyers. Public search pages should move qualified partners toward a product brief, sample or quotation request—not a consumer checkout.
+Aurelia Pretty is a B2B beauty supply and product-development partner for retailers, distributors, e-commerce operators, gifting teams and private-label buyers. Public search pages should move qualified partners toward a product brief, sample or quotation request—not a consumer checkout.
 
 ## Primary Search Themes
 
@@ -40,8 +40,8 @@ Account, admin, RFQ and internal support routes remain `noindex`.
 
 - Keep titles buyer-oriented and generally below 60 characters.
 - Keep descriptions useful and generally between 140–160 characters.
-- Use `Aurelia Beauty` as the site and Organization name.
-- The canonical origin defaults to `https://www.aureliabeauty.com` and can be overridden with `VITE_SITE_URL` / `SITE_URL`.
+- Use `Aurelia Pretty` as the site and Organization name.
+- The canonical origin defaults to `https://www.aureliapretty.com` and can be overridden with `VITE_SITE_URL` / `SITE_URL`.
 - Give every public product and article a unique canonical URL.
 - Product schema uses `BusinessAudience` and additional properties for format, MOQ and lead time.
 - Do not publish `Offer`, unit price, public availability or inventory until real commercial terms exist.

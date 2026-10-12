@@ -1,6 +1,6 @@
-# Aurelia Beauty B2B
+# Aurelia Pretty B2B
 
-Aurelia Beauty 是面向零售商、分销商、精品店、电商渠道与品牌合作方的美妆 B2B 项目。首发系列包含 8 款护肤、彩妆与身体香氛产品，网站以产品展示、样品申请、合作询盘和 RFQ 为核心，不提供面向消费者的购物车或在线支付。
+Aurelia Pretty 是面向零售商、分销商、精品店、电商渠道与品牌合作方的美妆 B2B 项目。首发系列包含 8 款护肤、彩妆与身体香氛产品，网站以产品展示、样品申请、合作询盘和 RFQ 为核心，不提供面向消费者的购物车或在线支付。
 
 ## 项目定位
 
@@ -91,13 +91,13 @@ npm run db:install
 npm run db:migrate-users
 ```
 
-新环境默认使用 `aurelia_beauty_b2b` 数据库。已有环境如果仍使用历史数据库名，可暂时通过 `DB_NAME` 指向旧库，完成数据迁移后再切换；数据库账号和密码必须通过环境变量提供。
+新环境默认使用 `aurelia_pretty_b2b` 数据库。已有环境如果仍使用历史数据库名，可暂时通过 `DB_NAME` 指向旧库，完成数据迁移后再切换；数据库账号和密码必须通过环境变量提供。
 
 ## 环境变量
 
 ```env
-VITE_SITE_URL=https://www.aureliabeauty.com
-SITE_URL=https://www.aureliabeauty.com
+VITE_SITE_URL=https://www.aureliapretty.com
+SITE_URL=https://www.aureliapretty.com
 JWT_SECRET=replace-with-a-strong-secret
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -106,7 +106,7 @@ DB_USER=your_database_user
 DB_PASSWORD=your_database_password
 ADMIN_ACCOUNT=admin
 ADMIN_PASSWORD=replace-with-a-strong-admin-password
-ADMIN_NAME=Aurelia Beauty Admin
+ADMIN_NAME=Aurelia Pretty Admin
 LARK_NOTIFICATIONS_ENABLED=true
 LARK_WEBHOOK_URL=https://open.larksuite.com/open-apis/bot/v2/hook/replace-with-your-webhook-id
 LARK_WEBHOOK_SECRET=replace-with-your-signing-secret

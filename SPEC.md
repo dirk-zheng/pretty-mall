@@ -1,4 +1,4 @@
-# Aurelia Beauty B2B 产品规格
+# Aurelia Pretty B2B 产品规格
 
 ## 1. 产品目标
 

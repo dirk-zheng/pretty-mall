@@ -42,9 +42,9 @@ const keywordRules = [
 
 // Default fallback replies
 const defaultReplies = [
-  'Thank you for contacting Aurelia Beauty. Ask about products, samples, pricing, rituals or private label.',
+  'Thank you for contacting Aurelia Pretty. Ask about products, samples, pricing, rituals or private label.',
   'Hello! Share your beauty goals, audience, target price and desired launch window.',
-  'Welcome to Aurelia Beauty. How can we help make your next ritual or partnership more luminous?'
+  'Welcome to Aurelia Pretty. How can we help make your next ritual or partnership more luminous?'
 ];
 
 // Get AI response based on keywords

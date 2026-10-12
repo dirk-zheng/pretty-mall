@@ -15,7 +15,7 @@ export default function HomePage() {
   const featured = state.products.slice(0, 6);
   return <div className="min-h-screen bg-[#fbf7f2] pt-24">
     <section className="relative min-h-[720px] overflow-hidden bg-[#ead9ce]">
-      <img src="/beauty/hero-aurelia.png" alt="Aurelia Beauty skincare and makeup collection" className="absolute inset-0 h-full w-full object-cover object-[68%_center]" />
+      <img src="/beauty/hero-aurelia.png" alt="Aurelia Pretty skincare and makeup collection" className="absolute inset-0 h-full w-full object-cover object-[68%_center]" />
       <div className="absolute inset-0 bg-gradient-to-r from-[#fbf6ef]/95 via-[#fbf6ef]/72 to-transparent" />
       <div className="relative mx-auto flex min-h-[720px] max-w-7xl items-center px-5 sm:px-8">
         <div className="max-w-xl py-20">
