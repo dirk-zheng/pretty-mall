@@ -1,7 +1,50 @@
 [
-  {"id":"faq-formulas","category":"Formulas","question":"Are Aurelia products vegan?","answer":"Our core collection is formulated without animal-derived ingredients. Final ingredient lists are provided on each product and may be reviewed again when a formula is updated.","status":"published","sortOrder":10},
-  {"id":"faq-skin","category":"Skincare","question":"How do I build an Aurelia skin ritual?","answer":"Begin with the lightest texture: essence, then serum, then moisturizer. Use broad-spectrum sunscreen every morning and adjust layers based on how your skin feels.","status":"published","sortOrder":20},
-  {"id":"faq-shades","category":"Makeup","question":"How do I choose a shade?","answer":"Product pages describe undertone and finish. For partnership sampling or help with an edited shade assortment, contact our team with your audience profile.","status":"published","sortOrder":30},
-  {"id":"faq-partners","category":"Partnerships","question":"Do you offer wholesale or private label?","answer":"Yes. We work with selected beauty retailers, creators and hospitality partners. Typical private-label minimums begin around 500 units per SKU and vary by formula, shade and packaging.","status":"published","sortOrder":40},
-  {"id":"faq-lead","category":"Partnerships","question":"What is the typical development lead time?","answer":"Existing formula programs typically require 30–50 days after approvals. Custom formulas, compatibility testing and new packaging may require a longer development calendar.","status":"published","sortOrder":50}
+  {
+    "id": "faq-range",
+    "category": "Products",
+    "question": "Which protective products are available?",
+    "answer": "The current collection includes hand sanitizer, sanitizer alcohol spray, scented sanitizers, hand wash, an antiseptic cream concept, a customizable lip balm program and custom sunscreen formats. Formula, testing, packaging and market suitability are confirmed during inquiry.",
+    "status": "published",
+    "sortOrder": 10
+  },
+  {
+    "id": "faq-formats",
+    "category": "Customization",
+    "question": "Can formula, fragrance and packaging be customized?",
+    "answer": "Yes. Available options can include fragrance, viscosity, color, pack size, dispensing format, decoration and labels. Feasibility depends on the product brief, test plan and destination market.",
+    "status": "published",
+    "sortOrder": 20
+  },
+  {
+    "id": "faq-moq",
+    "category": "Ordering",
+    "question": "What is the minimum order quantity?",
+    "answer": "The source catalog lists a typical 10,000-unit order for the hand sanitizer and sanitizer spray. Other products are confirmed by formula, fragrance and packaging format before quotation.",
+    "status": "published",
+    "sortOrder": 30
+  },
+  {
+    "id": "faq-claims",
+    "category": "Compliance",
+    "question": "Are antiseptic and antibacterial claims guaranteed?",
+    "answer": "No claim should be treated as final until the exact formula, testing evidence, label wording and destination-market rules have been reviewed. Quotations and samples should identify the approved claim set.",
+    "status": "published",
+    "sortOrder": 40
+  },
+  {
+    "id": "faq-images",
+    "category": "Content",
+    "question": "Can the catalog images be used commercially?",
+    "answer": "The current website references images from the source catalog for product identification. Commercial publication, advertising and redistribution require confirmation that the necessary image and trademark permissions are in place.",
+    "status": "published",
+    "sortOrder": 50
+  },
+  {
+    "id": "faq-lead",
+    "category": "Ordering",
+    "question": "What is the production lead time?",
+    "answer": "Lead time is confirmed after formula, packaging, artwork, testing and order terms are approved. The website does not publish an unverified fixed production schedule.",
+    "status": "published",
+    "sortOrder": 60
+  }
 ]

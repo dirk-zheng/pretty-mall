@@ -1,14 +1,14 @@
 export const categories = [
-  { id: 'all', name: 'All Beauty' },
-  { id: 'skincare', name: 'Skincare' },
-  { id: 'makeup', name: 'Makeup' },
-  { id: 'body-fragrance', name: 'Body & Fragrance' },
+  { id: 'all', name: 'All Products' },
+  { id: 'protective-products', name: 'Protective Products' },
+  { id: 'lip-care', name: 'Lip Care' },
+  { id: 'sun-care', name: 'Sun Care' },
 ];
 
 export const productGroups = [
-  { title: 'Daily Skin Rituals', description: 'Barrier-supporting hydration, brightening care and restorative formulas for everyday routines.', categories: ['skincare'] },
-  { title: 'Modern Color', description: 'Wearable, complexion-friendly color designed to layer, blend and move with real life.', categories: ['makeup'] },
-  { title: 'Body & Scent', description: 'Tactile body care and skin-close fragrance that turn small moments into rituals.', categories: ['body-fragrance'] },
+  { title: 'Protective Care', description: 'Hand hygiene and protective-care formats for retail, travel, workplace and private-label programs.', categories: ['protective-products'] },
+  { title: 'Lip Care', description: 'Customizable lip balm formats for moisture, comfort, shade and bespoke packaging programs.', categories: ['lip-care'] },
+  { title: 'Sun Care', description: 'Custom sunscreen formats developed around texture, application, testing and target-market requirements.', categories: ['sun-care'] },
 ];
 
 export const categoryNames = Object.fromEntries(categories.filter(({ id }) => id !== 'all').map(({ id, name }) => [id, name]));

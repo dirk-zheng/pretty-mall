@@ -7,9 +7,9 @@ import {
 
 const categories = [
   { id: 'all', label: 'All beauty resources', icon: BookOpen },
-  { id: 'skincare', label: 'Skincare Rituals', icon: Droplets },
-  { id: 'makeup', label: 'Modern Color', icon: Sparkles },
-  { id: 'fragrance', label: 'Body & Fragrance', icon: BriefcaseBusiness },
+  { id: 'products', label: 'Product Guides', icon: Droplets },
+  { id: 'quality', label: 'Quality & Claims', icon: Sparkles },
+  { id: 'partnerships', label: 'Partnerships', icon: BriefcaseBusiness },
 ];
 
 const categoryById = Object.fromEntries(categories.map((category) => {

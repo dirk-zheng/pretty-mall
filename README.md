@@ -1,14 +1,34 @@
+# 参考产品网址
+
+https://www.global-cosmetics.com/company-information/
+
 # Aurelia Pretty B2B
 
-Aurelia Pretty 是面向零售商、分销商、精品店、电商渠道与品牌合作方的美妆 B2B 项目。首发系列包含 8 款护肤、彩妆与身体香氛产品，网站以产品展示、样品申请、合作询盘和 RFQ 为核心，不提供面向消费者的购物车或在线支付。
+Aurelia Pretty 是面向零售商、分销商、电商渠道、酒店及品牌合作方的防护类个护产品 B2B 项目。当前目录以 Global Cosmetics 的 Protective Products 页面为产品参考，提供产品展示、样品申请、合作询盘和 RFQ，不提供消费者购物车或在线支付。
+
+## 当前产品
+
+当前分类：protective-products（Protective Products）、lip-care（Lip Care）与 sun-care（Sun Care）。
+
+1. Hand Sanitizer
+2. Sanitizer Alcohol Spray
+3. Scented Sanitizers
+4. Hand Wash
+5. Antiseptic Cream
+6. Lip Balm
+7. Sunscreen SPF
+
+产品名称与参考图片来自 [Global Cosmetics Protective Products](https://www.global-cosmetics.com/protective-products/)、[Global Cosmetics Lip Balm](https://www.global-cosmetics.com/cosmetic-manufacture-products/oem-odm-lip-care/lip-balm/) 与 [Global Cosmetics Sunscreen SPF](https://www.global-cosmetics.com/cosmetic-manufacture-products/oem-odm-skin-care/sunscreen-spf/)。站内描述、规格摘要、使用提示和质量检查点为本项目重新编写，并对未经最终配方、测试或目标市场确认的功效宣称进行了限定。
+
+图片目前通过来源站 HTTPS 地址引用，没有复制到仓库。正式商用前必须确认图片、商标与产品资料的使用授权；远程图片也可能因来源站调整或防盗链而失效，生产上线前建议替换为已获授权的本地/CDN 素材。
 
 ## 项目定位
 
-- 品类：Skincare、Makeup、Body & Fragrance
-- 客户：Retailer、E-commerce、Distributor、Hospitality、Corporate Gifting、Private-label Partner
-- 首发组合：3 款护肤、3 款彩妆、2 款身体与香氛产品
-- 合作方式：批发、联名礼赠、定制包装与 Private Label
-- 商务信息：按 SKU 或色号标注参考 MOQ 与生产周期，最终以样品、规格和正式报价为准
+- 产品：手部消毒凝胶、酒精喷雾、香氛消毒凝胶、洗手液、防护霜、润唇膏与防晒产品
+- 客户：Retailer、E-commerce、Distributor、Workplace、Hospitality、Private-label Partner
+- 合作方式：批发、定制配方、定制香型、定制包装与 Private Label
+- 商务信息：MOQ、交期、配方、测试、标签和宣称均以样品、规格与正式报价为准
+- 合规边界：antiseptic、antibacterial、杀菌率及酒精含量等内容必须有针对最终配方与销售市场的资料支持
 
 ## 技术栈
 
@@ -20,102 +40,79 @@ Aurelia Pretty 是面向零售商、分销商、精品店、电商渠道与品�
 
 ## 本地运行
 
-```bash
-npm run install:all
-npm run dev:server
-npm run dev
-```
+    npm run install:all
+    npm run dev:server
+    npm run dev
 
-- 前端：`http://localhost:5173/`
-- 后端：`http://localhost:3001/`
-- WebSocket：`ws://localhost:3001/ws`
+- 前端：http://localhost:5173/
+- 后端：http://localhost:3001/
+- WebSocket：ws://localhost:3001/ws
 
 生产构建：
 
-```bash
-npm run build
-npm run preview
-```
+    npm run build
+    npm run preview
+
+Ubuntu 部署请参阅 [DEPLOY-UBUNTU.md](./DEPLOY-UBUNTU.md)。
 
 ## 主要页面
 
-- `/`：品牌与 B2B 合作入口
-- `/products`：8 款美妆产品系列
-- `/products/:slug`：配方亮点、规格、MOQ、周期、图库与样品/报价入口
-- `/services/wholesale-private-label`：批发与贴牌合作
-- `/services/skin-ritual`：护肤仪式与选品思路
-- `/services/quality-and-care`：配方、包材和质量控制
-- `/about`：品牌与合作模式
-- `/news-blog/`：美妆内容与合作方资源
-- `/faq`：样品、MOQ、定制、生产与交付常见问题
-- `/contact`：合作询盘
-- `/login`：合作方账户
-- `/quote`：登录后的多产品 RFQ 工作区
-- `/admin/*`：管理后台
-- `/support/inbox`：合作咨询工作台
+- /：品牌与 B2B 合作入口
+- /products：7 款防护、唇部护理与防晒产品目录
+- /products/:slug：图片、描述、规格、MOQ、周期、来源与报价入口
+- /services/wholesale-private-label：批发与贴牌合作
+- /services/skin-ritual：防护产品组合规划（保留历史 URL）
+- /services/quality-and-care：配方、宣称、包材与质量控制
+- /news-blog/：防护产品、质量与合作内容
+- /faq：产品、定制、MOQ、宣称、图片与交期
+- /contact：合作询盘
+- /quote：登录后的多产品 RFQ 工作区
+- /admin/*：管理后台
+- /support/inbox：合作咨询工作台
 
 ## 产品数据
 
-`server/data/products.json` 的主要字段：
+server/data/products.json 的主要字段：
 
-- `id`、`name`、`category`
-- `image`、`gallery`
-- `description`、`specs`、`applications`
-- `sizes`（净含量或包装规格）、`benefit`、`badge`
-- `moq`、`leadTime`
-- `price`、`stock`：后台兼容字段，公开 B2B 页面不展示零售价或实时库存
+- id、name、category
+- image、gallery
+- description、specs、applications
+- sizes、benefit、badge
+- moq、leadTime
+- sourceUrl、imageSource
+- qc
+- price、stock：后台兼容字段，公开页面不展示零售价或实时库存
 
-首发 8 款产品：
-
-1. Golden Dew Barrier Serum
-2. Cloud Veil Ceramide Cream
-3. Pearl Light Milky Essence
-4. Petal Satin Lip Color
-5. Soft Bloom Powder Blush
-6. Second Skin Luminous Tint
-7. Quiet Bloom Eau de Parfum
-8. Amber Silk Body Ritual
-
-每款产品拥有独立主图和细节图，并按品类补充场景图。概念视觉位于 `client/public/beauty/`，正式上线前应使用经确认的配方、包材、标签和实物样品照片替换或复核。
-
-## 数据存储
+## 数据存储与配置
 
 - MySQL：账号、资料、RFQ、询盘、客服会话和即时沟通
 - JSON：产品、FAQ 和文章内容
 
 安装数据库结构并迁移已有用户数据：
 
-```bash
-cd server
-npm run db:install
-npm run db:migrate-users
-```
+    cd server
+    npm run db:install
+    npm run db:migrate-users
 
-新环境默认使用 `aurelia_pretty_b2b` 数据库。已有环境如果仍使用历史数据库名，可暂时通过 `DB_NAME` 指向旧库，完成数据迁移后再切换；数据库账号和密码必须通过环境变量提供。
+环境变量示例：
 
-## 环境变量
-
-```env
-VITE_SITE_URL=https://www.aureliapretty.com
-SITE_URL=https://www.aureliapretty.com
-JWT_SECRET=replace-with-a-strong-secret
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_NAME=your_database_name
-DB_USER=your_database_user
-DB_PASSWORD=your_database_password
-ADMIN_ACCOUNT=admin
-ADMIN_PASSWORD=replace-with-a-strong-admin-password
-ADMIN_NAME=Aurelia Pretty Admin
-LARK_NOTIFICATIONS_ENABLED=true
-LARK_WEBHOOK_URL=https://open.larksuite.com/open-apis/bot/v2/hook/replace-with-your-webhook-id
-LARK_WEBHOOK_SECRET=replace-with-your-signing-secret
-```
+    VITE_SITE_URL=https://www.aureliapretty.com
+    SITE_URL=https://www.aureliapretty.com
+    JWT_SECRET=replace-with-a-strong-secret
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_NAME=your_database_name
+    DB_USER=your_database_user
+    DB_PASSWORD=your_database_password
+    ADMIN_ACCOUNT=admin
+    ADMIN_PASSWORD=replace-with-a-strong-admin-password
+    ADMIN_NAME=Aurelia Pretty Admin
+    LARK_NOTIFICATIONS_ENABLED=true
+    LARK_WEBHOOK_URL=https://open.larksuite.com/open-apis/bot/v2/hook/replace-with-your-webhook-id
+    LARK_WEBHOOK_SECRET=replace-with-your-signing-secret
 
 不要提交真实密钥。未配置通知渠道时，询盘仍会保存，但不会发送群通知。
 
-## 管理员与上线边界
+## 上线边界
 
-管理员账号配置在 `server/config/admin.js`，服务启动时会创建或校验该账号。正式部署前应使用环境化配置或密钥管理替换演示凭据。
-
-当前尚未接入 ERP、实时产能、实时库存、样品付款、PO/PI 签署或在线批发支付。上线前还需确认公司主体、隐私与 B2B 条款、成分表、标签规范、宣称依据、测试资料、运输限制及进口合规责任。
+当前尚未接入 ERP、实时产能、样品付款、PO/PI 签署或在线批发支付。上线前还需确认公司主体、隐私与 B2B 条款、最终配方、成分表、测试证据、标签规范、宣称依据、图片授权、运输限制及进口合规责任。

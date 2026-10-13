@@ -16,7 +16,7 @@ const keywordRules = [
   },
   {
     keywords: ['moq', 'minimum order', 'sample', 'quantity', 'private label', 'assortment', 'opening order', 'trial order'],
-    response: 'Flexible Beauty Partnerships 📦\n\nStart with a focused edit of skincare, color or scent. MOQ, samples, private-label options and timing are confirmed by formula and packaging.'
+    response: 'Flexible Beauty Partnerships 📦\n\nStart with hand sanitizer, spray, scented sanitizer, hand wash, cream, lip balm or sunscreen. MOQ, samples, claims and timing are confirmed by formula, testing and packaging.'
   },
   {
     keywords: ['document', 'report', 'customs', 'clearance', 'stability test', 'compatibility test', 'ingredient list', 'compliance'],

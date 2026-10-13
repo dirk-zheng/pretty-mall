@@ -161,7 +161,7 @@ const keywordRules = [
   },
   {
     keywords: ['moq', 'minimum order', 'sample', 'quantity', 'private label', 'assortment', 'opening order', 'trial order'],
-    response: 'Flexible Beauty Partnerships 📦\n\nStart with a focused edit of skincare, color or scent. MOQ, private-label options and delivery timing are confirmed by formula and packaging.'
+    response: 'Flexible Beauty Partnerships 📦\n\nStart with hand sanitizer, spray, scented sanitizer, hand wash, cream, lip balm or sunscreen. MOQ, private-label options, claims and timing are confirmed by formula, testing and packaging.'
   },
   {
     keywords: ['document', 'report', 'customs', 'clearance', 'stability test', 'compatibility test', 'ingredient list', 'compliance'],
@@ -211,7 +211,7 @@ function validateProduct(body) {
   const errors = [];
   if (!body.name || body.name.length < 2 || body.name.length > 100)
     errors.push('Product name must be 2-100 characters');
-  if (!body.category || !['skincare', 'makeup', 'body-fragrance'].includes(body.category))
+  if (!body.category || !['protective-products', 'lip-care', 'sun-care'].includes(body.category))
     errors.push('Please select a valid product category');
   if (!body.image)
     errors.push('Please provide a product image URL');

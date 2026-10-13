@@ -4,14 +4,14 @@ import { useStore } from '../context/StoreContext';
 import { categories, categoryNames } from '../data/products';
 
 const categoryIcons = {
-  'skincare': Sparkles,
-  'makeup': Sparkles,
-  'body-fragrance': Sparkles,
+  'protective-products': Sparkles,
+  'lip-care': Sparkles,
+  'sun-care': Sparkles,
 };
 
 const initialForm = {
   name: '',
-  category: 'skincare',
+  category: 'protective-products',
   moq: '',
   leadTime: '',
   image: '',

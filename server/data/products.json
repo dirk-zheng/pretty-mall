@@ -1,10 +1,228 @@
 [
-  {"id":"skin-dew-serum-001","name":"Golden Dew Barrier Serum","category":"skincare","image":"/beauty/golden-dew-serum-main.png","gallery":["/beauty/golden-dew-serum-main.png","/beauty/golden-dew-serum-detail.png","/beauty/skincare-ritual.png"],"description":"A cushiony daily serum that layers multi-weight hyaluronic acid, beta-glucan and ceramides for lasting, comfortable hydration.","specs":["Multi-weight hyaluronic acid","Ceramide and beta-glucan complex","Fragrance-free","Suitable for all skin types","30 ml frosted glass bottle"],"applications":"Use 2–3 drops after cleansing, morning and evening. Press into damp skin before moisturizer.","sizes":"30 ml","benefit":"Hydrate + strengthen","badge":"Bestseller","moq":"500 units / SKU","leadTime":"30–40 days after approval","price":0,"stock":860},
-  {"id":"cloud-cream-002","name":"Cloud Veil Ceramide Cream","category":"skincare","image":"/beauty/cloud-veil-cream-main.png","gallery":["/beauty/cloud-veil-cream-main.png","/beauty/cloud-veil-cream-detail.png","/beauty/skincare-ritual.png"],"description":"A plush but breathable moisturizer that seals in hydration without a heavy finish, leaving skin soft and quietly luminous.","specs":["Ceramide NP and squalane","Panthenol for comfort","Silky non-greasy finish","Dermatologist reviewed","50 ml refill-ready jar"],"applications":"Massage a pearl-sized amount over face and neck as the final step of your skincare routine.","sizes":"50 ml","benefit":"Nourish + comfort","badge":"Barrier care","moq":"500 units / SKU","leadTime":"30–40 days after approval","price":0,"stock":640},
-  {"id":"pearl-essence-003","name":"Pearl Light Milky Essence","category":"skincare","image":"/beauty/pearl-light-essence-main.png","gallery":["/beauty/pearl-light-essence-main.png","/beauty/pearl-light-essence-detail.png","/beauty/skincare-ritual.png"],"description":"A lightweight milky essence with niacinamide and rice ferment to visibly refine texture and restore a fresh, translucent glow.","specs":["5% niacinamide","Rice ferment filtrate","Alcohol-free","Layers without pilling","100 ml recyclable bottle"],"applications":"Pat one to two layers into clean skin before serum. Use daily, morning or evening.","sizes":"100 ml","benefit":"Brighten + refine","badge":"New ritual","moq":"500 units / SKU","leadTime":"35–45 days after approval","price":0,"stock":720},
-  {"id":"satin-lip-004","name":"Petal Satin Lip Color","category":"makeup","image":"/beauty/petal-satin-lip-main.png","gallery":["/beauty/petal-satin-lip-main.png","/beauty/petal-satin-lip-detail.png","/beauty/makeup-edit.png"],"description":"A creamy, buildable lipstick with true satin luminosity and a soft-focus finish in an edited range of modern neutrals.","specs":["8 wearable shades","Buildable medium coverage","Comfort-oil complex","Vegan formula","Magnetic refillable case"],"applications":"Swipe directly onto lips for full color or tap with a fingertip for a diffused petal stain.","sizes":"3.6 g","benefit":"Satin color","badge":"Editor favorite","moq":"800 units / shade","leadTime":"35–45 days after approval","price":0,"stock":1180},
-  {"id":"soft-focus-blush-005","name":"Soft Bloom Powder Blush","category":"makeup","image":"/beauty/soft-bloom-blush-main.png","gallery":["/beauty/soft-bloom-blush-main.png","/beauty/soft-bloom-blush-detail.png","/beauty/makeup-edit.png"],"description":"A finely milled blush that melts into skin with seamless, softly radiant color and no visible powderiness.","specs":["6 complexion-friendly shades","Soft-focus mineral pigments","Buildable payoff","Talc-free","Refillable compact"],"applications":"Sweep across the high points of cheeks and blend upward. Layer slowly for a watercolor flush.","sizes":"7 g","benefit":"Blur + enliven","badge":"Makeup essential","moq":"800 units / shade","leadTime":"35–45 days after approval","price":0,"stock":940},
-  {"id":"skin-tint-006","name":"Second Skin Luminous Tint","category":"makeup","image":"/beauty/second-skin-tint-main.png","gallery":["/beauty/second-skin-tint-main.png","/beauty/second-skin-tint-detail.png","/beauty/makeup-edit.png"],"description":"Flexible light-to-medium coverage that evens tone while preserving the dimensional finish of real skin.","specs":["16 adaptable shades","Light-to-medium coverage","Squalane and vitamin E","Natural luminous finish","30 ml glass bottle"],"applications":"Shake well, then blend one pump from the center of the face outward with fingers, sponge or brush.","sizes":"30 ml","benefit":"Even + illuminate","badge":"Inclusive shades","moq":"600 units / shade","leadTime":"40–50 days after approval","price":0,"stock":810},
-  {"id":"quiet-bloom-007","name":"Quiet Bloom Eau de Parfum","category":"body-fragrance","image":"/beauty/quiet-bloom-perfume-main.png","gallery":["/beauty/quiet-bloom-perfume-main.png","/beauty/quiet-bloom-perfume-detail.png","/beauty/body-fragrance.png"],"description":"A skin-close floral where pear blossom and iris settle into creamy sandalwood and clean amber.","specs":["Pear blossom and iris","Sandalwood and clean amber","18% fragrance concentration","Vegan formula","Recyclable 50 ml bottle"],"applications":"Mist onto pulse points and allow the fragrance to warm naturally on skin. Do not rub.","sizes":"50 ml","benefit":"Floral + warm woods","badge":"Signature scent","moq":"500 units / SKU","leadTime":"40–50 days after approval","price":0,"stock":430},
-  {"id":"silk-body-008","name":"Amber Silk Body Ritual","category":"body-fragrance","image":"/beauty/amber-silk-body-main.png","gallery":["/beauty/amber-silk-body-main.png","/beauty/amber-silk-body-detail.png","/beauty/body-fragrance.png"],"description":"A sensorial pairing of replenishing body cream and botanical oil, scented with warm amber, neroli and soft woods.","specs":["Shea butter and squalane cream","Lightweight botanical body oil","Layerable warm fragrance","Vegan formulas","Gift-ready two-piece set"],"applications":"Massage cream over dry skin, then press a few drops of oil onto shoulders, arms and legs for a satin sheen.","sizes":"200 ml + 50 ml","benefit":"Smooth + scent","badge":"Ritual set","moq":"500 sets","leadTime":"35–45 days after approval","price":0,"stock":510}
+  {
+    "id": "hand-sanitizer-001",
+    "name": "Hand Sanitizer",
+    "category": "protective-products",
+    "image": "https://www.global-cosmetics.com/wp-content/uploads/elementor/thumbs/H917bc36c6ec94caab394f06780c7b8ec1-ro4djo89i7s9q1938msnfibqvyyq9mijakh9v4ofy8.jpg",
+    "gallery": [
+      "https://www.global-cosmetics.com/wp-content/uploads/elementor/thumbs/H917bc36c6ec94caab394f06780c7b8ec1-ro4djo89i7s9q1938msnfibqvyyq9mijakh9v4ofy8.jpg"
+    ],
+    "description": "A rinse-free hand sanitizer gel developed for OEM and private-label programs, combining an alcohol-based hygiene format with aloe vera and skin-conditioning support for frequent use.",
+    "specs": [
+      "Alcohol-based rinse-free gel format",
+      "Aloe vera and moisturizing support",
+      "Fragrance, viscosity and packaging can be customized",
+      "Retail, travel and bulk packaging options",
+      "Final claims and labeling subject to formula and market review"
+    ],
+    "applications": "Apply enough product to cover dry hands, then rub thoroughly until dry. Final directions and cautions must follow the approved formula and destination-market rules.",
+    "sizes": "50 ml / 100 ml / 250 ml / 500 ml / 1 L",
+    "benefit": "Rinse-free hand hygiene",
+    "badge": "Protective care",
+    "moq": "10,000 units / order",
+    "leadTime": "Confirm after formula and packaging approval",
+    "price": 0,
+    "stock": 0,
+    "sourceUrl": "https://www.global-cosmetics.com/cosmetic-manufacture-products/protective-products/hand-sanitizer/",
+    "imageSource": "Global Cosmetics",
+    "qc": [
+      "Alcohol level and finished-product claims verified against the approved specification",
+      "Packaging compatibility, fill weight and closure performance checked",
+      "Directions, cautions and market-specific labels approved before production"
+    ]
+  },
+  {
+    "id": "sanitizer-alcohol-spray-002",
+    "name": "Sanitizer Alcohol Spray",
+    "category": "protective-products",
+    "image": "https://www.global-cosmetics.com/wp-content/uploads/elementor/thumbs/H297118f34cd44b079f5b754abf0763f8Y-ro4djo89i7s9q1938msnfibqvyyq9mijakh9v4ofy8.jpg",
+    "gallery": [
+      "https://www.global-cosmetics.com/wp-content/uploads/elementor/thumbs/H297118f34cd44b079f5b754abf0763f8Y-ro4djo89i7s9q1938msnfibqvyyq9mijakh9v4ofy8.jpg"
+    ],
+    "description": "A portable, rinse-free alcohol spray for hand-hygiene programs, designed for quick application and adaptable to retail, travel and workplace packaging.",
+    "specs": [
+      "Fine-mist rinse-free spray format",
+      "Source catalog identifies an ethanol-based formula",
+      "Bottle, actuator, fragrance and label can be customized",
+      "Multiple retail and bulk sizes available",
+      "Alcohol level and claims require final specification approval"
+    ],
+    "applications": "Spray evenly onto dry hands and rub over all surfaces until dry. Use only in accordance with the approved label, cautions and local requirements.",
+    "sizes": "50 ml / 100 ml / 250 ml / 500 ml / 1 L",
+    "benefit": "Portable hygiene spray",
+    "badge": "Travel format",
+    "moq": "10,000 units / order",
+    "leadTime": "Confirm after formula and packaging approval",
+    "price": 0,
+    "stock": 0,
+    "sourceUrl": "https://www.global-cosmetics.com/cosmetic-manufacture-products/protective-products/sanitizer-alcohol-spray/",
+    "imageSource": "Global Cosmetics",
+    "qc": [
+      "Spray pattern, leakage resistance and actuator performance checked",
+      "Alcohol level and label claims matched to the approved formula",
+      "Transport, packaging and destination-market requirements confirmed"
+    ]
+  },
+  {
+    "id": "scented-sanitizers-003",
+    "name": "Scented Sanitizers",
+    "category": "protective-products",
+    "image": "https://www.global-cosmetics.com/wp-content/uploads/elementor/thumbs/COCo-ro4djo89i7s9q1938msnfibqvyyq9mijakh9v4ofy8.jpg",
+    "gallery": [
+      "https://www.global-cosmetics.com/wp-content/uploads/elementor/thumbs/COCo-ro4djo89i7s9q1938msnfibqvyyq9mijakh9v4ofy8.jpg"
+    ],
+    "description": "A customizable collection of scented, rinse-free sanitizer gels that pairs everyday hand hygiene with a choice of fragrance profiles and portable packaging.",
+    "specs": [
+      "Rinse-free scented gel format",
+      "Custom fragrance profiles available",
+      "Travel, retail and bulk packaging options",
+      "Viscosity, color and decoration can be developed to brief",
+      "Fragrance safety and final claims subject to market review"
+    ],
+    "applications": "Dispense onto dry hands and rub thoroughly until dry. Fragrance, directions and cautions must be confirmed for the final formula and destination market.",
+    "sizes": "Travel / retail / bulk formats",
+    "benefit": "Hygiene with custom scent",
+    "badge": "Custom fragrance",
+    "moq": "Confirm by fragrance and format",
+    "leadTime": "Confirm after fragrance and packaging approval",
+    "price": 0,
+    "stock": 0,
+    "sourceUrl": "https://www.global-cosmetics.com/protective-products/",
+    "imageSource": "Global Cosmetics",
+    "qc": [
+      "Fragrance compatibility and stability reviewed",
+      "Viscosity, fill weight and packaging performance checked",
+      "Allergen, ingredient and market labeling requirements confirmed"
+    ]
+  },
+  {
+    "id": "hand-wash-004",
+    "name": "Hand Wash",
+    "category": "protective-products",
+    "image": "https://www.global-cosmetics.com/wp-content/uploads/elementor/thumbs/Hdf96e2a943b84a84aa9a033094314f05o-ro4djo89i7s9q1938msnfibqvyyq9mijakh9v4ofy8.jpg",
+    "gallery": [
+      "https://www.global-cosmetics.com/wp-content/uploads/elementor/thumbs/Hdf96e2a943b84a84aa9a033094314f05o-ro4djo89i7s9q1938msnfibqvyyq9mijakh9v4ofy8.jpg"
+    ],
+    "description": "A liquid hand-wash concept for frequent cleansing, with aloe vera and conditioning support intended to balance effective washing with a comfortable after-feel.",
+    "specs": [
+      "Rinse-off liquid hand-wash format",
+      "Aloe vera and conditioning support",
+      "Fragrance, color, viscosity and packaging can be customized",
+      "Pump, refill and hospitality formats available",
+      "Any antibacterial claim requires formula-specific evidence"
+    ],
+    "applications": "Apply to wet hands, work into a lather across all surfaces, then rinse thoroughly. Final directions and claims must follow the approved formula.",
+    "sizes": "Retail / refill / hospitality formats",
+    "benefit": "Cleanse + condition",
+    "badge": "Frequent use",
+    "moq": "Confirm by formula and format",
+    "leadTime": "Confirm after formula and packaging approval",
+    "price": 0,
+    "stock": 0,
+    "sourceUrl": "https://www.global-cosmetics.com/protective-products/",
+    "imageSource": "Global Cosmetics",
+    "qc": [
+      "Cleansing performance and skin-feel reviewed against the approved brief",
+      "Viscosity, pump output and packaging compatibility checked",
+      "Claims, directions and destination-market labels approved"
+    ]
+  },
+  {
+    "id": "antiseptic-cream-005",
+    "name": "Antiseptic Cream",
+    "category": "protective-products",
+    "image": "https://www.global-cosmetics.com/wp-content/uploads/elementor/thumbs/H041513704c1b4ebe951ec7e9f1549b86C-ro4djo89i7s9q1938msnfibqvyyq9mijakh9v4ofy8.jpg",
+    "gallery": [
+      "https://www.global-cosmetics.com/wp-content/uploads/elementor/thumbs/H041513704c1b4ebe951ec7e9f1549b86C-ro4djo89i7s9q1938msnfibqvyyq9mijakh9v4ofy8.jpg"
+    ],
+    "description": "A conditioning cream format for hand and body protective-care programs, designed around a comfortable texture and repeat-use positioning.",
+    "specs": [
+      "Hand and body cream format",
+      "Conditioning, low-residue texture can be tailored",
+      "Tube, pump and jar packaging options",
+      "Fragrance and sensorial profile can be customized",
+      "Antiseptic or antibacterial claims require market-specific substantiation"
+    ],
+    "applications": "Use only as directed on the approved finished-product label. Intended use, application area, frequency and cautions must be confirmed for the final formula.",
+    "sizes": "Tube / pump / jar formats",
+    "benefit": "Conditioning protective care",
+    "badge": "Cream format",
+    "moq": "Confirm by formula and format",
+    "leadTime": "Confirm after formula, testing and packaging approval",
+    "price": 0,
+    "stock": 0,
+    "sourceUrl": "https://www.global-cosmetics.com/protective-products/",
+    "imageSource": "Global Cosmetics",
+    "qc": [
+      "Formula stability and packaging compatibility assessed",
+      "Texture, residue and fill-weight specifications checked",
+      "Regulated claims and label content approved for the destination market"
+    ]
+  },
+  {
+    "id": "lip-balm-006",
+    "name": "Lip Balm",
+    "category": "lip-care",
+    "image": "https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwww.global-cosmetics.com%2Fcosmetic-manufacture-products%2Foem-odm-lip-care%2Flip-balm%2F?w=1200",
+    "gallery": [
+      "https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwww.global-cosmetics.com%2Fcosmetic-manufacture-products%2Foem-odm-lip-care%2Flip-balm%2F?w=1200"
+    ],
+    "description": "A customizable OEM/ODM lip balm program developed for everyday moisture, comfort and protective lip care, with classic and bespoke formula, shade and packaging directions for beauty brands.",
+    "specs": [
+      "Custom and classic lip balm directions",
+      "Vitamins, antioxidants and cosmetic-grade actives can be developed to brief",
+      "Formula, shade, finish and packaging can be customized",
+      "Embossed, marble-inspired and bespoke component options are presented by the source catalog",
+      "Source catalog lists production capacity of up to 40,000 units daily",
+      "Final ingredients, claims and sustainability statements require project-specific approval"
+    ],
+    "applications": "Apply directly to clean lips as needed. Final directions, ingredient information, cautions and claims must follow the approved formula and destination-market label.",
+    "sizes": "Custom stick / pot / bespoke formats",
+    "benefit": "Nourish + protect lips",
+    "badge": "Lip care",
+    "moq": "10,000 units / order; 5,000 / color",
+    "leadTime": "Confirm after formula, shade and packaging approval",
+    "price": 0,
+    "stock": 0,
+    "sourceUrl": "https://www.global-cosmetics.com/cosmetic-manufacture-products/oem-odm-lip-care/lip-balm/",
+    "imageSource": "Global Cosmetics product-page preview",
+    "qc": [
+      "Formula stability, texture and sensory performance reviewed",
+      "Shade, fill weight and packaging compatibility checked",
+      "Ingredients, claims, directions and market labels approved before production"
+    ]
+  },
+  {
+    "id": "sunscreen-spf-007",
+    "name": "Sunscreen SPF",
+    "category": "sun-care",
+    "image": "https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwww.global-cosmetics.com%2Fcosmetic-manufacture-products%2Foem-odm-skin-care%2Fsunscreen-spf%2F?w=1200",
+    "gallery": [
+      "https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwww.global-cosmetics.com%2Fcosmetic-manufacture-products%2Foem-odm-skin-care%2Fsunscreen-spf%2F?w=1200"
+    ],
+    "description": "A custom OEM/ODM sunscreen development program spanning spray, gel, cream, lotion, stick and tinted formats, with texture and skincare benefits tailored to the intended market and use setting.",
+    "specs": [
+      "Spray, gel, cream, lotion, stick and tinted directions",
+      "UV-filter system and texture developed for the destination market",
+      "Hydration, brightening or age-support benefits can be explored to brief",
+      "Packaging and dispensing format can be customized",
+      "Source catalog lists production capacity of up to 50,000 units daily",
+      "SPF, broad-spectrum and water-resistance claims require finished-formula testing and regulatory approval"
+    ],
+    "applications": "Apply generously and evenly before sun exposure, then reapply according to the approved finished-product label. Exact amount, timing, SPF claim, cautions and reapplication directions require formula-specific testing and market review.",
+    "sizes": "Custom spray / tube / pump / stick formats",
+    "benefit": "Custom UV-protection formats",
+    "badge": "Sun care",
+    "moq": "10,000 units / order; 5,000 / formulation type",
+    "leadTime": "Confirm after formula, SPF testing and packaging approval",
+    "price": 0,
+    "stock": 0,
+    "sourceUrl": "https://www.global-cosmetics.com/cosmetic-manufacture-products/oem-odm-skin-care/sunscreen-spf/",
+    "imageSource": "Global Cosmetics product-page preview",
+    "qc": [
+      "SPF and broad-spectrum performance tested on the final formula",
+      "UV-filter compliance confirmed for the destination market",
+      "Stability, packaging compatibility, fill weight and label content approved"
+    ]
+  }
 ]

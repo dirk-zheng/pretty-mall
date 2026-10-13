@@ -2,46 +2,62 @@
 
 ## 1. 产品目标
 
-建立面向零售商、分销商、电商渠道、酒店礼赠与品牌合作方的美妆 B2B 网站，以产品评估、样品申请、合作询盘和多 SKU RFQ 为核心转化。
+建立面向零售商、分销商、电商渠道、工作场所、酒店及品牌合作方的防护类个护产品 B2B 网站，以产品评估、样品申请、合作询盘和多 SKU RFQ 为核心转化。
 
 系统不服务消费者直接购买：不显示公开零售价，不提供消费者购物车、促销倒计时、免邮或零售退货承诺。
 
-## 2. 用户与价值
+## 2. 目录范围
 
-外部用户包括 Retailer、E-commerce Buyer、Distributor、Hospitality / Gifting Buyer 和 Private-label Partner；内部用户包括 Seller 与 Admin。
+合法分类为：protective-products、lip-care 与 sun-care。
 
-核心价值：
+当前固定产品为 7 款：
 
-- 护肤、彩妆、身体与香氛的精简首发组合
-- 每款产品独立主图、细节图和品类场景图
-- 清晰展示净含量、配方亮点、典型 MOQ 和生产周期
-- 支持批发、样品、定制包装和 Private Label 沟通
-- 收集目标市场、渠道、数量、包装、合规和交付要求
+1. Hand Sanitizer
+2. Sanitizer Alcohol Spray
+3. Scented Sanitizers
+4. Hand Wash
+5. Antiseptic Cream
+6. Lip Balm
+7. Sunscreen SPF
+
+产品名称、目录结构和参考图片基于 Global Cosmetics Protective Products、Lip Balm 与 Sunscreen SPF 页面；描述为项目原创改写。每条产品数据保留 sourceUrl 与 imageSource 以便追溯。
 
 ## 3. 商品模型
 
-合法分类：`skincare`、`makeup`、`body-fragrance`。
+公开商品页展示名称、品类、来源参考图、产品说明、产品定位、规格或包装范围、使用提示、参考 MOQ、待确认交期以及报价和样品入口。
 
-首发商品固定为 8 款：
+核心字段：
 
-1. Golden Dew Barrier Serum
-2. Cloud Veil Ceramide Cream
-3. Pearl Light Milky Essence
-4. Petal Satin Lip Color
-5. Soft Bloom Powder Blush
-6. Second Skin Luminous Tint
-7. Quiet Bloom Eau de Parfum
-8. Amber Silk Body Ritual
+- 标识：id、name、category
+- 展示：image、gallery、description、benefit、badge
+- 规格：specs、applications、sizes、qc
+- 商务：moq、leadTime
+- 追溯：sourceUrl、imageSource
+- 兼容：price、stock
 
-公开商品页展示：名称、品类、主图与图库、产品说明、核心功效、净含量、配方或包装规格、使用方式、典型 MOQ、典型生产周期以及报价和样品入口。
+price 和 stock 仅作为后台兼容字段；公开页面与 Product JSON-LD 不输出未经确认的价格 Offer。
 
-`price` 和 `stock` 仅作为后台兼容字段；在没有正式商业条款前，公开页面与 Product JSON-LD 不输出零售价、库存或 Offer。
+## 4. 图片与内容策略
 
-## 4. 转化流程
+- 当前产品图片使用来源站 HTTPS URL，不在仓库内复制第三方图片；
+- 详情页显示来源链接及商用授权提醒；
+- 正式上线前必须取得图片、商标与内容使用许可，或替换为自有/已授权素材；
+- 外链图片不可视为稳定生产资源，授权确认后应迁移到自有对象存储或 CDN；
+- 不逐字复制来源站描述，所有站内描述与规格摘要采用重新编写的表达。
+
+## 5. 宣称与合规
+
+- antiseptic、antibacterial、杀菌率、酒精含量等宣称必须对应最终配方、测试证据和目标市场法规；
+- Hand Wash 来源页存在需要进一步核实的酒精含量表述，项目不直接采纳该项宣称；
+- MOQ 和周期使用 Typical、Confirm、Subject to approval 等限定语；
+- INCI、标签语言、过敏原、危险品运输、包装相容性和市场准入责任需在订单中确认；
+- 使用说明仅作目录级参考，最终以获批标签为准。
+
+## 6. 转化流程
 
 ### 公共合作询盘
 
-无需登录即可提交联系人、公司、商务邮箱、业务类型、销售渠道、网站、目标市场、感兴趣产品、预计数量、包装或贴牌要求、目标交付窗口和补充说明。
+无需登录即可提交联系人、公司、商务邮箱、业务类型、销售渠道、目标市场、感兴趣产品、预计数量、配方或香型、包装要求、目标交付窗口和补充说明。
 
 表单只创建合作线索，不创建 PO，也不保证价格、产能、合规状态或交期。
 
@@ -49,41 +65,26 @@
 
 1. 合作方登录；
 2. 从商品详情添加多个产品；
-3. 填写各 SKU 或色号的参考数量；
-4. 补充渠道、市场、包装、标签、配方偏好、合规与交付要求；
-5. 提交后生成 RFQ 编号，由商务团队确认后续样品和报价。
+3. 填写各产品参考数量；
+4. 补充市场、包装、标签、配方、香型、宣称、合规与交付要求；
+5. 提交 RFQ，由商务团队确认样品、测试与报价。
 
-## 5. 内容体系
+## 7. 内容体系
 
+- Protective Products：5 款产品目录及详情
 - Wholesale & Private Label：合作、打样、包材、订单与交付
-- Skin Ritual：护肤步骤、成分搭配和系列选品
-- Formula, Quality & Care：稳定性、包材相容性、标签、批次与质量控制
-- Beauty Journal：护肤、现代彩妆、香氛与渠道合作内容
-- FAQ：资格、样品、MOQ、报价、定制、生产、质量、运输与合规
-
-## 6. B2B 合规表达
-
-- MOQ 和周期使用 “Typical”“Indicative”“Subject to confirmation”等限定语；
-- 成分、功效、测试、认证、纯素、可持续性和产地宣称必须有资料支持；
-- INCI、标签语言、过敏原、香精限制、运输条件和市场准入责任需在订单中确认；
-- 网站图片为概念视觉时应明确标注，不能替代确认样、签样或最终包材标准；
-- 进口商、税费、清关和目的地监管责任以合同与正式订单为准。
-
-## 7. 权限与 SEO
-
-- 公开：首页、产品、详情、服务、关于、Journal、FAQ、Contact
-- 登录合作方：RFQ Workspace、Conversation History
-- Seller/Admin：Support Inbox
-- Admin：产品、用户、角色、内容和 FAQ
-
-私有页面必须 `noindex`。商品结构化数据使用 `BusinessAudience` 与业务属性，不输出未经确认的价格 Offer。
+- Protective-Care Range：使用场景与产品组合
+- Formula, Claims & Quality：稳定性、包材相容性、标签、批次与宣称
+- Journal：产品格式、质量审批与渠道合作内容
+- FAQ：产品、定制、MOQ、宣称、图片授权与生产周期
 
 ## 8. 验收标准
 
-- 公开页面无牛仔、服装尺码、面料水洗等旧项目文案；
-- 全站明确为美妆 B2B 合作项目，不出现消费者结账路径；
-- Collection 仅呈现 8 款首发产品及 3/3/2 品类结构；
-- 每款产品拥有独立主图和详情图，资源路径有效；
-- 商品卡与详情展示净含量、核心功效、MOQ、周期和合作 CTA；
-- FAQ、文章、服务与客服知识均围绕美妆采购和合作；
+- Collection 呈现 7 款产品与 protective-products、lip-care、sun-care 三个分类；
+- 前端筛选、后台新增/编辑及 WebSocket 商品校验接受新分类；
+- 每款产品展示对应来源图片、标题、原创描述与来源链接；
+- 商品卡与详情展示规格、定位、MOQ、周期和合作 CTA；
+- SEO 结构化数据正确处理远程 HTTPS 图片；
+- FAQ、文章、服务与客服知识不再围绕旧护肤、彩妆和香氛目录；
+- README 明确第三方图片授权与远程依赖风险；
 - 构建、预渲染、JSON 和服务端语法检查通过。
