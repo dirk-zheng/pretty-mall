@@ -10,17 +10,22 @@
 
 合法分类为：protective-products、lip-care 与 sun-care。
 
-当前固定产品为 7 款：
+当前固定产品为 12 款：
 
 1. Hand Sanitizer
 2. Sanitizer Alcohol Spray
 3. Scented Sanitizers
 4. Hand Wash
 5. Antiseptic Cream
-6. Lip Balm
-7. Sunscreen SPF
+6. Designer Lipstick
+7. Traditional Lipsticks
+8. Color Changing Lipsticks
+9. Sunscreen Spray
+10. Sunscreen Gel
+11. Sunscreen Cream & Lotion
+12. Sunscreen Stick
 
-产品名称、目录结构和参考图片基于 Global Cosmetics Protective Products、Lip Balm 与 Sunscreen SPF 页面；描述为项目原创改写。每条产品数据保留 sourceUrl 与 imageSource 以便追溯。
+产品名称、目录结构和参考图片基于 Global Cosmetics Protective Products、Sunscreen SPF 与 Lipsticks 页面；描述为项目原创改写。每条产品数据保留 sourceUrl 与 imageSource 以便追溯。
 
 ## 3. 商品模型
 
@@ -39,10 +44,10 @@ price 和 stock 仅作为后台兼容字段；公开页面与 Product JSON-LD �
 
 ## 4. 图片与内容策略
 
-- 当前产品图片使用来源站 HTTPS URL，不在仓库内复制第三方图片；
+- 当前产品图片保存在 client/public/product-images/，产品数据使用站内路径；
 - 详情页显示来源链接及商用授权提醒；
 - 正式上线前必须取得图片、商标与内容使用许可，或替换为自有/已授权素材；
-- 外链图片不可视为稳定生产资源，授权确认后应迁移到自有对象存储或 CDN；
+- 当前目录图仅作来源产品参考，授权确认后应替换为正式高分辨率素材，并可迁移到自有对象存储或 CDN；
 - 不逐字复制来源站描述，所有站内描述与规格摘要采用重新编写的表达。
 
 ## 5. 宣称与合规
@@ -80,7 +85,7 @@ price 和 stock 仅作为后台兼容字段；公开页面与 Product JSON-LD �
 
 ## 8. 验收标准
 
-- Collection 呈现 7 款产品与 protective-products、lip-care、sun-care 三个分类；
+- Collection 呈现 12 款产品与 protective-products、lip-care、sun-care 三个分类；
 - 前端筛选、后台新增/编辑及 WebSocket 商品校验接受新分类；
 - 每款产品展示对应来源图片、标题、原创描述与来源链接；
 - 商品卡与详情展示规格、定位、MOQ、周期和合作 CTA；

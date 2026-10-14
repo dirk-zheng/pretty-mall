@@ -15,16 +15,21 @@ Aurelia Pretty 是面向零售商、分销商、电商渠道、酒店及品牌�
 3. Scented Sanitizers
 4. Hand Wash
 5. Antiseptic Cream
-6. Lip Balm
-7. Sunscreen SPF
+6. Designer Lipstick
+7. Traditional Lipsticks
+8. Color Changing Lipsticks
+9. Sunscreen Spray
+10. Sunscreen Gel
+11. Sunscreen Cream & Lotion
+12. Sunscreen Stick
 
-产品名称与参考图片来自 [Global Cosmetics Protective Products](https://www.global-cosmetics.com/protective-products/)、[Global Cosmetics Lip Balm](https://www.global-cosmetics.com/cosmetic-manufacture-products/oem-odm-lip-care/lip-balm/) 与 [Global Cosmetics Sunscreen SPF](https://www.global-cosmetics.com/cosmetic-manufacture-products/oem-odm-skin-care/sunscreen-spf/)。站内描述、规格摘要、使用提示和质量检查点为本项目重新编写，并对未经最终配方、测试或目标市场确认的功效宣称进行了限定。
+产品名称与参考图片来自 [Global Cosmetics Protective Products](https://www.global-cosmetics.com/protective-products/)、[Global Cosmetics Sunscreen SPF](https://www.global-cosmetics.com/cosmetic-manufacture-products/oem-odm-skin-care/sunscreen-spf/) 与 [Global Cosmetics Lipsticks](https://www.global-cosmetics.com/cosmetic-manufacture-products/oem-odm-lip-care/lipsticks/)。站内描述、规格摘要、使用提示和质量检查点为本项目重新编写，并对未经最终配方、测试或目标市场确认的功效宣称进行了限定。
 
-图片目前通过来源站 HTTPS 地址引用，没有复制到仓库。正式商用前必须确认图片、商标与产品资料的使用授权；远程图片也可能因来源站调整或防盗链而失效，生产上线前建议替换为已获授权的本地/CDN 素材。
+产品图片已下载到 client/public/product-images/ 并通过站内路径加载，不再依赖来源站热链。正式商用前仍必须确认图片、商标与产品资料的使用授权；获得正式素材后，建议用已授权的高分辨率图片替换当前目录参考图。
 
 ## 项目定位
 
-- 产品：手部消毒凝胶、酒精喷雾、香氛消毒凝胶、洗手液、防护霜、润唇膏与防晒产品
+- 产品：手部消毒凝胶、酒精喷雾、香氛消毒凝胶、洗手液、防护霜、三类唇膏方案，以及防晒喷雾、防晒凝胶、防晒霜/乳和防晒棒
 - 客户：Retailer、E-commerce、Distributor、Workplace、Hospitality、Private-label Partner
 - 合作方式：批发、定制配方、定制香型、定制包装与 Private Label
 - 商务信息：MOQ、交期、配方、测试、标签和宣称均以样品、规格与正式报价为准
@@ -58,7 +63,7 @@ Ubuntu 部署请参阅 [DEPLOY-UBUNTU.md](./DEPLOY-UBUNTU.md)。
 ## 主要页面
 
 - /：品牌与 B2B 合作入口
-- /products：7 款防护、唇部护理与防晒产品目录
+- /products：12 款防护、唇部护理与防晒产品目录
 - /products/:slug：图片、描述、规格、MOQ、周期、来源与报价入口
 - /services/wholesale-private-label：批发与贴牌合作
 - /services/skin-ritual：防护产品组合规划（保留历史 URL）
