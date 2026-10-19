@@ -211,7 +211,7 @@ function validateProduct(body) {
   const errors = [];
   if (!body.name || body.name.length < 2 || body.name.length > 100)
     errors.push('Product name must be 2-100 characters');
-  if (!body.category || !['protective-products', 'lip-care', 'sun-care'].includes(body.category))
+  if (!body.category || !['protective-products', 'lip-care', 'sun-care', 'surfactants'].includes(body.category))
     errors.push('Please select a valid product category');
   if (!body.image)
     errors.push('Please provide a product image URL');

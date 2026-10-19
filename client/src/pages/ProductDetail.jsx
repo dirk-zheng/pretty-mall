@@ -29,7 +29,7 @@ export default function ProductDetail(){
       <div>
         <div className="overflow-hidden rounded-[2.25rem] bg-[#eadfd8]"><img src={activeImage} alt={`${p.name} — view ${activeIndex+1}`} className={`aspect-[4/5] w-full transition duration-300 ${p.imageFit==='contain'?'bg-white object-contain p-4':'object-cover'}`}/></div>
         {gallery.length>1&&<div className="mt-4 grid grid-cols-3 gap-3">{gallery.map((image,index)=><button type="button" key={image} onClick={()=>setActiveIndex(index)} aria-label={`View ${index+1} of ${p.name}`} aria-pressed={activeIndex===index} className={`overflow-hidden rounded-2xl border-2 bg-[#eadfd8] transition ${activeIndex===index?'border-[#a05247] shadow-sm':'border-transparent opacity-75 hover:opacity-100'}`}><img src={image} alt="" className="aspect-square w-full object-cover"/></button>)}</div>}
-        <p className="mt-3 text-center text-xs text-[#81706a]">Source-catalog reference image · Confirm commercial image rights before publication</p>{p.sourceUrl&&<p className="mt-2 text-center text-xs text-[#81706a]">Source: <a href={p.sourceUrl} target="_blank" rel="noreferrer" className="underline">Global Cosmetics product catalog</a></p>}
+        <p className="mt-3 text-center text-xs text-[#81706a]">Source-catalog reference image · Confirm commercial image rights before publication</p>{p.sourceUrl&&<p className="mt-2 text-center text-xs text-[#81706a]">Source: <a href={p.sourceUrl} target="_blank" rel="noreferrer" className="underline">Source product catalog</a></p>}
       </div>
       <section className="lg:py-4">
         <p className="text-xs font-bold uppercase tracking-[.22em] text-[#a05247]">{categoryNames[p.category]} · {p.badge}</p>

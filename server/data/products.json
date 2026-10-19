@@ -389,5 +389,222 @@
       "Texture, residue and fill-weight specifications checked",
       "Regulated claims and label content approved for the destination market"
     ]
+  },
+  {
+    "id": "lc-surfactant-001",
+    "name": "十二烷基硫酸钠 RSAW LXNS/ZA",
+    "category": "surfactants",
+    "price": 0,
+    "stock": 0,
+    "image": "/surfactant-images/sodium-lauryl-sulfate.jpg",
+    "gallery": [
+      "/surfactant-images/sodium-lauryl-sulfate.jpg"
+    ],
+    "imageFit": "contain",
+    "description": "来源页面描述为针状十二烷基硫酸钠产品。作为阴离子表面活性剂原料，适用于清洁体系的配方筛选；最终应用和法规适用性应以供应商技术资料为准。",
+    "sizes": "包装规格与 MOQ 询价确认",
+    "benefit": "清洁与起泡体系原料",
+    "badge": "阴离子表面活性剂",
+    "moq": "询价确认",
+    "leadTime": "按产品等级与数量确认",
+    "applications": "用于配方筛选时，先确认目标体系、浓度、pH、刺激性与成品稳定性。",
+    "specs": [
+      "针状产品形态（来源页面说明）",
+      "阴离子表面活性剂",
+      "建议依据 TDS 确认活性物、溶解性及工艺"
+    ],
+    "qc": [
+      "外观与活性物",
+      "水分及杂质指标",
+      "微生物和法规文件（按实际供应资料确认）"
+    ],
+    "sourceUrl": "http://www.hnlcwang.com/products/sewjls.html",
+    "imageSource": "Local copy of the source product listing image from hnlcwang.com"
+  },
+  {
+    "id": "lc-surfactant-002",
+    "name": "椰油单乙醇酰胺 RSAW CMEA/N",
+    "category": "surfactants",
+    "price": 0,
+    "stock": 0,
+    "image": "/surfactant-images/cocamide-mea.jpg",
+    "gallery": [
+      "/surfactant-images/cocamide-mea.jpg"
+    ],
+    "imageFit": "contain",
+    "description": "来源页面说明该材料由椰油脂肪酸甲酯与单乙醇胺反应制得，可作为清洁体系的泡沫、黏度或珠光感辅助原料进行评估。",
+    "sizes": "包装规格与 MOQ 询价确认",
+    "benefit": "泡沫与体系肤感辅助",
+    "badge": "非离子助剂",
+    "moq": "询价确认",
+    "leadTime": "按产品等级与数量确认",
+    "applications": "根据目标洗护体系的透明度、黏度和泡沫目标进行小试，并验证与主表活和防腐体系的兼容性。",
+    "specs": [
+      "椰油脂肪酸衍生原料",
+      "可用于表面活性剂体系辅助设计",
+      "具体添加量须以 TDS 和成品测试确认"
+    ],
+    "qc": [
+      "外观和色泽",
+      "熔点或凝固点",
+      "成分与法规文件（按实际供应资料确认）"
+    ],
+    "sourceUrl": "http://www.hnlcwang.com/products/yydycx.html",
+    "imageSource": "Local copy of the source product listing image from hnlcwang.com"
+  },
+  {
+    "id": "lc-surfactant-003",
+    "name": "烷基苯磺酸钠 RSAW SABS30/ZA",
+    "category": "surfactants",
+    "price": 0,
+    "stock": 0,
+    "image": "/surfactant-images/sodium-alkylbenzene-sulfonate.jpg",
+    "gallery": [
+      "/surfactant-images/sodium-alkylbenzene-sulfonate.jpg"
+    ],
+    "imageFit": "contain",
+    "description": "来源页面说明该产品为烷基苯磺酸钠水溶液，并以直链烷基苯为原料。适用于洗涤和清洁用途的原料筛选；化妆品应用须先完成法规与安全评估。",
+    "sizes": "包装规格与 MOQ 询价确认",
+    "benefit": "洗涤与清洁体系原料",
+    "badge": "阴离子表面活性剂",
+    "moq": "询价确认",
+    "leadTime": "按产品等级与数量确认",
+    "applications": "用于清洁配方时，需结合活性物、刺激性、pH、法规及成品性能进行完整验证。",
+    "specs": [
+      "烷基苯磺酸钠水溶液（来源页面说明）",
+      "面向洗涤体系进行评估",
+      "化妆品用途需单独确认"
+    ],
+    "qc": [
+      "外观和活性物",
+      "pH 与色泽",
+      "法规适用性确认"
+    ],
+    "sourceUrl": "http://www.hnlcwang.com/products/wjbhsn.html",
+    "imageSource": "Local copy of the source product listing image from hnlcwang.com"
+  },
+  {
+    "id": "lc-surfactant-004",
+    "name": "α-烯基磺酸钠 RSAW AOS92/AOS96",
+    "category": "surfactants",
+    "price": 0,
+    "stock": 0,
+    "image": "/surfactant-images/aos.jpg",
+    "gallery": [
+      "/surfactant-images/aos.jpg"
+    ],
+    "imageFit": "contain",
+    "description": "来源页面说明该产品为粉状固体 α-烯基磺酸钠。可作为阴离子表面活性剂，用于清洁和起泡体系的原料方案比较。",
+    "sizes": "包装规格与 MOQ 询价确认",
+    "benefit": "清洁与泡沫表现",
+    "badge": "阴离子表面活性剂",
+    "moq": "询价确认",
+    "leadTime": "按产品等级与数量确认",
+    "applications": "建议先进行小试溶解和泡沫评估，再确认与增稠剂、香精、防腐和包装的兼容性。",
+    "specs": [
+      "粉状固体（来源页面说明）",
+      "AOS92 / AOS96 产品等级",
+      "使用前需确认溶解、pH 与体系兼容性"
+    ],
+    "qc": [
+      "外观和活性物",
+      "水分与溶解性",
+      "微生物及法规资料"
+    ],
+    "sourceUrl": "http://www.hnlcwang.com/products/ayxjhs.html",
+    "imageSource": "Local copy of the source product listing image from hnlcwang.com"
+  },
+  {
+    "id": "lc-surfactant-005",
+    "name": "十二烷基醚硫酸钠 RSAW ESB70/ZA",
+    "category": "surfactants",
+    "price": 0,
+    "stock": 0,
+    "image": "/surfactant-images/sodium-laureth-sulfate.jpg",
+    "gallery": [
+      "/surfactant-images/sodium-laureth-sulfate.jpg"
+    ],
+    "imageFit": "contain",
+    "description": "来源页面将该产品描述为化妆品级十二烷基醚（2EO）硫酸钠，可作为洗发、沐浴和清洁类体系的主表活方案进行筛选。",
+    "sizes": "包装规格与 MOQ 询价确认",
+    "benefit": "清洁、起泡与洗护体系构建",
+    "badge": "化妆品级阴离子表活",
+    "moq": "询价确认",
+    "leadTime": "按产品等级与数量确认",
+    "applications": "适用于洗护类配方小试；应评估与两性或非离子表活、增稠剂、防腐及香精的协同性。",
+    "specs": [
+      "十二烷基醚（2EO）硫酸钠（来源页面说明）",
+      "化妆品级表面活性剂",
+      "活性物和配方用量须以 TDS 为准"
+    ],
+    "qc": [
+      "活性物和 pH",
+      "外观、色泽和气味",
+      "微生物及配方稳定性"
+    ],
+    "sourceUrl": "http://www.hnlcwang.com/products/yyxbas.html",
+    "imageSource": "Local copy of the source product listing image from hnlcwang.com"
+  },
+  {
+    "id": "lc-surfactant-006",
+    "name": "月桂酰肌氨酸钠 RSAW LS30/ZA",
+    "category": "surfactants",
+    "price": 0,
+    "stock": 0,
+    "image": "/surfactant-images/sodium-lauroyl-sarcosinate.jpg",
+    "gallery": [
+      "/surfactant-images/sodium-lauroyl-sarcosinate.jpg"
+    ],
+    "imageFit": "contain",
+    "description": "来源页面说明该产品为浓度 30% 的月桂酰肌氨酸钠水溶液，可用于温和清洁和泡沫体系的配方评估。",
+    "sizes": "包装规格与 MOQ 询价确认",
+    "benefit": "温和清洁与泡沫支持",
+    "badge": "氨基酸类表面活性剂",
+    "moq": "询价确认",
+    "leadTime": "按产品等级与数量确认",
+    "applications": "用于洁面、沐浴或洗护方向时，应结合目标 pH、活性物、泡沫和肤感开展配方验证。",
+    "specs": [
+      "月桂酰肌氨酸钠水溶液",
+      "来源页面标示浓度 30%",
+      "实际用量须依据具体 TDS 确认"
+    ],
+    "qc": [
+      "活性物与 pH",
+      "外观和色泽",
+      "微生物及防腐兼容性"
+    ],
+    "sourceUrl": "http://www.hnlcwang.com/products/ygxjas.html",
+    "imageSource": "Local copy of the source product listing image from hnlcwang.com"
+  },
+  {
+    "id": "lc-surfactant-007",
+    "name": "烷基苯磺酸 RSAW LABSA",
+    "category": "surfactants",
+    "price": 0,
+    "stock": 0,
+    "image": "/surfactant-images/labsa.jpg",
+    "gallery": [
+      "/surfactant-images/labsa.jpg"
+    ],
+    "imageFit": "contain",
+    "description": "来源页面说明该材料由直链烷基苯经 SO₃ 连续磺化制得。它是洗涤表活体系的原料方向，使用前应完成安全、法规和终端用途适配评估。",
+    "sizes": "包装规格与 MOQ 询价确认",
+    "benefit": "洗涤表活体系中间原料",
+    "badge": "磺酸类原料",
+    "moq": "询价确认",
+    "leadTime": "按产品等级与数量确认",
+    "applications": "仅在确认目标用途、处理工艺和合规要求后进行配方开发与小试。",
+    "specs": [
+      "直链烷基苯磺化衍生原料",
+      "来源页面说明采用连续磺化工艺",
+      "终端用途需经安全和法规确认"
+    ],
+    "qc": [
+      "酸值或活性指标",
+      "外观和色泽",
+      "运输与储存要求"
+    ],
+    "sourceUrl": "http://www.hnlcwang.com/products/wjbhsr.html",
+    "imageSource": "Local copy of the source product listing image from hnlcwang.com"
   }
 ]

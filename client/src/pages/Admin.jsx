@@ -7,6 +7,7 @@ const categoryIcons = {
   'protective-products': Sparkles,
   'lip-care': Sparkles,
   'sun-care': Sparkles,
+  'surfactants': Package,
 };
 
 const initialForm = {
