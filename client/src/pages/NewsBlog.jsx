@@ -75,9 +75,9 @@ export default function NewsBlog({ initialArticles = [] }) {
         <div className="absolute -top-32 right-0 w-[34rem] h-[34rem] rounded-full bg-primary/20 blur-3xl" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24">
           <div className="max-w-3xl animate-slide-up">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-orange-400/20 bg-orange-400/10 text-orange-200 text-sm mb-6"><BookOpen size={15} />Beauty Partner Resources</div>
-            <h1 className="font-heading text-4xl md:text-6xl font-bold leading-tight mb-5">Beauty notes for<br />your everyday ritual.</h1>
-            <p className="text-lg text-slate-300 leading-relaxed max-w-2xl">Thoughtful guidance on skin rituals, ingredients, modern color, intimate scent and beauty partnerships.</p>
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-teal-200/20 bg-teal-200/10 text-teal-100 text-sm mb-6"><BookOpen size={15} />Ingredient & Formulation Resources</div>
+            <h1 className="font-heading text-4xl md:text-6xl font-bold leading-tight mb-5">Ingredient insight<br />for better formulas.</h1>
+            <p className="text-lg text-slate-300 leading-relaxed max-w-2xl">Practical guidance on material grades, formulation fit, technical documents, sampling and responsible sourcing.</p>
           </div>
         </div>
       </section>
@@ -104,7 +104,7 @@ export default function NewsBlog({ initialArticles = [] }) {
 
         <section aria-labelledby="latest-insights">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
-            <div><p className="text-primary font-semibold text-sm uppercase tracking-wider mb-2">Beauty partner library</p><h2 id="latest-insights" className="font-heading text-3xl font-bold text-slate-900">Latest beauty insights</h2></div>
+            <div><p className="text-primary font-semibold text-sm uppercase tracking-wider mb-2">Ingredient resource library</p><h2 id="latest-insights" className="font-heading text-3xl font-bold text-slate-900">Latest ingredient insights</h2></div>
             <label className="relative block w-full lg:w-80">
               <span className="sr-only">Search articles</span><Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" />
               <input value={query} onChange={(event) => {
@@ -153,7 +153,7 @@ export default function NewsBlog({ initialArticles = [] }) {
         </section>
 
         <section className="mt-16 rounded-3xl bg-gradient-to-br from-orange-600 to-amber-500 p-8 md:p-12 text-white flex flex-col md:flex-row md:items-center justify-between gap-8">
-          <div className="max-w-2xl"><div className="flex items-center gap-2 text-orange-100 text-sm font-medium mb-3"><CheckCircle2 size={17} />Preparing a beauty partnership inquiry?</div><h2 className="font-heading text-3xl font-bold mb-3">Review the questions beauty partners ask most.</h2><p className="text-orange-50/90">MOQ, samples, formulas, shades, packaging, private label, production, quality and shipping coordination.</p></div>
+          <div className="max-w-2xl"><div className="flex items-center gap-2 text-teal-100 text-sm font-medium mb-3"><CheckCircle2 size={17} />Preparing an ingredient sourcing brief?</div><h2 className="font-heading text-3xl font-bold mb-3">Start with the details suppliers need.</h2><p className="text-orange-50/90">Material or INCI, grade, application, quantity, target market and required technical documents.</p></div>
           <Link to="/faq" className="shrink-0 inline-flex items-center justify-center gap-2 bg-white text-orange-700 px-6 py-3.5 rounded-xl font-semibold hover:bg-orange-50 transition-colors">Browse FAQ <ArrowRight size={18} /></Link>
         </section>
       </main>

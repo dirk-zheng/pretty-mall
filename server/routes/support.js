@@ -11,28 +11,28 @@ const router = express.Router();
 // AI Keyword matching configuration
 const keywordRules = [
   {
-    keywords: ['skin', 'routine', 'ritual', 'dry', 'oily', 'sensitive', 'hydrate'],
-    response: 'Skin Ritual Support ✨\n\nTell us how your skin feels and what finish you enjoy. We can help you layer essence, serum and moisturizer into a simple, flexible ritual.'
+    keywords: ['inci', 'grade', 'assay', 'purity', 'solubility', 'ph', 'use level', 'active', 'ingredient'],
+    response: 'Ingredient & Formulation Support 🧪\n\nShare the INCI name, target grade, formula format, pH range and intended use. We can help check sourcing options and the technical information available for review.'
   },
   {
     keywords: ['moq', 'minimum order', 'sample', 'quantity', 'private label', 'assortment', 'opening order', 'trial order'],
-    response: 'Flexible Beauty Partnerships 📦\n\nStart with hand sanitizer, spray, scented sanitizer, hand wash, cream, lipstick or sunscreen spray, gel, lotion or stick. MOQ, samples, claims and timing are confirmed by formula, testing and packaging.'
+    response: 'Ingredient Samples & Supply 📦\n\nTell us the ingredient, required grade, estimated quantity and destination market. Sample availability, pack size, MOQ and lead time are confirmed against the requested specification.'
   },
   {
     keywords: ['document', 'report', 'customs', 'clearance', 'stability test', 'compatibility test', 'ingredient list', 'compliance'],
-    response: 'Product Documents 📄\n\nIngredients, directions, cautions, packaging specifications and available test documents are confirmed by formula and market.'
+    response: 'Technical Documents 📄\n\nAvailable documents may include specification, SDS, COA and origin information. Exact documents depend on the material, grade, supplier and destination-market requirements.'
   },
   {
     keywords: ['price', 'cost', 'how much', 'cheap', 'discount', 'promotion', 'pricing', 'quote'],
-    response: 'Beauty Partnership Quotation 💰\n\nShare the formulas, shades, packaging, target market and estimated quantity. Pricing follows the confirmed specification and volume.'
+    response: 'Ingredient Sourcing Quotation 💰\n\nShare the material name or INCI, requested grade, quantity, destination and documentation needs. Pricing follows confirmed availability, specification and order volume.'
   },
   {
     keywords: ['shipping', 'delivery', 'logistics', 'transport', 'how long', 'freight', 'tracking'],
-    response: 'Order & Delivery Support 🚢\n\nShipment planning, cartons, commercial documents and delivery coordination follow the confirmed order. Market compliance responsibilities are agreed before production.'
+    response: 'Shipping & Delivery 🚢\n\nShipping options and required commercial or transport documents depend on the material classification, quantity and destination. Requirements are confirmed before an order is placed.'
   },
   {
     keywords: ['return', 'refund', 'warranty', 'quality', 'damage', 'defect', 'exchange', 'inspect', 'inspection', 'qc', 'fill weight', 'shade', 'packaging'],
-    response: 'Beauty Quality Support 🛡️\n\nQuality review can cover formula stability, shade, fill weight, packaging compatibility, labels, batch coding and packing.'
+    response: 'Material Quality Support 🛡️\n\nQuality review is based on the agreed specification and available batch documents such as COA. Please share the material, grade and any required test parameters.'
   },
   {
     keywords: ['payment', 'pay', 'method', 'wire', 'bank', 'credit', 'terms', 'TT', 'LC'],
@@ -42,9 +42,9 @@ const keywordRules = [
 
 // Default fallback replies
 const defaultReplies = [
-  'Thank you for contacting Aurelia Pretty. Ask about products, samples, pricing, rituals or private label.',
-  'Hello! Share your beauty goals, audience, target price and desired launch window.',
-  'Welcome to Aurelia Pretty. How can we help make your next ritual or partnership more luminous?'
+  'Thank you for contacting Aurelia Pretty Ingredients. Ask us about material grades, samples, technical documents or sourcing.',
+  'Hello! Share the ingredient or INCI, target application, quantity and destination market.',
+  'Welcome to Aurelia Pretty Ingredients. How can we help with your raw-material sourcing brief?'
 ];
 
 // Get AI response based on keywords

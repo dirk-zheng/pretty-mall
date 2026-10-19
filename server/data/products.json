@@ -1,610 +1,524 @@
 [
   {
-    "id": "designer-lipstick-008",
-    "name": "Designer Lipstick",
-    "category": "lip-care",
-    "image": "/product-images/designer-lipstick.jpg",
+    "id": "ING-ACT-001",
+    "name": "Hyaluronic Acid（透明质酸）",
+    "category": "active-ingredients",
+    "image": "/ingredient-images/hyaluronic-acid.png",
     "gallery": [
-      "/product-images/designer-lipstick.jpg"
-    ],
-    "description": "A statement OEM/ODM lipstick program pairing customizable formulas with premium packaging directions such as marble-inspired finishes, decorative effects and bespoke components.",
-    "specs": [
-      "Custom lipstick formula, shade and finish development",
-      "Statement packaging concepts for premium positioning",
-      "Marble-inspired, decorative and bespoke component directions",
-      "Source catalog lists production capacity of up to 32,000 units daily",
-      "Final formula, component construction and decoration require project approval"
-    ],
-    "applications": "Apply directly to the lips as directed on the approved finished-product label. Final ingredients, directions, cautions and claims must follow the confirmed formula and destination-market requirements.",
-    "sizes": "Custom bullet / component / decorative formats",
-    "benefit": "Premium formula + statement packaging",
-    "badge": "Designer lipstick",
-    "moq": "10,000 units / order; 5,000 / color",
-    "leadTime": "Confirm after formula, shade and packaging approval",
-    "price": 0,
-    "stock": 0,
-    "sourceUrl": "https://www.global-cosmetics.com/cosmetic-manufacture-products/oem-odm-lip-care/lipsticks/",
-    "imageSource": "Local project crop of the Designer Lipstick image in the linked source page's Types & Styles section",
-    "qc": [
-      "Formula stability, payoff and sensory performance reviewed",
-      "Shade, fill weight, component fit and decoration checked",
-      "Ingredients, claims and destination-market labels approved before production"
-    ],
-    "imageFit": "contain"
-  },
-  {
-    "id": "traditional-lipsticks-009",
-    "name": "Traditional Lipsticks",
-    "category": "lip-care",
-    "image": "/product-images/traditional-lipsticks.jpg",
-    "gallery": [
-      "/product-images/traditional-lipsticks.jpg"
-    ],
-    "description": "A versatile OEM/ODM lipstick program spanning classic sheer, cream, satin and matte finishes for brands building an adaptable everyday color assortment.",
-    "specs": [
-      "Sheer, cream, satin and matte finish directions",
-      "Custom shades, sensorial profiles and wear targets",
-      "Classic bullet and brand-specific packaging options",
-      "Source catalog lists production capacity of up to 32,000 units daily",
-      "Final performance and claims require formula-specific testing"
-    ],
-    "applications": "Apply directly to the lips as directed on the approved finished-product label. Final ingredients, wear claims, cautions and directions must follow the confirmed formula and destination-market requirements.",
-    "sizes": "Custom bullet / classic lipstick formats",
-    "benefit": "Sheer to matte finish range",
-    "badge": "Classic lipstick",
-    "moq": "10,000 units / order; 5,000 / color",
-    "leadTime": "Confirm after formula, shade and packaging approval",
-    "price": 0,
-    "stock": 0,
-    "sourceUrl": "https://www.global-cosmetics.com/cosmetic-manufacture-products/oem-odm-lip-care/lipsticks/",
-    "imageSource": "Local project crop of the Traditional Lipsticks image in the linked source page's Types & Styles section",
-    "qc": [
-      "Shade, texture, payoff and wear targets reviewed",
-      "Bullet integrity, fill weight and packaging compatibility checked",
-      "Ingredients, claims and destination-market labels approved before production"
-    ],
-    "imageFit": "contain"
-  },
-  {
-    "id": "color-changing-lipsticks-010",
-    "name": "Color Changing Lipsticks",
-    "category": "lip-care",
-    "image": "/product-images/color-changing-lipsticks.jpg",
-    "gallery": [
-      "/product-images/color-changing-lipsticks.jpg"
-    ],
-    "description": "A reactive OEM/ODM lipstick concept designed to develop a personalized-looking tone in response to the wearer's lip environment, combining novelty with customizable formula and packaging choices.",
-    "specs": [
-      "Reactive color-development concept",
-      "Custom shade direction, finish and packaging",
-      "Designed for differentiated lip-color launches",
-      "Source catalog lists production capacity of up to 32,000 units daily",
-      "Color response, stability, ingredients and claims require final-formula testing"
-    ],
-    "applications": "Apply directly to clean lips and allow the color to develop. Exact shade response, directions, ingredients, cautions and claims must be confirmed on the approved finished-product label.",
-    "sizes": "Custom bullet / reactive lipstick formats",
-    "benefit": "Personalized-looking color response",
-    "badge": "Reactive color",
-    "moq": "10,000 units / order; 5,000 / color",
-    "leadTime": "Confirm after formula, shade and packaging approval",
-    "price": 0,
-    "stock": 0,
-    "sourceUrl": "https://www.global-cosmetics.com/cosmetic-manufacture-products/oem-odm-lip-care/lipsticks/",
-    "imageSource": "Local project crop of the Color Changing Lipsticks image in the linked source page's Types & Styles section",
-    "qc": [
-      "Color-development behavior and shade range tested on the final formula",
-      "Stability, bullet integrity and packaging compatibility checked",
-      "Ingredients, claims and destination-market labels approved before production"
-    ],
-    "imageFit": "contain"
-  },
-  {
-    "id": "sunscreen-spray-011",
-    "name": "Sunscreen Spray",
-    "category": "sun-care",
-    "image": "/product-images/sunscreen-spray.jpg",
-    "gallery": [
-      "/product-images/sunscreen-spray.jpg"
+      "/ingredient-images/hyaluronic-acid.png"
     ],
     "imageFit": "contain",
-    "description": "A lightweight OEM/ODM sunscreen spray program designed for convenient, on-the-go application, even coverage, quick absorption and a non-greasy skin feel.",
+    "description": "水溶性透明质酸粉体，适用于保湿精华、乳液、面霜及面膜等配方开发。分子量和规格需按目标肤感及供应商资料确认。",
     "specs": [
-      "Fine-mist or continuous-spray format development",
-      "Lightweight feel and even-coverage targets",
-      "Bottle, actuator, formula and decoration can be customized",
-      "Source catalog lists production capacity of up to 50,000 units daily",
-      "SPF, broad-spectrum, water-resistance and spray-safety claims require final-product testing"
+      "外观：白色至类白色粉末",
+      "水分散型规格可选",
+      "建议起始添加量：0.05–0.5%",
+      "分子量按目标肤感选择"
     ],
-    "applications": "Apply generously and evenly before sun exposure, avoiding inhalation and following the approved spray directions. Reapplication timing, SPF claim and cautions must be confirmed for the final formula and market.",
-    "sizes": "Custom spray / mist formats",
-    "benefit": "Quick, even on-the-go application",
-    "badge": "Sunscreen spray",
-    "moq": "10,000 units / order; 5,000 / formulation type",
-    "leadTime": "Confirm after formula, SPF testing and packaging approval",
+    "applications": "按供应商建议预分散并缓慢加入水相；需验证溶解、黏度、防腐体系与成品稳定性。",
+    "sizes": "Lab sample / 1 kg / 5 kg / commercial pack (confirm by grade)",
+    "benefit": "Hydration and sensorial slip",
+    "badge": "Hydration active",
+    "moq": "Confirm by grade and pack size",
+    "leadTime": "Confirm after grade and quantity review",
     "price": 0,
     "stock": 0,
-    "sourceUrl": "https://www.global-cosmetics.com/cosmetic-manufacture-products/oem-odm-skin-care/sunscreen-spf/",
-    "imageSource": "Local project crop of the Sunscreen Spray image in the linked source page's Types & Styles section",
     "qc": [
-      "Spray pattern, dose consistency and actuator performance checked",
-      "SPF and broad-spectrum performance tested on the final formula",
-      "Stability, packaging compatibility and destination-market labels approved"
-    ]
+      "身份与含量",
+      "微生物限度",
+      "适用时确认分子量分布"
+    ],
+    "imageSource": "Existing AI-generated project image; visual reference only"
   },
   {
-    "id": "sunscreen-gel-012",
-    "name": "Sunscreen Gel",
-    "category": "sun-care",
-    "image": "/product-images/sunscreen-gel.jpg",
+    "id": "ING-ACT-002",
+    "name": "Niacinamide（烟酰胺）",
+    "category": "active-ingredients",
+    "image": "/ingredient-images/niacinamide.png",
     "gallery": [
-      "/product-images/sunscreen-gel.jpg"
+      "/ingredient-images/niacinamide.png"
     ],
     "imageFit": "contain",
-    "description": "A water-based OEM/ODM sunscreen gel concept combining a fresh, lightweight texture with hydration support, quick absorption and customizable UV-protection development.",
+    "description": "维生素 B3 化妆品原料，可用于面部及身体护理配方。最终添加量与适用 pH 应根据所选等级和供应商技术资料确定。",
     "specs": [
-      "Water-based gel texture direction",
-      "Lightweight, refreshing and low-residue sensory targets",
-      "Hydration support can be developed to brief",
-      "Source catalog lists production capacity of up to 50,000 units daily",
-      "SPF and broad-spectrum claims require finished-formula testing and regulatory review"
+      "外观：白色结晶粉末",
+      "水溶性",
+      "建议起始添加量：2–5%",
+      "适用于免洗及淋洗配方开发"
     ],
-    "applications": "Apply generously and evenly before sun exposure, then reapply according to the approved finished-product label. Exact amount, timing, claims and cautions require formula-specific testing.",
-    "sizes": "Custom pump / bottle / tube gel formats",
-    "benefit": "Fresh hydration + UV protection",
-    "badge": "Sunscreen gel",
-    "moq": "10,000 units / order; 5,000 / formulation type",
-    "leadTime": "Confirm after formula, SPF testing and packaging approval",
+    "applications": "加入水相溶解，并按供应商建议控制 pH；评估颜色、气味及长期稳定性。",
+    "sizes": "Lab sample / 1 kg / 5 kg / commercial pack (confirm by grade)",
+    "benefit": "Barrier and tone-care formulation",
+    "badge": "Vitamin active",
+    "moq": "Confirm by grade and pack size",
+    "leadTime": "Confirm after grade and quantity review",
     "price": 0,
     "stock": 0,
-    "sourceUrl": "https://www.global-cosmetics.com/cosmetic-manufacture-products/oem-odm-skin-care/sunscreen-spf/",
-    "imageSource": "Local project crop of the Sunscreen Gel image in the linked source page's Types & Styles section",
     "qc": [
-      "Gel stability, absorption and skin-feel reviewed",
-      "SPF and broad-spectrum performance tested on the final formula",
-      "Packaging compatibility, fill weight and destination-market labels approved"
-    ]
+      "身份与含量",
+      "水分",
+      "残留及微生物指标"
+    ],
+    "imageSource": "Existing AI-generated project image; visual reference only"
   },
   {
-    "id": "sunscreen-cream-lotion-013",
-    "name": "Sunscreen Cream & Lotion",
-    "category": "sun-care",
-    "image": "/product-images/sunscreen-cream-lotion.jpg",
+    "id": "ING-ACT-003",
+    "name": "Stabilized Vitamin C（稳定型维生素 C）",
+    "category": "active-ingredients",
+    "image": "/ingredient-images/stabilized-vitamin-c.png",
     "gallery": [
-      "/product-images/sunscreen-cream-lotion.jpg"
+      "/ingredient-images/stabilized-vitamin-c.png"
     ],
     "imageFit": "contain",
-    "description": "A customizable OEM/ODM sunscreen cream and lotion program focused on smooth spreadability, comfortable daily wear and skincare benefits tailored to the intended market.",
+    "description": "稳定型维生素 C 衍生物原料方案，可按配方水相或油相结构选择规格。衍生物类型、溶解性和适用条件以供应商规格为准。",
     "specs": [
-      "Cream and lotion texture directions",
-      "Custom slip, absorption, finish and hydration profile",
-      "Tube, pump and bottle packaging options",
-      "Source catalog lists production capacity of up to 50,000 units daily",
-      "UV-filter system, SPF and broad-spectrum claims require final-formula testing"
+      "衍生物按配方相态选择",
+      "粉体规格可选",
+      "用量因衍生物而异",
+      "按所选等级获取技术资料"
     ],
-    "applications": "Apply generously and evenly before sun exposure, then reapply according to the approved finished-product label. Exact amount, timing, SPF claim and cautions require formula-specific testing and market review.",
-    "sizes": "Custom tube / pump / bottle formats",
-    "benefit": "Smooth daily sun-care textures",
-    "badge": "Cream & lotion",
-    "moq": "10,000 units / order; 5,000 / formulation type",
-    "leadTime": "Confirm after formula, SPF testing and packaging approval",
+    "applications": "依据具体衍生物的 pH、温度与加入相要求操作，并通过成品稳定性和含量测试验证。",
+    "sizes": "Lab sample / 1 kg / 5 kg / commercial pack (confirm by grade)",
+    "benefit": "Brightening and antioxidant concepts",
+    "badge": "Antioxidant active",
+    "moq": "Confirm by grade and pack size",
+    "leadTime": "Confirm after grade and quantity review",
     "price": 0,
     "stock": 0,
-    "sourceUrl": "https://www.global-cosmetics.com/cosmetic-manufacture-products/oem-odm-skin-care/sunscreen-spf/",
-    "imageSource": "Local project crop of the Sunscreen Cream & Lotion image in the linked source page's Types & Styles section",
     "qc": [
-      "Texture, spreadability and finished-product stability reviewed",
-      "SPF and broad-spectrum performance tested on the final formula",
-      "Packaging compatibility, fill weight and destination-market labels approved"
-    ]
+      "身份与含量",
+      "颜色与水分",
+      "相关杂质及稳定性指标"
+    ],
+    "imageSource": "Existing AI-generated project image; visual reference only"
   },
   {
-    "id": "sunscreen-stick-014",
-    "name": "Sunscreen Stick",
-    "category": "sun-care",
-    "image": "/product-images/sunscreen-stick.jpg",
+    "id": "ING-ACT-004",
+    "name": "Ceramide Complex（神经酰胺复合物）",
+    "category": "active-ingredients",
+    "image": "/ingredient-images/ceramide-complex.png",
     "gallery": [
-      "/product-images/sunscreen-stick.jpg"
+      "/ingredient-images/ceramide-complex.png"
     ],
     "imageFit": "contain",
-    "description": "A compact OEM/ODM sunscreen stick program for targeted, mess-free application on areas such as the face, lips, ears and nose, with a smooth glide and travel-ready format.",
+    "description": "用于屏障护理概念的脂质活性原料，可提供片状、颗粒或预分散方案。载体与神经酰胺组成需结合乳化体系确认。",
     "specs": [
-      "Solid, targeted sunscreen format",
-      "Smooth-glide and non-greasy sensory targets",
-      "Face, lip and exposed-area positioning can be developed to brief",
-      "Source catalog lists production capacity of up to 50,000 units daily",
-      "SPF, broad-spectrum and water-resistance claims require final-product testing"
+      "象牙白片状、颗粒或分散体规格",
+      "油相或预分散方案",
+      "建议用量依有效成分含量而定",
+      "面霜与乳液方向"
     ],
-    "applications": "Glide generously and evenly over exposed areas before sun exposure and reapply according to the approved label. Coverage amount, permitted use areas, SPF claim and cautions require final-formula review.",
-    "sizes": "Custom twist-up / compact stick formats",
-    "benefit": "Targeted, travel-ready protection",
-    "badge": "Sunscreen stick",
-    "moq": "10,000 units / order; 5,000 / formulation type",
-    "leadTime": "Confirm after formula, SPF testing and packaging approval",
+    "applications": "根据载体和供应商工艺要求加入油相或冷却阶段；评估分散性及长期稳定性。",
+    "sizes": "Lab sample / 1 kg / 5 kg / commercial pack (confirm by grade)",
+    "benefit": "Barrier-lipid formulation support",
+    "badge": "Lipid active",
+    "moq": "Confirm by grade and pack size",
+    "leadTime": "Confirm after grade and quantity review",
     "price": 0,
     "stock": 0,
-    "sourceUrl": "https://www.global-cosmetics.com/cosmetic-manufacture-products/oem-odm-skin-care/sunscreen-spf/",
-    "imageSource": "Local project crop of the Sunscreen Stick image in the linked source page's Types & Styles section",
     "qc": [
-      "Stick integrity, glide, payoff and heat stability reviewed",
-      "SPF and broad-spectrum performance tested on the final formula",
-      "Component compatibility, fill weight and destination-market labels approved"
-    ]
+      "神经酰胺组成",
+      "有效成分含量",
+      "微生物及氧化指标"
+    ],
+    "imageSource": "Existing AI-generated project image; visual reference only"
   },
   {
-    "id": "hand-sanitizer-001",
-    "name": "Hand Sanitizer",
-    "category": "protective-products",
-    "image": "/product-images/hand-sanitizer.jpg",
+    "id": "ING-BOT-001",
+    "name": "Centella Asiatica Extract（积雪草提取物）",
+    "category": "botanical-extracts",
+    "image": "/ingredient-images/centella-extract.png",
     "gallery": [
-      "/product-images/hand-sanitizer.jpg"
+      "/ingredient-images/centella-extract.png"
     ],
-    "description": "A rinse-free hand sanitizer gel developed for OEM and private-label programs, combining an alcohol-based hygiene format with aloe vera and skin-conditioning support for frequent use.",
+    "imageFit": "contain",
+    "description": "积雪草来源的植物提取物，可用于舒缓护理类配方开发。提取方式、载体、标志成分和颜色会随规格而异。",
     "specs": [
-      "Alcohol-based rinse-free gel format",
-      "Aloe vera and moisturizing support",
-      "Fragrance, viscosity and packaging can be customized",
-      "Retail, travel and bulk packaging options",
-      "Final claims and labeling subject to formula and market review"
+      "粉体与液体载体规格",
+      "颜色因等级而变化",
+      "建议起始添加量：0.1–2%",
+      "标准化规格依供应情况"
     ],
-    "applications": "Apply enough product to cover dry hands, then rub thoroughly until dry. Final directions and cautions must follow the approved formula and destination-market rules.",
-    "sizes": "50 ml / 100 ml / 250 ml / 500 ml / 1 L",
-    "benefit": "Rinse-free hand hygiene",
-    "badge": "Protective care",
-    "moq": "10,000 units / order",
-    "leadTime": "Confirm after formula and packaging approval",
+    "applications": "按照所选等级的推荐相态加入；评估颜色、气味、防腐兼容性与成品稳定性。",
+    "sizes": "Lab sample / 1 kg / 5 kg / commercial pack (confirm by grade)",
+    "benefit": "Soothing-care formulation concept",
+    "badge": "Botanical extract",
+    "moq": "Confirm by grade and pack size",
+    "leadTime": "Confirm after grade and quantity review",
     "price": 0,
     "stock": 0,
-    "sourceUrl": "https://www.global-cosmetics.com/cosmetic-manufacture-products/protective-products/hand-sanitizer/",
-    "imageSource": "Local project copy from the linked Global Cosmetics source page",
     "qc": [
-      "Alcohol level and finished-product claims verified against the approved specification",
-      "Packaging compatibility, fill weight and closure performance checked",
-      "Directions, cautions and market-specific labels approved before production"
-    ]
+      "植物身份",
+      "标志成分或提取比例",
+      "微生物与污染物指标"
+    ],
+    "imageSource": "Existing AI-generated project image; visual reference only"
   },
   {
-    "id": "sanitizer-alcohol-spray-002",
-    "name": "Sanitizer Alcohol Spray",
-    "category": "protective-products",
-    "image": "/product-images/sanitizer-alcohol-spray.jpg",
+    "id": "ING-BOT-002",
+    "name": "Green Tea Extract（绿茶提取物）",
+    "category": "botanical-extracts",
+    "image": "/ingredient-images/green-tea-extract.png",
     "gallery": [
-      "/product-images/sanitizer-alcohol-spray.jpg"
+      "/ingredient-images/green-tea-extract.png"
     ],
-    "description": "A portable, rinse-free alcohol spray for hand-hygiene programs, designed for quick application and adaptable to retail, travel and workplace packaging.",
+    "imageFit": "contain",
+    "description": "茶来源提取物，可用于皮肤、身体及头皮护理配方。多酚指标、载体、颜色和热稳定性按具体等级确认。",
     "specs": [
-      "Fine-mist rinse-free spray format",
-      "Source catalog identifies an ethanol-based formula",
-      "Bottle, actuator, fragrance and label can be customized",
-      "Multiple retail and bulk sizes available",
-      "Alcohol level and claims require final specification approval"
+      "粉体及液体规格",
+      "可选多酚指标规格",
+      "建议起始添加量：0.1–1%",
+      "适用于皮肤及头皮护理开发"
     ],
-    "applications": "Spray evenly onto dry hands and rub over all surfaces until dry. Use only in accordance with the approved label, cautions and local requirements.",
-    "sizes": "50 ml / 100 ml / 250 ml / 500 ml / 1 L",
-    "benefit": "Portable hygiene spray",
-    "badge": "Travel format",
-    "moq": "10,000 units / order",
-    "leadTime": "Confirm after formula and packaging approval",
+    "applications": "按规格分散或溶解；关注热敏性、颜色变化、气味及加速稳定性结果。",
+    "sizes": "Lab sample / 1 kg / 5 kg / commercial pack (confirm by grade)",
+    "benefit": "Antioxidant botanical concept",
+    "badge": "Botanical extract",
+    "moq": "Confirm by grade and pack size",
+    "leadTime": "Confirm after grade and quantity review",
     "price": 0,
     "stock": 0,
-    "sourceUrl": "https://www.global-cosmetics.com/cosmetic-manufacture-products/protective-products/sanitizer-alcohol-spray/",
-    "imageSource": "Local project copy from the linked Global Cosmetics source page",
     "qc": [
-      "Spray pattern, leakage resistance and actuator performance checked",
-      "Alcohol level and label claims matched to the approved formula",
-      "Transport, packaging and destination-market requirements confirmed"
-    ]
+      "植物身份",
+      "多酚指标",
+      "微生物及污染物指标"
+    ],
+    "imageSource": "Existing AI-generated project image; visual reference only"
   },
   {
-    "id": "scented-sanitizers-003",
-    "name": "Scented Sanitizers",
-    "category": "protective-products",
-    "image": "/product-images/scented-sanitizers.jpg",
+    "id": "ING-BOT-003",
+    "name": "Jojoba Oil（霍霍巴油）",
+    "category": "botanical-extracts",
+    "image": "/ingredient-images/jojoba-oil.png",
     "gallery": [
-      "/product-images/scented-sanitizers.jpg"
+      "/ingredient-images/jojoba-oil.png"
     ],
-    "description": "A customizable collection of scented, rinse-free sanitizer gels that pairs everyday hand hygiene with a choice of fragrance profiles and portable packaging.",
+    "imageFit": "contain",
+    "description": "液态蜡酯类润肤原料，可用于面部、身体、唇部及头发护理配方，提供柔润与延展感。可按需求评估精制或天然色泽规格。",
     "specs": [
-      "Rinse-free scented gel format",
-      "Custom fragrance profiles available",
-      "Travel, retail and bulk packaging options",
-      "Viscosity, color and decoration can be developed to brief",
-      "Fragrance safety and final claims subject to market review"
+      "透明淡金色液体",
+      "精制及天然色泽规格",
+      "建议起始添加量：1–20%",
+      "适用于乳化及无水体系"
     ],
-    "applications": "Dispense onto dry hands and rub thoroughly until dry. Fragrance, directions and cautions must be confirmed for the final formula and destination market.",
-    "sizes": "Travel / retail / bulk formats",
-    "benefit": "Hygiene with custom scent",
-    "badge": "Custom fragrance",
-    "moq": "Confirm by fragrance and format",
-    "leadTime": "Confirm after fragrance and packaging approval",
+    "applications": "加入油相或直接用于无水体系；评估氧化控制、气味、颜色与包装相容性。",
+    "sizes": "Lab sample / 1 kg / 5 kg / commercial pack (confirm by grade)",
+    "benefit": "Light emollience and slip",
+    "badge": "Botanical oil",
+    "moq": "Confirm by grade and pack size",
+    "leadTime": "Confirm after grade and quantity review",
     "price": 0,
     "stock": 0,
-    "sourceUrl": "https://www.global-cosmetics.com/protective-products/",
-    "imageSource": "Local project copy from the linked Global Cosmetics source page",
     "qc": [
-      "Fragrance compatibility and stability reviewed",
-      "Viscosity, fill weight and packaging performance checked",
-      "Allergen, ingredient and market labeling requirements confirmed"
-    ]
+      "身份与脂肪酸组成",
+      "酸值和过氧化值",
+      "色泽与气味"
+    ],
+    "imageSource": "Existing AI-generated project image; visual reference only"
   },
   {
-    "id": "hand-wash-004",
-    "name": "Hand Wash",
-    "category": "protective-products",
-    "image": "/product-images/hand-wash.jpg",
+    "id": "ING-BOT-004",
+    "name": "Plant-Derived Squalane（植物角鲨烷）",
+    "category": "botanical-extracts",
+    "image": "/ingredient-images/squalane.png",
     "gallery": [
-      "/product-images/hand-wash.jpg"
+      "/ingredient-images/squalane.png"
     ],
-    "description": "A liquid hand-wash concept for frequent cleansing, with aloe vera and conditioning support intended to balance effective washing with a comfortable after-feel.",
+    "imageFit": "contain",
+    "description": "轻质润肤原料，可用于护肤、彩妆及护发体系，帮助调节延展性和肤感。植物来源路线及纯度应以供应文件为准。",
     "specs": [
-      "Rinse-off liquid hand-wash format",
-      "Aloe vera and conditioning support",
-      "Fragrance, color, viscosity and packaging can be customized",
-      "Pump, refill and hospitality formats available",
-      "Any antibacterial claim requires formula-specific evidence"
+      "无色透明液体",
+      "植物来源规格可询",
+      "建议起始添加量：1–20%",
+      "可用于油相及无水体系"
     ],
-    "applications": "Apply to wet hands, work into a lather across all surfaces, then rinse thoroughly. Final directions and claims must follow the approved formula.",
-    "sizes": "Retail / refill / hospitality formats",
-    "benefit": "Cleanse + condition",
-    "badge": "Frequent use",
-    "moq": "Confirm by formula and format",
-    "leadTime": "Confirm after formula and packaging approval",
+    "applications": "加入油相或无水配方，与酯类、油脂和蜡复配以调整铺展与柔润度。",
+    "sizes": "Lab sample / 1 kg / 5 kg / commercial pack (confirm by grade)",
+    "benefit": "Silky lightweight emollience",
+    "badge": "Premium emollient",
+    "moq": "Confirm by grade and pack size",
+    "leadTime": "Confirm after grade and quantity review",
     "price": 0,
     "stock": 0,
-    "sourceUrl": "https://www.global-cosmetics.com/protective-products/",
-    "imageSource": "Local project copy from the linked Global Cosmetics source page",
     "qc": [
-      "Cleansing performance and skin-feel reviewed against the approved brief",
-      "Viscosity, pump output and packaging compatibility checked",
-      "Claims, directions and destination-market labels approved"
-    ]
+      "身份与纯度",
+      "颜色与气味",
+      "酸值、碘值及过氧化值"
+    ],
+    "imageSource": "Existing AI-generated project image; visual reference only"
   },
   {
-    "id": "antiseptic-cream-005",
-    "name": "Antiseptic Cream",
-    "category": "protective-products",
-    "image": "/product-images/antiseptic-cream.jpg",
+    "id": "ING-FRM-001",
+    "name": "Emulsifying Wax（乳化蜡）",
+    "category": "formulation-essentials",
+    "image": "/ingredient-images/emulsifying-wax.png",
     "gallery": [
-      "/product-images/antiseptic-cream.jpg"
+      "/ingredient-images/emulsifying-wax.png"
     ],
-    "description": "A conditioning cream format for hand and body protective-care programs, designed around a comfortable texture and repeat-use positioning.",
+    "imageFit": "contain",
+    "description": "用于乳液与面霜开发的乳化原料。具体体系需根据油相比例、目标黏度、pH 和目标市场选择。",
     "specs": [
-      "Hand and body cream format",
-      "Conditioning, low-residue texture can be tailored",
-      "Tube, pump and jar packaging options",
-      "Fragrance and sensorial profile can be customized",
-      "Antiseptic or antibacterial claims require market-specific substantiation"
+      "象牙白珠粒、颗粒或片状",
+      "非离子体系规格可询",
+      "建议起始添加量：2–8%",
+      "按油相比例和黏度目标选择"
     ],
-    "applications": "Use only as directed on the approved finished-product label. Intended use, application area, frequency and cautions must be confirmed for the final formula.",
-    "sizes": "Tube / pump / jar formats",
-    "benefit": "Conditioning protective care",
-    "badge": "Cream format",
-    "moq": "Confirm by formula and format",
-    "leadTime": "Confirm after formula, testing and packaging approval",
+    "applications": "按供应商工艺在推荐温度融入指定相，乳化后验证黏度、冻融和加速稳定性。",
+    "sizes": "Lab sample / 1 kg / 5 kg / commercial pack (confirm by grade)",
+    "benefit": "Cream and lotion structure",
+    "badge": "Emulsifier",
+    "moq": "Confirm by grade and pack size",
+    "leadTime": "Confirm after grade and quantity review",
     "price": 0,
     "stock": 0,
-    "sourceUrl": "https://www.global-cosmetics.com/protective-products/",
-    "imageSource": "Local project copy from the linked Global Cosmetics source page",
     "qc": [
-      "Formula stability and packaging compatibility assessed",
-      "Texture, residue and fill-weight specifications checked",
-      "Regulated claims and label content approved for the destination market"
-    ]
+      "身份与熔点范围",
+      "适用时确认酸值或羟值",
+      "微生物指标"
+    ],
+    "imageSource": "Existing AI-generated project image; visual reference only"
+  },
+  {
+    "id": "ING-FRM-002",
+    "name": "Preservative Blend（防腐复配）",
+    "category": "formulation-essentials",
+    "image": "/ingredient-images/preservative-blend.png",
+    "gallery": [
+      "/ingredient-images/preservative-blend.png"
+    ],
+    "imageFit": "contain",
+    "description": "面向含水化妆品配方的防腐体系选择方案。适用性取决于 pH、水活度、包装、生产卫生和销售市场法规。",
+    "specs": [
+      "液体及粉体体系可选",
+      "适用 pH 因体系而异",
+      "用量依据具体体系与法规确认",
+      "可按市场需求评估规格"
+    ],
+    "applications": "按照推荐温度和 pH 加入；最终成品仍需进行适用的微生物及防腐挑战测试。",
+    "sizes": "Lab sample / 1 kg / 5 kg / commercial pack (confirm by grade)",
+    "benefit": "Preservation system selection",
+    "badge": "Preservation system",
+    "moq": "Confirm by grade and pack size",
+    "leadTime": "Confirm after grade and quantity review",
+    "price": 0,
+    "stock": 0,
+    "qc": [
+      "身份与有效成分",
+      "微生物质量",
+      "组成与合规资料"
+    ],
+    "imageSource": "Existing AI-generated project image; visual reference only"
+  },
+  {
+    "id": "ING-FRM-003",
+    "name": "Cosmetic Pigments（化妆品色粉）",
+    "category": "formulation-essentials",
+    "image": "/ingredient-images/cosmetic-pigments.png",
+    "gallery": [
+      "/ingredient-images/cosmetic-pigments.png"
+    ],
+    "imageFit": "contain",
+    "description": "用于彩妆及带色护肤开发的矿物或效果颜料方案。色号、表面处理和使用范围需结合具体应用及目标市场确认。",
+    "specs": [
+      "氧化铁、白色及效果颜料可选",
+      "未处理及表面处理等级",
+      "用量由色彩和遮盖目标决定",
+      "需按用途进行市场法规筛选"
+    ],
+    "applications": "使用适配的润湿介质和研磨工艺预分散；验证色差、分散、使用表现及目标市场允许范围。",
+    "sizes": "Lab sample / 1 kg / 5 kg / commercial pack (confirm by grade)",
+    "benefit": "Shade and coverage development",
+    "badge": "Color system",
+    "moq": "Confirm by grade and pack size",
+    "leadTime": "Confirm after grade and quantity review",
+    "price": 0,
+    "stock": 0,
+    "qc": [
+      "CI 身份与色强",
+      "粒径与分散性",
+      "重金属及微生物指标"
+    ],
+    "imageSource": "Existing AI-generated project image; visual reference only"
+  },
+  {
+    "id": "ING-FRM-004",
+    "name": "Mild Surfactant Base（温和表活基底）",
+    "category": "formulation-essentials",
+    "image": "/ingredient-images/surfactant-base.png",
+    "gallery": [
+      "/ingredient-images/surfactant-base.png"
+    ],
+    "imageFit": "contain",
+    "description": "用于洁面、沐浴、洗手及洗发配方开发的温和清洁基底方案。体系按泡沫、黏度、透明度和目标肤感选择。",
+    "specs": [
+      "透明至珠光液体体系",
+      "可询无硫酸盐方案",
+      "用量取决于活性物含量",
+      "适用于皮肤及头发清洁开发"
+    ],
+    "applications": "依推荐工艺稀释并调节黏度；验证防腐兼容性、透明度、泡沫和包装表现。",
+    "sizes": "Lab sample / 1 kg / 5 kg / commercial pack (confirm by grade)",
+    "benefit": "Cleansing and foam structure",
+    "badge": "Surfactant system",
+    "moq": "Confirm by grade and pack size",
+    "leadTime": "Confirm after grade and quantity review",
+    "price": 0,
+    "stock": 0,
+    "qc": [
+      "活性物与 pH",
+      "黏度及外观",
+      "微生物指标"
+    ],
+    "imageSource": "Existing AI-generated project image; visual reference only"
   },
   {
     "id": "lc-surfactant-001",
-    "name": "十二烷基硫酸钠 RSAW LXNS/ZA",
+    "name": "Sodium Lauryl Sulfate（十二烷基硫酸钠）RSAW LXNS/ZA",
     "category": "surfactants",
-    "price": 0,
-    "stock": 0,
     "image": "/surfactant-images/sodium-lauryl-sulfate.jpg",
     "gallery": [
       "/surfactant-images/sodium-lauryl-sulfate.jpg"
     ],
     "imageFit": "contain",
-    "description": "来源页面描述为针状十二烷基硫酸钠产品。作为阴离子表面活性剂原料，适用于清洁体系的配方筛选；最终应用和法规适用性应以供应商技术资料为准。",
-    "sizes": "包装规格与 MOQ 询价确认",
+    "description": "来源页面描述为针状十二烷基硫酸钠产品，可作为清洁体系原料进行配方评估。具体应用和规格以供应商技术资料为准。",
+    "specs": [
+      "针状形态（来源页面说明）",
+      "阴离子表面活性剂",
+      "活性物、溶解性与工艺需按 TDS 确认"
+    ],
+    "applications": "先确认目标体系、浓度、pH 与兼容性，并开展成品性能和安全评估。",
+    "sizes": "Supplier pack sizes: confirm by grade",
     "benefit": "清洁与起泡体系原料",
     "badge": "阴离子表面活性剂",
-    "moq": "询价确认",
-    "leadTime": "按产品等级与数量确认",
-    "applications": "用于配方筛选时，先确认目标体系、浓度、pH、刺激性与成品稳定性。",
-    "specs": [
-      "针状产品形态（来源页面说明）",
-      "阴离子表面活性剂",
-      "建议依据 TDS 确认活性物、溶解性及工艺"
-    ],
+    "moq": "Confirm by supplier and pack size",
+    "leadTime": "Confirm by current supplier availability",
+    "price": 0,
+    "stock": 0,
     "qc": [
-      "外观与活性物",
-      "水分及杂质指标",
-      "微生物和法规文件（按实际供应资料确认）"
+      "Specification and active matter per supplier TDS/COA",
+      "Quality and market applicability to be confirmed for target use"
     ],
     "sourceUrl": "http://www.hnlcwang.com/products/sewjls.html",
-    "imageSource": "Local copy of the source product listing image from hnlcwang.com"
+    "imageSource": "Product image downloaded from source product listing; confirm rights and grade before external reuse"
   },
   {
     "id": "lc-surfactant-002",
-    "name": "椰油单乙醇酰胺 RSAW CMEA/N",
+    "name": "Cocamide MEA（椰油单乙醇酰胺）RSAW CMEA/N",
     "category": "surfactants",
-    "price": 0,
-    "stock": 0,
     "image": "/surfactant-images/cocamide-mea.jpg",
     "gallery": [
       "/surfactant-images/cocamide-mea.jpg"
     ],
     "imageFit": "contain",
-    "description": "来源页面说明该材料由椰油脂肪酸甲酯与单乙醇胺反应制得，可作为清洁体系的泡沫、黏度或珠光感辅助原料进行评估。",
-    "sizes": "包装规格与 MOQ 询价确认",
-    "benefit": "泡沫与体系肤感辅助",
-    "badge": "非离子助剂",
-    "moq": "询价确认",
-    "leadTime": "按产品等级与数量确认",
-    "applications": "根据目标洗护体系的透明度、黏度和泡沫目标进行小试，并验证与主表活和防腐体系的兼容性。",
+    "description": "来源页面说明该产品由椰油脂肪酸甲酯与单乙醇胺反应制得，可评估用于清洁体系的泡沫、黏度或珠光感辅助。",
     "specs": [
-      "椰油脂肪酸衍生原料",
-      "可用于表面活性剂体系辅助设计",
-      "具体添加量须以 TDS 和成品测试确认"
+      "椰油脂肪酸衍生物",
+      "用于表活体系辅助设计",
+      "添加量须依据 TDS 和成品测试"
     ],
-    "qc": [
-      "外观和色泽",
-      "熔点或凝固点",
-      "成分与法规文件（按实际供应资料确认）"
-    ],
-    "sourceUrl": "http://www.hnlcwang.com/products/yydycx.html",
-    "imageSource": "Local copy of the source product listing image from hnlcwang.com"
-  },
-  {
-    "id": "lc-surfactant-003",
-    "name": "烷基苯磺酸钠 RSAW SABS30/ZA",
-    "category": "surfactants",
+    "applications": "根据透明度、黏度和泡沫目标开展小试，验证与主表活和防腐体系的兼容性。",
+    "sizes": "Supplier pack sizes: confirm by grade",
+    "benefit": "泡沫与黏度辅助",
+    "badge": "非离子助剂",
+    "moq": "Confirm by supplier and pack size",
+    "leadTime": "Confirm by current supplier availability",
     "price": 0,
     "stock": 0,
-    "image": "/surfactant-images/sodium-alkylbenzene-sulfonate.jpg",
-    "gallery": [
-      "/surfactant-images/sodium-alkylbenzene-sulfonate.jpg"
-    ],
-    "imageFit": "contain",
-    "description": "来源页面说明该产品为烷基苯磺酸钠水溶液，并以直链烷基苯为原料。适用于洗涤和清洁用途的原料筛选；化妆品应用须先完成法规与安全评估。",
-    "sizes": "包装规格与 MOQ 询价确认",
-    "benefit": "洗涤与清洁体系原料",
-    "badge": "阴离子表面活性剂",
-    "moq": "询价确认",
-    "leadTime": "按产品等级与数量确认",
-    "applications": "用于清洁配方时，需结合活性物、刺激性、pH、法规及成品性能进行完整验证。",
-    "specs": [
-      "烷基苯磺酸钠水溶液（来源页面说明）",
-      "面向洗涤体系进行评估",
-      "化妆品用途需单独确认"
-    ],
     "qc": [
-      "外观和活性物",
-      "pH 与色泽",
-      "法规适用性确认"
+      "Specification and active matter per supplier TDS/COA",
+      "Quality and market applicability to be confirmed for target use"
     ],
-    "sourceUrl": "http://www.hnlcwang.com/products/wjbhsn.html",
-    "imageSource": "Local copy of the source product listing image from hnlcwang.com"
+    "sourceUrl": "http://www.hnlcwang.com/products/yydycx.html",
+    "imageSource": "Product image downloaded from source product listing; confirm rights and grade before external reuse"
   },
   {
     "id": "lc-surfactant-004",
-    "name": "α-烯基磺酸钠 RSAW AOS92/AOS96",
+    "name": "Sodium Alpha Olefin Sulfonate（α-烯基磺酸钠）RSAW AOS92/AOS96",
     "category": "surfactants",
-    "price": 0,
-    "stock": 0,
     "image": "/surfactant-images/aos.jpg",
     "gallery": [
       "/surfactant-images/aos.jpg"
     ],
     "imageFit": "contain",
-    "description": "来源页面说明该产品为粉状固体 α-烯基磺酸钠。可作为阴离子表面活性剂，用于清洁和起泡体系的原料方案比较。",
-    "sizes": "包装规格与 MOQ 询价确认",
-    "benefit": "清洁与泡沫表现",
-    "badge": "阴离子表面活性剂",
-    "moq": "询价确认",
-    "leadTime": "按产品等级与数量确认",
-    "applications": "建议先进行小试溶解和泡沫评估，再确认与增稠剂、香精、防腐和包装的兼容性。",
+    "description": "来源页面说明为粉状固体 α-烯基磺酸钠，可作为清洁和起泡体系原料进行比较。",
     "specs": [
       "粉状固体（来源页面说明）",
-      "AOS92 / AOS96 产品等级",
-      "使用前需确认溶解、pH 与体系兼容性"
+      "AOS92 / AOS96 等级",
+      "需确认溶解性、pH 和兼容性"
     ],
+    "applications": "进行小试溶解与泡沫评估，并确认增稠剂、防腐和香精兼容性。",
+    "sizes": "Supplier pack sizes: confirm by grade",
+    "benefit": "清洁与泡沫表现",
+    "badge": "阴离子表面活性剂",
+    "moq": "Confirm by supplier and pack size",
+    "leadTime": "Confirm by current supplier availability",
+    "price": 0,
+    "stock": 0,
     "qc": [
-      "外观和活性物",
-      "水分与溶解性",
-      "微生物及法规资料"
+      "Specification and active matter per supplier TDS/COA",
+      "Quality and market applicability to be confirmed for target use"
     ],
     "sourceUrl": "http://www.hnlcwang.com/products/ayxjhs.html",
-    "imageSource": "Local copy of the source product listing image from hnlcwang.com"
+    "imageSource": "Product image downloaded from source product listing; confirm rights and grade before external reuse"
   },
   {
     "id": "lc-surfactant-005",
-    "name": "十二烷基醚硫酸钠 RSAW ESB70/ZA",
+    "name": "Sodium Laureth Sulfate（十二烷基醚硫酸钠）RSAW ESB70/ZA",
     "category": "surfactants",
-    "price": 0,
-    "stock": 0,
     "image": "/surfactant-images/sodium-laureth-sulfate.jpg",
     "gallery": [
       "/surfactant-images/sodium-laureth-sulfate.jpg"
     ],
     "imageFit": "contain",
-    "description": "来源页面将该产品描述为化妆品级十二烷基醚（2EO）硫酸钠，可作为洗发、沐浴和清洁类体系的主表活方案进行筛选。",
-    "sizes": "包装规格与 MOQ 询价确认",
-    "benefit": "清洁、起泡与洗护体系构建",
-    "badge": "化妆品级阴离子表活",
-    "moq": "询价确认",
-    "leadTime": "按产品等级与数量确认",
-    "applications": "适用于洗护类配方小试；应评估与两性或非离子表活、增稠剂、防腐及香精的协同性。",
+    "description": "来源页面将其描述为化妆品级十二烷基醚（2EO）硫酸钠，可作为洗护与清洁体系的主表面活性剂方案评估。",
     "specs": [
-      "十二烷基醚（2EO）硫酸钠（来源页面说明）",
-      "化妆品级表面活性剂",
-      "活性物和配方用量须以 TDS 为准"
+      "十二烷基醚（2EO）硫酸钠",
+      "来源页面标示化妆品级",
+      "活性物与用量依供应商 TDS 确认"
     ],
+    "applications": "评估与两性或非离子表活、增稠剂、防腐及香精的协同表现。",
+    "sizes": "Supplier pack sizes: confirm by grade",
+    "benefit": "清洁与起泡",
+    "badge": "化妆品级阴离子表活",
+    "moq": "Confirm by supplier and pack size",
+    "leadTime": "Confirm by current supplier availability",
+    "price": 0,
+    "stock": 0,
     "qc": [
-      "活性物和 pH",
-      "外观、色泽和气味",
-      "微生物及配方稳定性"
+      "Specification and active matter per supplier TDS/COA",
+      "Quality and market applicability to be confirmed for target use"
     ],
     "sourceUrl": "http://www.hnlcwang.com/products/yyxbas.html",
-    "imageSource": "Local copy of the source product listing image from hnlcwang.com"
+    "imageSource": "Product image downloaded from source product listing; confirm rights and grade before external reuse"
   },
   {
     "id": "lc-surfactant-006",
-    "name": "月桂酰肌氨酸钠 RSAW LS30/ZA",
+    "name": "Sodium Lauroyl Sarcosinate（月桂酰肌氨酸钠）RSAW LS30/ZA",
     "category": "surfactants",
-    "price": 0,
-    "stock": 0,
     "image": "/surfactant-images/sodium-lauroyl-sarcosinate.jpg",
     "gallery": [
       "/surfactant-images/sodium-lauroyl-sarcosinate.jpg"
     ],
     "imageFit": "contain",
-    "description": "来源页面说明该产品为浓度 30% 的月桂酰肌氨酸钠水溶液，可用于温和清洁和泡沫体系的配方评估。",
-    "sizes": "包装规格与 MOQ 询价确认",
-    "benefit": "温和清洁与泡沫支持",
-    "badge": "氨基酸类表面活性剂",
-    "moq": "询价确认",
-    "leadTime": "按产品等级与数量确认",
-    "applications": "用于洁面、沐浴或洗护方向时，应结合目标 pH、活性物、泡沫和肤感开展配方验证。",
+    "description": "来源页面说明为浓度 30% 的月桂酰肌氨酸钠水溶液，可用于清洁体系配方评估。",
     "specs": [
       "月桂酰肌氨酸钠水溶液",
       "来源页面标示浓度 30%",
-      "实际用量须依据具体 TDS 确认"
+      "实际用量依 TDS 确认"
     ],
-    "qc": [
-      "活性物与 pH",
-      "外观和色泽",
-      "微生物及防腐兼容性"
-    ],
-    "sourceUrl": "http://www.hnlcwang.com/products/ygxjas.html",
-    "imageSource": "Local copy of the source product listing image from hnlcwang.com"
-  },
-  {
-    "id": "lc-surfactant-007",
-    "name": "烷基苯磺酸 RSAW LABSA",
-    "category": "surfactants",
+    "applications": "结合目标 pH、活性物、泡沫和肤感进行配方验证。",
+    "sizes": "Supplier pack sizes: confirm by grade",
+    "benefit": "温和清洁与泡沫支持",
+    "badge": "阴离子表面活性剂",
+    "moq": "Confirm by supplier and pack size",
+    "leadTime": "Confirm by current supplier availability",
     "price": 0,
     "stock": 0,
-    "image": "/surfactant-images/labsa.jpg",
-    "gallery": [
-      "/surfactant-images/labsa.jpg"
-    ],
-    "imageFit": "contain",
-    "description": "来源页面说明该材料由直链烷基苯经 SO₃ 连续磺化制得。它是洗涤表活体系的原料方向，使用前应完成安全、法规和终端用途适配评估。",
-    "sizes": "包装规格与 MOQ 询价确认",
-    "benefit": "洗涤表活体系中间原料",
-    "badge": "磺酸类原料",
-    "moq": "询价确认",
-    "leadTime": "按产品等级与数量确认",
-    "applications": "仅在确认目标用途、处理工艺和合规要求后进行配方开发与小试。",
-    "specs": [
-      "直链烷基苯磺化衍生原料",
-      "来源页面说明采用连续磺化工艺",
-      "终端用途需经安全和法规确认"
-    ],
     "qc": [
-      "酸值或活性指标",
-      "外观和色泽",
-      "运输与储存要求"
+      "Specification and active matter per supplier TDS/COA",
+      "Quality and market applicability to be confirmed for target use"
     ],
-    "sourceUrl": "http://www.hnlcwang.com/products/wjbhsr.html",
-    "imageSource": "Local copy of the source product listing image from hnlcwang.com"
+    "sourceUrl": "http://www.hnlcwang.com/products/ygxjas.html",
+    "imageSource": "Product image downloaded from source product listing; confirm rights and grade before external reuse"
   }
 ]

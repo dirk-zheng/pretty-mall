@@ -156,12 +156,12 @@ function buildRfqAssortmentItems(visitorId) {
 // ─── Support (AI) ────────────────────────────────
 const keywordRules = [
   {
-    keywords: ['skin', 'routine', 'ritual', 'dry', 'oily', 'sensitive', 'hydrate'],
-    response: 'Skin Ritual Support ✨\n\nTell us how your skin feels and what finish you enjoy. We can help you layer essence, serum and moisturizer into a simple, flexible ritual.'
+    keywords: ['inci', 'grade', 'assay', 'purity', 'solubility', 'ph', 'use level', 'active', 'ingredient'],
+    response: 'Ingredient & Formulation Support 🧪\n\nShare the INCI name, target grade, formula format and intended use. We can help check sourcing options and available technical information.'
   },
   {
     keywords: ['moq', 'minimum order', 'sample', 'quantity', 'private label', 'assortment', 'opening order', 'trial order'],
-    response: 'Flexible Beauty Partnerships 📦\n\nStart with hand sanitizer, spray, scented sanitizer, hand wash, cream, lipstick or sunscreen spray, gel, lotion or stick. MOQ, private-label options, claims and timing are confirmed by formula, testing and packaging.'
+    response: 'Ingredient Samples & Supply 📦\n\nTell us the ingredient, grade, estimated quantity and destination market. Sample availability, pack size, MOQ and lead time are confirmed against the requested specification.'
   },
   {
     keywords: ['document', 'report', 'customs', 'clearance', 'stability test', 'compatibility test', 'ingredient list', 'compliance'],
@@ -169,7 +169,7 @@ const keywordRules = [
   },
   {
     keywords: ['price', 'cost', 'how much', 'cheap', 'discount', 'promotion', 'pricing', 'quote'],
-    response: 'Beauty Partnership Quotation 💰\n\nPricing depends on formula, shade, component, decoration, packaging and volume. Send the products and quantities you need.'
+    response: 'Ingredient Sourcing Quotation 💰\n\nShare the material name or INCI, requested grade, quantity, destination and documentation needs. Pricing follows confirmed availability, specification and volume.'
   },
   {
     keywords: ['shipping', 'delivery', 'logistics', 'transport', 'how long', 'freight', 'tracking'],
@@ -177,7 +177,7 @@ const keywordRules = [
   },
   {
     keywords: ['return', 'refund', 'warranty', 'quality', 'damage', 'defect', 'exchange', 'inspect', 'inspection', 'qc', 'fill weight', 'shade', 'packaging'],
-    response: 'Beauty Quality Support 🛡️\n\nQuality review can cover formula stability, shade, fill weight, packaging compatibility, labels, batch coding and packing.'
+    response: 'Material Quality Support 🛡️\n\nQuality review is based on the agreed specification and available batch documents such as COA. Please share the material, grade and test parameters required.'
   },
   {
     keywords: ['payment', 'pay', 'method', 'wire', 'bank', 'credit', 'terms', 'TT', 'LC'],
@@ -186,9 +186,9 @@ const keywordRules = [
 ];
 
 const defaultReplies = [
-  'Thank you for contacting Aurelia Pretty. Ask about products, samples, pricing, rituals or private label.',
-  'Hello! Share your beauty goals, audience, target price and desired launch window.',
-  'Welcome to Aurelia Pretty. How can we help with your ritual or partnership?'
+  'Thank you for contacting Aurelia Pretty Ingredients. Ask about material grades, samples, technical documents or sourcing.',
+  'Hello! Share the ingredient or INCI, target application, quantity and destination market.',
+  'Welcome to Aurelia Pretty Ingredients. How can we help with your raw-material sourcing brief?'
 ];
 
 //根据用户消息关键词生成客服回复
@@ -211,7 +211,7 @@ function validateProduct(body) {
   const errors = [];
   if (!body.name || body.name.length < 2 || body.name.length > 100)
     errors.push('Product name must be 2-100 characters');
-  if (!body.category || !['protective-products', 'lip-care', 'sun-care', 'surfactants'].includes(body.category))
+  if (!body.category || !['active-ingredients', 'botanical-extracts', 'formulation-essentials', 'surfactants'].includes(body.category))
     errors.push('Please select a valid product category');
   if (!body.image)
     errors.push('Please provide a product image URL');

@@ -1,49 +1,49 @@
 [
   {
-    "id": "faq-range",
+    "id": "faq-catalog",
     "category": "Products",
-    "question": "Which products are available?",
-    "answer": "The current collection includes hand sanitizer, sanitizer alcohol spray, scented sanitizers, hand wash, an antiseptic cream concept, three lipstick programs, sunscreen spray, sunscreen gel, sunscreen cream and lotion, and sunscreen stick. Formula, testing, packaging and market suitability are confirmed during inquiry.",
+    "question": "Which cosmetic raw materials are available?",
+    "answer": "The catalog includes active ingredients, botanical extracts, oils, emulsifiers, preservation systems, cosmetic pigments and surfactants. Check the product catalog for current material programs.",
     "status": "published",
     "sortOrder": 10
   },
   {
-    "id": "faq-formats",
-    "category": "Customization",
-    "question": "Can formula, fragrance and packaging be customized?",
-    "answer": "Yes. Available options can include fragrance, viscosity, color, pack size, dispensing format, decoration and labels. Feasibility depends on the product brief, test plan and destination market.",
+    "id": "faq-documents",
+    "category": "Documentation",
+    "question": "Which technical documents can I request?",
+    "answer": "Depending on grade and supplier, documents may include TDS, SDS, COA, composition or INCI information and applicable statements. Availability is confirmed for each material.",
     "status": "published",
     "sortOrder": 20
+  },
+  {
+    "id": "faq-sample",
+    "category": "Samples",
+    "question": "Can I request a laboratory sample?",
+    "answer": "Yes. Sample size and availability depend on the ingredient, grade and destination. Include your intended application and quantity in the sourcing inquiry.",
+    "status": "published",
+    "sortOrder": 30
   },
   {
     "id": "faq-moq",
     "category": "Ordering",
     "question": "What is the minimum order quantity?",
-    "answer": "The source catalog lists a typical 10,000-unit order for the hand sanitizer and sanitizer spray. Other products are confirmed by formula, fragrance and packaging format before quotation.",
-    "status": "published",
-    "sortOrder": 30
-  },
-  {
-    "id": "faq-claims",
-    "category": "Compliance",
-    "question": "Are antiseptic and antibacterial claims guaranteed?",
-    "answer": "No claim should be treated as final until the exact formula, testing evidence, label wording and destination-market rules have been reviewed. Quotations and samples should identify the approved claim set.",
+    "answer": "MOQ and commercial pack sizes vary by grade and supplier. The final minimum is confirmed in the quotation.",
     "status": "published",
     "sortOrder": 40
   },
   {
-    "id": "faq-images",
-    "category": "Content",
-    "question": "Can the catalog images be used commercially?",
-    "answer": "The current website references images from the source catalog for product identification. Commercial publication, advertising and redistribution require confirmation that the necessary image and trademark permissions are in place.",
+    "id": "faq-use",
+    "category": "Formulation",
+    "question": "Are the listed use levels final recommendations?",
+    "answer": "No. Any range shown is a formulation starting point only. Confirm the selected supplier specification, local rules and finished-formula test results before production.",
     "status": "published",
     "sortOrder": 50
   },
   {
-    "id": "faq-lead",
-    "category": "Ordering",
-    "question": "What is the production lead time?",
-    "answer": "Lead time is confirmed after formula, packaging, artwork, testing and order terms are approved. The website does not publish an unverified fixed production schedule.",
+    "id": "faq-images",
+    "category": "Catalog",
+    "question": "Do images show the exact commercial material?",
+    "answer": "Existing project ingredient images are visual references. Appearance can vary by grade and supplier; use the approved sample and specification for purchasing decisions.",
     "status": "published",
     "sortOrder": 60
   }

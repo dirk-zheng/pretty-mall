@@ -64,7 +64,7 @@ export default function Login() {
             </div>
             <div>
               <h1 className="font-heading text-3xl font-bold text-dark-900">Aurelia Pretty</h1>
-              <p className="text-dark-500">Beauty Partner Portal</p>
+              <p className="text-dark-500">Ingredient Partner Portal</p>
             </div>
           </div>
 
@@ -76,7 +76,7 @@ export default function Login() {
           </h2>
 
           <p className="text-dark-500 mb-8">
-            Sign in to build a sample edit, organize partnership requirements and continue conversations with our beauty team.
+            Sign in to manage ingredient shortlists, sourcing requirements and conversations with our technical team.
           </p>
 
           <div className="space-y-4">

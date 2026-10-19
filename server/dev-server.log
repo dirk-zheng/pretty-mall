@@ -3,10 +3,7 @@
 > node --watch index.js
 
 ◇ injected env (4) from .env // tip: ⌘ override existing { override: true }
-◇ injected env (0) from .env // tip: ⌘ override existing { override: true }
-Restarting 'index.js'
-◇ injected env (4) from .env // tip: ⌘ suppress logs { quiet: true }
-◇ injected env (0) from .env // tip: ⌘ override existing { override: true }
+◇ injected env (0) from .env // tip: ⌘ enable debugging { debug: true }
   Fixed administrator created: admin
   WebSocket server: ws://localhost:3001/ws
 ╔══════════════════════════════════════════╗
@@ -16,4 +13,6 @@ Restarting 'index.js'
 ║   WS:     ws://localhost:3001/ws                    ║
 ║   Mode:   development                  ║
 ╚══════════════════════════════════════════╝
-[2026-10-19T11:47:19.289Z] GET /api/products?pageSize=100
+[2026-10-19T12:35:25.193Z] GET /api/products?pageSize=1
+[2026-10-19T12:38:26.063Z] GET /api/articles
+[2026-10-19T12:38:31.508Z] GET /api/faqs

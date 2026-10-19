@@ -1,50 +1,8 @@
-import { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import { ArrowLeft, Check, ClipboardPlus, Leaf, PackageCheck, Sparkles } from 'lucide-react';
+import { useEffect,useState } from 'react';
+import { Link,useParams } from 'react-router-dom';
+import { ArrowLeft,Check,ClipboardPlus,FileCheck2,FlaskConical,PackageCheck } from 'lucide-react';
 import { useStore } from '../context/StoreContext';
 import { useAuth } from '../context/AuthContext';
 import { categoryNames } from '../data/products';
 import { productSlug } from '../data/seoContent';
-
-export default function ProductDetail(){
-  const {slug}=useParams();
-  const {state,addToRfqAssortment}=useStore();
-  const {user}=useAuth();
-  const [added,setAdded]=useState(false);
-  const [error,setError]=useState('');
-  const [activeIndex,setActiveIndex]=useState(0);
-  const p=state.products.find(x=>productSlug(x)===slug);
-
-  useEffect(()=>{setActiveIndex(0);setAdded(false);setError('')},[slug]);
-
-  if(!p)return <div className="min-h-screen pt-40 text-center"><h1 className="text-3xl font-bold">Product program not found</h1><Link to="/products" className="mt-4 inline-block text-[#a05247]">View all programs</Link></div>;
-
-  const gallery=Array.isArray(p.gallery)&&p.gallery.length?p.gallery:[p.image];
-  const activeImage=gallery[Math.min(activeIndex,gallery.length-1)]||p.image;
-  const add=async()=>{setError('');try{await addToRfqAssortment(p);setAdded(true)}catch(err){setError(err.message)}};
-
-  return <div className="min-h-screen bg-[#fbf7f2] pt-24"><main className="mx-auto max-w-7xl px-5 py-10 sm:px-8">
-    <Link to="/products" className="mb-7 inline-flex items-center gap-2 text-sm font-semibold text-[#6f5b55]"><ArrowLeft size={16}/> Back to collection</Link>
-    <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
-      <div>
-        <div className="overflow-hidden rounded-[2.25rem] bg-[#eadfd8]"><img src={activeImage} alt={`${p.name} — view ${activeIndex+1}`} className={`aspect-[4/5] w-full transition duration-300 ${p.imageFit==='contain'?'bg-white object-contain p-4':'object-cover'}`}/></div>
-        {gallery.length>1&&<div className="mt-4 grid grid-cols-3 gap-3">{gallery.map((image,index)=><button type="button" key={image} onClick={()=>setActiveIndex(index)} aria-label={`View ${index+1} of ${p.name}`} aria-pressed={activeIndex===index} className={`overflow-hidden rounded-2xl border-2 bg-[#eadfd8] transition ${activeIndex===index?'border-[#a05247] shadow-sm':'border-transparent opacity-75 hover:opacity-100'}`}><img src={image} alt="" className="aspect-square w-full object-cover"/></button>)}</div>}
-        <p className="mt-3 text-center text-xs text-[#81706a]">Source-catalog reference image · Confirm commercial image rights before publication</p>{p.sourceUrl&&<p className="mt-2 text-center text-xs text-[#81706a]">Source: <a href={p.sourceUrl} target="_blank" rel="noreferrer" className="underline">Source product catalog</a></p>}
-      </div>
-      <section className="lg:py-4">
-        <p className="text-xs font-bold uppercase tracking-[.22em] text-[#a05247]">{categoryNames[p.category]} · {p.badge}</p>
-        <h1 className="mt-4 font-heading text-4xl font-medium text-[#2d201d] sm:text-5xl">{p.name}</h1>
-        <p className="mt-3 text-lg text-[#8a5048]">{p.benefit}</p>
-        <p className="mt-6 text-lg leading-8 text-[#695751]">{p.description}</p>
-        <div className="mt-7 grid grid-cols-2 gap-3 border-y border-[#2d201d]/10 py-5">
-          <div><span className="text-xs uppercase tracking-wider text-[#75635d]">Format</span><strong className="mt-1 block">{p.sizes}</strong></div>
-          <div><span className="text-xs uppercase tracking-wider text-[#75635d]">Typical MOQ</span><strong className="mt-1 block">{p.moq}</strong></div>
-        </div>
-        <div className="mt-7 grid gap-3 sm:grid-cols-2"><Link to={`/contact?product=${encodeURIComponent(p.name)}`} className="flex items-center justify-center rounded-full bg-[#2d201d] px-5 py-4 font-semibold text-white hover:bg-[#a05247]">Request quote & sample</Link>{user?<button onClick={add} disabled={added} className="flex items-center justify-center gap-2 rounded-full border border-[#2d201d]/20 px-5 py-4 font-semibold disabled:bg-rose-50 disabled:text-[#8d4940]"><ClipboardPlus size={18}/>{added?'Added to your edit':'Add to partner edit'}</button>:<Link to="/login" state={{from:{pathname:`/products/${slug}`}}} className="flex items-center justify-center gap-2 rounded-full border border-[#2d201d]/20 px-5 py-4 font-semibold"><ClipboardPlus size={18}/> Sign in for partner samples</Link>}</div>
-        {error&&<p className="mt-3 text-sm text-red-600">{error}</p>}
-        <div className="mt-9"><h2 className="font-heading text-2xl font-medium">Program highlights</h2><ul className="mt-4 space-y-3">{(p.specs||[]).map(s=><li key={s} className="flex gap-3 text-[#695751]"><Check className="mt-1 shrink-0 text-[#a05247]" size={16}/>{s}</li>)}</ul>{p.applications&&<div className="mt-6 rounded-2xl bg-[#efe2da] p-5 text-sm leading-6"><strong className="mb-1 block text-[#2d201d]">Consumer use direction</strong>{p.applications}</div>}</div>
-        <div className="mt-7 grid gap-3 border-y border-[#2d201d]/10 py-6 sm:grid-cols-3"><span className="flex items-center gap-2 text-xs"><Leaf size={17}/> Formula options</span><span className="flex items-center gap-2 text-xs"><Sparkles size={17}/> Sample support</span><span className="flex items-center gap-2 text-xs"><PackageCheck size={17}/> Custom packaging</span></div>
-      </section>
-    </div>
-  </main></div>;
-}
+export default function ProductDetail(){const{slug}=useParams();const{state,addToRfqAssortment}=useStore();const{user}=useAuth();const[added,setAdded]=useState(false);const[error,setError]=useState('');const p=state.products.find(x=>productSlug(x)===slug);useEffect(()=>{setAdded(false);setError('')},[slug]);if(!p)return <div className="min-h-screen pt-40 text-center"><h1 className="text-3xl font-bold">Ingredient not found</h1><Link to="/products" className="mt-4 inline-block text-[#2f7f80]">Browse ingredients</Link></div>;const add=async()=>{setError('');try{await addToRfqAssortment(p);setAdded(true)}catch(e){setError(e.message)}};return <div className="min-h-screen bg-gradient-to-b from-[#edf3ef] to-[#faf8f3] pt-24 text-[#173638]"><main className="mx-auto max-w-7xl px-5 py-10 sm:px-8"><Link to="/products" className="mb-7 inline-flex items-center gap-2 text-sm font-semibold text-[#39545b]"><ArrowLeft size={16}/>Back to ingredient catalog</Link><div className="grid gap-10 lg:grid-cols-2 lg:gap-16"><div className="overflow-hidden rounded-[2.25rem] border border-[#234b4c]/10 bg-white shadow-xl"><img src={p.image} alt={p.name} className={`aspect-square w-full ${p.imageFit==='contain'?'object-contain p-5':'object-cover'}`}/><p className="px-4 pb-4 text-center text-xs text-[#73827f]">{p.imageSource||'Product image'}{p.sourceUrl&&<> · <a href={p.sourceUrl} target="_blank" rel="noreferrer" className="underline">Source product page</a></>}</p></div><section className="lg:py-4"><p className="text-xs font-bold uppercase tracking-[.22em] text-[#2f7f80]">{categoryNames[p.category]} · {p.badge}</p><h1 className="mt-4 font-heading text-4xl font-medium sm:text-5xl">{p.name}</h1><p className="mt-3 text-lg font-semibold text-[#55727a]">{p.benefit}</p><p className="mt-6 text-lg leading-8 text-[#566b69]">{p.description}</p><div className="mt-7 grid grid-cols-2 gap-3 border-y border-[#173638]/10 py-5"><div><span className="text-xs uppercase tracking-wider text-[#71817e]">Pack formats</span><strong className="mt-1 block">{p.sizes}</strong></div><div><span className="text-xs uppercase tracking-wider text-[#71817e]">MOQ guidance</span><strong className="mt-1 block">{p.moq}</strong></div></div><div className="mt-7 grid gap-3 sm:grid-cols-2"><Link to={`/contact?product=${encodeURIComponent(p.name)}`} className="flex items-center justify-center rounded-full bg-[#2f7f80] px-5 py-4 font-semibold text-white">Request specification & sample</Link>{user?<button onClick={add} disabled={added} className="flex items-center justify-center gap-2 rounded-full border border-[#2f7f80]/30 bg-white px-5 py-4 font-semibold disabled:opacity-60"><ClipboardPlus size={18}/>{added?'Added to sourcing brief':'Add to sourcing brief'}</button>:<Link to="/login" state={{from:{pathname:`/products/${slug}`}}} className="flex items-center justify-center gap-2 rounded-full border border-[#2f7f80]/30 bg-white px-5 py-4 font-semibold"><ClipboardPlus size={18}/>Sign in to save shortlist</Link>}</div>{error&&<p className="mt-3 text-sm text-red-600">{error}</p>}<div className="mt-9"><h2 className="font-heading text-2xl font-medium">Grade starting points</h2><ul className="mt-4 space-y-3">{(p.specs||[]).map(item=><li key={item} className="flex gap-3 text-[#566b69]"><Check className="mt-1 shrink-0 text-[#2f7f80]" size={16}/>{item}</li>)}</ul>{p.applications&&<div className="mt-6 rounded-2xl border border-[#234b4c]/10 bg-[#edf3ef] p-5 text-sm leading-6"><strong className="mb-1 block">Formulation guidance</strong>{p.applications}</div>}</div><div className="mt-7 grid gap-3 border-y border-[#173638]/10 py-6 sm:grid-cols-3"><span className="flex items-center gap-2 text-xs"><FileCheck2 size={17}/>Documents by grade</span><span className="flex items-center gap-2 text-xs"><FlaskConical size={17}/>Sample support</span><span className="flex items-center gap-2 text-xs"><PackageCheck size={17}/>Sourcing review</span></div></section></div><p className="mt-8 text-xs leading-5 text-[#74817f]">Technical ranges are starting guidance only. Confirm the selected grade against supplier TDS/SDS/COA, applicable market requirements and finished-formula testing.</p></main></div>}

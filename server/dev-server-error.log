@@ -1,4 +1,2 @@
 JWT_SECRET is missing or weak; using an ephemeral development secret. Existing sessions will expire after restart.
 DB_USER is not configured; using non-persistent in-memory storage for development.
-JWT_SECRET is missing or weak; using an ephemeral development secret. Existing sessions will expire after restart.
-DB_USER is not configured; using non-persistent in-memory storage for development.

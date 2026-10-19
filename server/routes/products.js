@@ -113,7 +113,7 @@ router.post('/', authenticateToken, requireAdmin, (req, res) => {
     if (!name || name.length < 2 || name.length > 100) {
       errors.push('Product name must be 2-100 characters');
     }
-    if (!category || !['protective-products', 'lip-care', 'sun-care', 'surfactants'].includes(category)) {
+    if (!category || !['active-ingredients', 'botanical-extracts', 'formulation-essentials', 'surfactants'].includes(category)) {
       errors.push('Please select a valid product category');
     }
     if (!image) {
@@ -171,7 +171,7 @@ router.put('/:id', authenticateToken, requireAdmin, (req, res) => {
     if (!name || name.length < 2 || name.length > 100) {
       errors.push('Product name must be 2-100 characters');
     }
-    if (!category || !['protective-products', 'lip-care', 'sun-care', 'surfactants'].includes(category)) {
+    if (!category || !['active-ingredients', 'botanical-extracts', 'formulation-essentials', 'surfactants'].includes(category)) {
       errors.push('Please select a valid product category');
     }
     if (!image) {

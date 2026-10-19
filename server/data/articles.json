@@ -1,5 +1,89 @@
 [
-  {"id":"article-format-001","category":"products","title":"Choosing the Right Hand-Hygiene Format","slug":"choose-hand-hygiene-format","summary":"A practical comparison of gel, spray and rinse-off formats for retail, travel, workplace and hospitality programs.","intro":"The best format follows the use setting, dispensing experience and compliance brief—not a one-size-fits-all trend.","sections":[["Start with the use setting","Travel packs prioritize portability, while workplace and hospitality programs may need pumps, refills or larger formats."],["Match texture to dispensing","Gel, fine-mist spray and liquid wash each require different closures, viscosity targets and compatibility checks."],["Confirm the finished claim set","Alcohol level, directions, cautions and regulated claims must match the approved formula and target market."]],"content":"Compare gel, spray and rinse-off hand-hygiene formats by use setting, dispensing system and compliance needs.","image":"https://www.global-cosmetics.com/wp-content/uploads/elementor/thumbs/H917bc36c6ec94caab394f06780c7b8ec1-ro4djo89i7s9q1938msnfibqvyyq9mijakh9v4ofy8.jpg","readTime":"4 min read","featured":true,"status":"published","authorName":"Aurelia Pretty Studio","publishedAt":"2026-09-01T00:00:00.000Z"},
-  {"id":"article-package-002","category":"quality","title":"What to Approve Before Protective-Product Production","slug":"protective-product-production-approval","summary":"A concise checklist for formula, packaging, artwork, compatibility and market-specific claims.","intro":"Production should begin only after the formula, component system and label content work together as one approved specification.","sections":[["Lock the formula","Confirm ingredients, fragrance, viscosity, alcohol level where relevant and the allowed claim language."],["Test the pack","Review leakage, closure or actuator performance, fill weight, stability and transport conditions."],["Approve market content","Directions, cautions, language, responsible party details and regulated claims vary by destination."]],"content":"Approve the formula, pack performance and market label as a complete finished-product system.","image":"https://www.global-cosmetics.com/wp-content/uploads/elementor/thumbs/H297118f34cd44b079f5b754abf0763f8Y-ro4djo89i7s9q1938msnfibqvyyq9mijakh9v4ofy8.jpg","readTime":"5 min read","featured":false,"status":"published","authorName":"Aurelia Quality Studio","publishedAt":"2026-08-20T00:00:00.000Z"},
-  {"id":"article-private-label-003","category":"partnerships","title":"Planning a Private-Label Protective-Care Range","slug":"private-label-protective-care-range","summary":"How to turn a commercial brief into a focused sanitizer, wash and conditioning-care assortment.","intro":"A strong range begins with a clear audience, use setting, format hierarchy and realistic approval plan.","sections":[["Define the range role","Decide whether the assortment serves travel, workplace, hospitality, retail gifting or everyday home use."],["Edit the formats","Build around a lead product, then add complementary spray, wash or conditioning-care options only where they add value."],["Plan approvals early","Reserve time for samples, testing, artwork, market review and packaging confirmation before production."]],"content":"Build a focused protective-care assortment around audience, setting, formats and a realistic approval plan.","image":"https://www.global-cosmetics.com/wp-content/uploads/elementor/thumbs/Hdf96e2a943b84a84aa9a033094314f05o-ro4djo89i7s9q1938msnfibqvyyq9mijakh9v4ofy8.jpg","readTime":"4 min read","featured":false,"status":"published","authorName":"Aurelia Partnership Studio","publishedAt":"2026-08-08T00:00:00.000Z"}
+  {
+    "id": "article-active-001",
+    "category": "formulation",
+    "title": "Build an Active Ingredient Shortlist",
+    "slug": "build-active-ingredient-shortlist",
+    "summary": "Turn a formula concept into a focused set of compatible grades and verification steps.",
+    "intro": "Start with the formula architecture and the goal the ingredient needs to serve.",
+    "sections": [
+      [
+        "Define the format",
+        "Note the phase structure, pH, heat exposure and target sensory profile."
+      ],
+      [
+        "Compare grades",
+        "Check identity, assay, solubility, carrier and processing conditions."
+      ],
+      [
+        "Plan validation",
+        "Identify stability, microbiological and claim-related tests for the finished formula."
+      ]
+    ],
+    "content": "A practical process for comparing cosmetic active ingredients.",
+    "image": "/ingredient-images/niacinamide.png",
+    "readTime": "4 min read",
+    "featured": true,
+    "status": "published",
+    "authorName": "Aurelia Pretty Ingredient Team",
+    "publishedAt": "2026-10-10T00:00:00.000Z"
+  },
+  {
+    "id": "article-botanical-002",
+    "category": "quality",
+    "title": "What to Review in a Botanical Extract",
+    "slug": "review-botanical-extract",
+    "summary": "Origin, extraction, carrier and marker content affect how an extract fits a formula.",
+    "intro": "Two extracts with the same plant name can differ in carrier, color and performance.",
+    "sections": [
+      [
+        "Identify the material",
+        "Review botanical name, plant part, origin and extraction route."
+      ],
+      [
+        "Understand the carrier",
+        "Powder and liquid extracts bring different solvents and processing needs."
+      ],
+      [
+        "Set quality information",
+        "Confirm markers, microbiological limits, contaminants, color and odor."
+      ]
+    ],
+    "content": "Evaluate botanical extracts beyond their marketing name.",
+    "image": "/ingredient-images/centella-extract.png",
+    "readTime": "5 min read",
+    "featured": false,
+    "status": "published",
+    "authorName": "Aurelia Pretty Ingredient Team",
+    "publishedAt": "2026-10-03T00:00:00.000Z"
+  },
+  {
+    "id": "article-preservation-003",
+    "category": "quality",
+    "title": "Choose Preservation for the Finished Formula",
+    "slug": "preservation-finished-formula",
+    "summary": "pH, water content, packaging and manufacturing conditions all affect preservation.",
+    "intro": "A preservative blend cannot be approved independently from the finished cosmetic formula.",
+    "sections": [
+      [
+        "Map the system",
+        "Consider water content, packaging, botanicals and consumer use."
+      ],
+      [
+        "Check the operating window",
+        "Confirm pH, temperature, solubility and incompatibilities by grade."
+      ],
+      [
+        "Test the finished product",
+        "Run suitable microbiological and preservative-efficacy testing."
+      ]
+    ],
+    "content": "Select and validate preservation as part of the complete formula.",
+    "image": "/ingredient-images/preservative-blend.png",
+    "readTime": "5 min read",
+    "featured": false,
+    "status": "published",
+    "authorName": "Aurelia Pretty Ingredient Team",
+    "publishedAt": "2026-09-26T00:00:00.000Z"
+  }
 ]
