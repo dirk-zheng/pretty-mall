@@ -14,3 +14,8 @@ These details affect wetting, dispersion, shade development and batch consistenc
 Send an exact grade or an application target: https://www.aureliapretty.com/contact
 
 #CosmeticPigments #ColorCosmetics #Dispersion #IngredientSourcing
+
+
+## 发布前证据要求
+
+Pair this post with a sample and dispersion-condition record. If no authorized record is available, use a scenario from ../案例与流程内容库.md and keep the “Illustrative scenario” disclosure.

@@ -16,3 +16,8 @@ If some fields are unknown, describe the formula goal and current reference mate
 Featured catalog or not, submit the requirement here: https://www.aureliapretty.com/contact
 
 #RFQ #CosmeticIngredients #IngredientSourcing #ChinaSupplyChain
+
+
+## 发布前证据要求
+
+Pair this post with a completed and redacted RFQ example. If no authorized record is available, use a scenario from ../案例与流程内容库.md and keep the “Illustrative scenario” disclosure.

@@ -78,6 +78,7 @@ export default function Footer() {
             <h3 className="font-semibold">Technical & sourcing</h3>
             <div className="mt-4 space-y-3 text-sm text-white/60">
               <Link className="block" to="/contact">Submit a sourcing request</Link>
+              <Link className="block" to="/resources">Sourcing templates</Link>
               <Link className="block" to="/faq">FAQ</Link>
               <Link className="block" to="/privacy">Privacy</Link>
               <Link className="block" to="/terms">Terms</Link>

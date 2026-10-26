@@ -28,3 +28,8 @@ ALT：A laboratory specialist compares a botanical raw-material sample with tech
 ## Story 配套
 
 问题框：`Which document causes the most confusion—TDS, SDS or COA?`
+
+
+## 互动 CTA
+
+Which document causes the most confusion: TDS, SDS or COA? Comment below, or save this post for your next supplier review.

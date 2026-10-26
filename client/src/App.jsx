@@ -18,6 +18,7 @@ import ProductDetail from './pages/ProductDetail';
 import ServicePage from './pages/ServicePage';
 import ArticleDetail from './pages/ArticleDetail';
 import Contact from './pages/Contact';
+import Resources from './pages/Resources';
 import SupportWidget from './components/SupportWidget';
 import SEOManager from './components/SEOManager';
 import NotFound from './pages/NotFound';
@@ -94,6 +95,7 @@ export function AppContent({ initialProducts = [], initialFaqs = [], initialArti
                 <Route path="/services/:slug" element={<ServicePage />} />
                 <Route path="/faq" element={<FAQ initialFaqs={initialFaqs} />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/resources" element={<Resources />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/privacy" element={<PrivacyPolicy />} />
                 <Route path="/terms" element={<TermsOfUse />} />

@@ -9,3 +9,8 @@ We can help identify candidate materials and obtain supplier documentation from 
 Start with your formula context: https://www.aureliapretty.com/contact
 
 #Preservation #CosmeticFormulation #Microbiology #IngredientSourcing
+
+
+## 发布前证据要求
+
+Pair this post with a redacted preservative-candidate document review. If no authorized record is available, use a scenario from ../案例与流程内容库.md and keep the “Illustrative scenario” disclosure.

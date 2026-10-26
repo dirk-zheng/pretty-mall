@@ -27,3 +27,8 @@ Submit a sourcing brief: https://www.aureliapretty.com/contact
 `assets/grade-and-document-review.png`
 
 ALT：Gloved hands compare a cosmetic raw-material sample with analytical documents, sample vials and laboratory equipment.
+
+
+## 发布前证据要求
+
+Pair this post with a redacted document-version comparison. If no authorized record is available, use a scenario from ../案例与流程内容库.md and keep the “Illustrative scenario” disclosure.

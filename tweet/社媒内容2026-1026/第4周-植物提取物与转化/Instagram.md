@@ -33,3 +33,8 @@ ALT：Concept images representing Centella and green tea extracts for cosmetic i
 投票：`What matters most when comparing botanical extracts?`
 
 选项：`Assay / marker`、`Extraction & carrier`
+
+
+## 互动 CTA
+
+Which matters most in your comparison: assay/marker or extraction/carrier? Comment below, or save this post for your next supplier review.

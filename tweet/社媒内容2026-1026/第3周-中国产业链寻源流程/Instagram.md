@@ -30,3 +30,8 @@ Link in bio.
 - `assets/china-ingredient-supply-chain.png`
 - 网站联系表单录屏
 - 项目原料图片特写
+
+
+## 互动 CTA
+
+Which stage are you at: requirement, sample or commercial confirmation? Comment below, or save this post for your next supplier review.

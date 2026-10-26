@@ -13,3 +13,8 @@ For a meaningful comparison, normalize active matter and confirm the supplied fo
 Send the INCI, active level and intended application: https://www.aureliapretty.com/contact
 
 #Surfactants #PersonalCareFormulation #RawMaterials #ChinaSupplyChain
+
+
+## 发布前证据要求
+
+Pair this post with an active-matter normalization table. If no authorized record is available, use a scenario from ../案例与流程内容库.md and keep the “Illustrative scenario” disclosure.

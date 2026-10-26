@@ -11,3 +11,8 @@ Need a specification not shown in the catalog? Send it to us.
 #Niacinamide #CosmeticChemistry #IngredientQuality #B2BSourcing
 
 ALT: Gloved hands reviewing white niacinamide powder beside analytical equipment and charts.
+
+
+## 互动 CTA
+
+Which is harder to compare: assay or related substances? Comment below, or save this post for your next supplier review.

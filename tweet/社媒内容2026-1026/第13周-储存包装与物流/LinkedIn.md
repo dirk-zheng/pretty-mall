@@ -9,3 +9,8 @@ We incorporate packaging and storage questions when coordinating with China’s 
 Tell us the grade, quantity and storage constraints: https://www.aureliapretty.com/contact
 
 #RawMaterialStorage #PackagingIntegrity #CosmeticIngredients #SupplyChainQuality
+
+
+## 发布前证据要求
+
+Pair this post with an authorized packaging or storage inspection photo. If no authorized record is available, use a scenario from ../案例与流程内容库.md and keep the “Illustrative scenario” disclosure.

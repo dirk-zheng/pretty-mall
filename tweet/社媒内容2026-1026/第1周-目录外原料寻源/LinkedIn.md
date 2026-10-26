@@ -26,3 +26,8 @@ Request an unlisted ingredient: https://www.aureliapretty.com/contact
 `assets/featured-and-unlisted-ingredients.png`
 
 ALT：A top-down arrangement of cosmetic raw-material samples including powders, oils, gels, wax flakes and pigments, with open space representing an unlisted sourcing request.
+
+
+## 发布前证据要求
+
+Pair this post with a redacted requirement-clarification record. If no authorized record is available, use a scenario from ../案例与流程内容库.md and keep the “Illustrative scenario” disclosure.

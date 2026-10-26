@@ -17,3 +17,8 @@ Need a grade not shown in our featured catalog? Submit the exact requirement: ht
 #HyaluronicAcid #CosmeticIngredients #Formulation #ChinaSupplyChain
 
 Image: `assets/hyaluronic-acid-grades.png`
+
+
+## 发布前证据要求
+
+Pair this post with a redacted sample-to-specification mapping. If no authorized record is available, use a scenario from ../案例与流程内容库.md and keep the “Illustrative scenario” disclosure.

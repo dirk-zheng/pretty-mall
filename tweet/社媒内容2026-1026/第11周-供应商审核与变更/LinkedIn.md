@@ -15,3 +15,14 @@ We use these questions when coordinating with partners in China’s cosmetic-ing
 Need help qualifying an exact ingredient source? https://www.aureliapretty.com/contact
 
 #SupplierQualification #ChangeControl #CosmeticIngredients #QualityAssurance
+
+
+## 发布前证据要求
+
+Pair this post with a redacted supplier questionnaire or change-control clause. If no authorized record is available, use a scenario from ../案例与流程内容库.md and keep the “Illustrative scenario” disclosure.
+
+## 可插入案例段
+
+`Illustrative scenario based on a typical sourcing workflow; not a disclosed customer case.`
+
+A sample and COA appear acceptable, but the quotation does not identify the manufacturing site or change-notification terms. Those gaps become qualification questions before the source is considered for commercial approval.

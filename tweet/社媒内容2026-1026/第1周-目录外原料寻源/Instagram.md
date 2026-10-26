@@ -2,7 +2,7 @@
 
 ## 页面文字
 
-1. `Not in the catalog? Ask us to source it.`
+1. `Not in the catalog? Submit it for sourcing review.`
 2. `Send the ingredient or trade name.`
 3. `Add INCI or CAS if known.`
 4. `Tell us the grade, quantity and destination.`
@@ -33,3 +33,8 @@ ALT：Diverse cosmetic ingredient samples arranged around blank copy space.
 画面 2 投票：`What do you have?` 选项：`INCI / CAS`、`Only a trade name`
 
 画面 3：`Send the requirement through the link in bio.`
+
+
+## 互动 CTA
+
+What ingredient family is hardest for you to source right now? Comment below, or save this post for your next supplier review.

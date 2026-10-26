@@ -25,3 +25,14 @@ Submit a sourcing brief: https://www.aureliapretty.com/contact
 `assets/china-ingredient-supply-chain.png`
 
 ALT：A cosmetic ingredient specialist reviews a sample in a laboratory beside a modern manufacturing facility in China.
+
+
+## 发布前证据要求
+
+Pair this post with a real, redacted workflow task record. If no authorized record is available, use a scenario from ../案例与流程内容库.md and keep the “Illustrative scenario” disclosure.
+
+## 可插入流程场景
+
+`Illustrative scenario based on a typical sourcing workflow; not a disclosed customer case.`
+
+A request arrives with a trade name and reference photo, but no confirmed INCI. Before supplier outreach, the brief is rebuilt around identity, composition, application, destination market and quantity. Only then can potential sources answer the same requirement instead of quoting different materials under a similar name.

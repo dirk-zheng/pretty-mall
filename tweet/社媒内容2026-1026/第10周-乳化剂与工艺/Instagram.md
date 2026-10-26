@@ -7,3 +7,8 @@ An ingredient name alone cannot describe the process.
 #EmulsionScience #CosmeticFormulation #RawMaterials #ChinaSupplyChain
 
 ALT: Formulation scientist reviewing emulsion samples beside oil and water phases and an overhead mixer.
+
+
+## 互动 CTA
+
+Which constraint matters most: heat, shear or electrolytes? Comment below, or save this post for your next supplier review.

@@ -27,3 +27,8 @@ https://www.aureliapretty.com/contact
 `assets/centella-extract.png`
 
 ALT：Concept image representing Centella asiatica extract as a cosmetic raw material; not a real commercial batch.
+
+
+## 发布前证据要求
+
+Pair this post with a redacted botanical specification comparison. If no authorized record is available, use a scenario from ../案例与流程内容库.md and keep the “Illustrative scenario” disclosure.
