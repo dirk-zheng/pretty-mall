@@ -2,7 +2,7 @@
 
 ## Positioning
 
-Aurelia Pretty is a B2B cosmetic raw-material sourcing partner for brands, formulation laboratories, manufacturers, distributors and importers. The featured catalog is representative rather than exhaustive. Public search pages should invite qualified buyers to submit any ingredient name, INCI, CAS number, grade or specification for sourcing review, samples, documents or quotation—not a consumer checkout.
+Aurelia Pretty connects brands, formulation laboratories, manufacturers, distributors and importers with China’s cosmetic raw-material manufacturing and supply chain. The featured catalog is representative rather than exhaustive. Public search pages should invite qualified buyers to submit an ingredient name, INCI, CAS number, grade or specification for supplier matching, samples, document review or quotation—not a consumer checkout.
 
 ## Primary Search Themes
 

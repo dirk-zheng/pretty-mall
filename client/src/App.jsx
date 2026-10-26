@@ -22,6 +22,7 @@ import SupportWidget from './components/SupportWidget';
 import SEOManager from './components/SEOManager';
 import NotFound from './pages/NotFound';
 import AdminToolRail from './components/AdminToolRail';
+import SupplyChainStatement from './components/SupplyChainStatement';
 import AdminUsers from './pages/AdminUsers';
 import AdminArticles from './pages/AdminArticles';
 import AdminFaqs from './pages/AdminFaqs';
@@ -132,6 +133,7 @@ export function AppContent({ initialProducts = [], initialFaqs = [], initialArti
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>
+            <SupplyChainStatement />
             <Footer />
 
             {/* Floating Support FAB + Chat Panel */}

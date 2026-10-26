@@ -1,7 +1,7 @@
 import { productSlug,servicePages } from './data/seoContent';
 export const defaultSiteUrl='https://www.aureliapretty.com';
 const basePages={
- '/':['Cosmetic Ingredient Sourcing | Aurelia Pretty','Request sourcing support for any cosmetic ingredient by name, INCI, CAS number, grade or specification.'],
+ '/':['China Cosmetic Ingredient Sourcing | Aurelia Pretty','Connect ingredient requirements with China’s cosmetic raw-material supply chain by name, INCI, CAS number, grade or specification.'],
  '/products':['Featured Cosmetic Ingredients | Aurelia Pretty','Browse a representative sourcing catalog or request any unlisted cosmetic raw material.'],
  '/about':['Our Ingredient Approach | Aurelia Pretty','Learn how Aurelia Pretty helps brands and formulation labs evaluate cosmetic raw materials.'],
  '/news-blog/':['Ingredient Insights | Aurelia Pretty','Practical guidance on cosmetic ingredients, formulation, quality and sourcing.'],

@@ -125,7 +125,7 @@ async function startServer() {
   server.listen(PORT, HOST, () => {
   console.log('╔══════════════════════════════════════════╗');
   console.log('║     Aurelia Pretty                       ║');
-  console.log('║     Modern Beauty · Global Partners      ║');
+  console.log('║     China Ingredient Supply Chain        ║');
   console.log(`║   HTTP:   http://${displayHost}:${PORT}                    ║`);
   console.log(`║   WS:     ws://${displayHost}:${PORT}/ws                    ║`);
   console.log(`║   Mode:   ${ENV}                  ║`);
