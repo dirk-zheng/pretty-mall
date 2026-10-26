@@ -37,7 +37,7 @@ export default function Footer() {
               AURELIA <span className="text-xs font-bold tracking-[.2em] text-[#a7c6bd]">INGREDIENTS</span>
             </div>
             <p className="mt-5 max-w-lg leading-7 text-white/65">
-              Sourcing support for featured and unlisted cosmetic raw materials for brands, formulation labs and manufacturers.
+              Not limited to our featured catalog. Share the material name, INCI, CAS number, grade or specification, and we will help explore relevant sourcing options through China’s cosmetic ingredient supply chain.
             </p>
             <div className="mt-6 text-sm leading-7 text-white/55">
               <p>{businessConfig.legalName}</p>
@@ -47,7 +47,7 @@ export default function Footer() {
                   {businessConfig.inquiriesEmail}
                 </a>
               </p>
-              <p>Any cosmetic ingredient · B2B sourcing</p>
+              <p>Featured and unlisted ingredients · B2B sourcing support</p>
             </div>
             <nav aria-label="Social media" className="mt-6 flex items-center gap-3">
               {socialChannels.map(({ name, href, path }) => (
@@ -77,7 +77,7 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold">Technical & sourcing</h3>
             <div className="mt-4 space-y-3 text-sm text-white/60">
-              <Link className="block" to="/contact">Request any ingredient</Link>
+              <Link className="block" to="/contact">Submit a sourcing request</Link>
               <Link className="block" to="/faq">FAQ</Link>
               <Link className="block" to="/privacy">Privacy</Link>
               <Link className="block" to="/terms">Terms</Link>

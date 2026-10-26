@@ -31,7 +31,7 @@ export default function QuoteModal({ product = '', onClose }) {
             </div>
             <div>
               <p className="mb-1 text-xs font-semibold uppercase tracking-[0.18em] text-orange-300">No account required</p>
-              <h2 id="quote-modal-title" className="font-heading text-2xl font-bold">Request any cosmetic ingredient</h2>
+              <h2 id="quote-modal-title" className="font-heading text-2xl font-bold">Submit an ingredient sourcing request</h2>
               <p className="mt-1 text-sm text-slate-300">Share the material name, INCI or CAS number, grade and quantity so we can review relevant options in China’s cosmetic ingredient supply chain.</p>
             </div>
           </div>
