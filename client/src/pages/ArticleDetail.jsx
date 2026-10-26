@@ -74,7 +74,7 @@ export default function ArticleDetail({ initialArticles = [] }) {
           </div>
         </header>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <img src={article.image || '/beauty/hero-aurelia.png'} alt={article.title} className="w-full aspect-[16/9] object-cover rounded-3xl border border-slate-200 mb-12" width="960" height="540" />
+          <img src={article.image || '/ingredient-images/hyaluronic-acid.png'} alt={article.title} className="w-full aspect-[16/9] object-cover rounded-3xl border border-slate-200 mb-12" width="960" height="540" />
           <div className="space-y-10">
             {sections.map(([title, body]) => {
               //渲染:渲染结构化文章章节
@@ -86,9 +86,9 @@ export default function ArticleDetail({ initialArticles = [] }) {
             })}
           </div>
           <aside className="mt-14 bg-white border border-slate-200 rounded-3xl p-8">
-            <h2 className="font-heading text-2xl font-bold text-slate-900 mb-3">Planning a beauty assortment or custom program?</h2>
-            <p className="text-slate-600 mb-6">Share your market, sales channel, product category, target positioning, opening quantities, packaging needs and launch window.</p>
-            <Link to="/contact" className="inline-flex items-center gap-2 text-primary font-semibold">Start a partnership inquiry <ArrowRight size={18} /></Link>
+            <h2 className="font-heading text-2xl font-bold text-slate-900 mb-3">Need an ingredient that is not in the catalog?</h2>
+            <p className="text-slate-600 mb-6">Share the material name, INCI or CAS number, required grade, quantity, destination market and technical-document needs.</p>
+            <Link to="/contact" className="inline-flex items-center gap-2 text-primary font-semibold">Submit a sourcing request <ArrowRight size={18} /></Link>
           </aside>
         </div>
       </article>

@@ -11,11 +11,11 @@ const router = express.Router();
 // AI Keyword matching configuration
 const keywordRules = [
   {
-    keywords: ['inci', 'grade', 'assay', 'purity', 'solubility', 'ph', 'use level', 'active', 'ingredient'],
-    response: 'Ingredient & Formulation Support 🧪\n\nShare the INCI name, target grade, formula format, pH range and intended use. We can help check sourcing options and the technical information available for review.'
+    keywords: ['inci', 'cas', 'grade', 'assay', 'purity', 'solubility', 'ph', 'use level', 'active', 'ingredient', 'source', 'sourcing', 'unlisted'],
+    response: 'Any Cosmetic Ingredient Sourcing 🧪\n\nThe material does not need to appear in our featured catalog. Share its name, INCI or CAS number, target grade, formula application, quantity and destination market. We can help investigate sourcing options, samples and available technical documents.'
   },
   {
-    keywords: ['moq', 'minimum order', 'sample', 'quantity', 'private label', 'assortment', 'opening order', 'trial order'],
+    keywords: ['moq', 'minimum order', 'sample', 'quantity', 'pack size', 'commercial supply'],
     response: 'Ingredient Samples & Supply 📦\n\nTell us the ingredient, required grade, estimated quantity and destination market. Sample availability, pack size, MOQ and lead time are confirmed against the requested specification.'
   },
   {
@@ -31,7 +31,7 @@ const keywordRules = [
     response: 'Shipping & Delivery 🚢\n\nShipping options and required commercial or transport documents depend on the material classification, quantity and destination. Requirements are confirmed before an order is placed.'
   },
   {
-    keywords: ['return', 'refund', 'warranty', 'quality', 'damage', 'defect', 'exchange', 'inspect', 'inspection', 'qc', 'fill weight', 'shade', 'packaging'],
+    keywords: ['quality', 'batch', 'coa', 'contamination', 'variance', 'appearance', 'odor', 'color', 'inspection', 'qc'],
     response: 'Material Quality Support 🛡️\n\nQuality review is based on the agreed specification and available batch documents such as COA. Please share the material, grade and any required test parameters.'
   },
   {

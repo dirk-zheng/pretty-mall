@@ -22,6 +22,8 @@ router.post('/public', async (req, res) => {
     const email = clean(req.body.email, 200).toLowerCase();
     if (!name || !company || !country || !email) return res.status(400).json({ code: 400, message: 'Name, company, country and email are required.' });
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return res.status(400).json({ code: 400, message: 'Enter a valid business email.' });
+    const ingredientName = clean(req.body.ingredientName, 200);
+    if (!ingredientName) return res.status(400).json({ code: 400, message: 'An ingredient or trade name is required.' });
 
     const clientKey = `${req.ip}:${email}`;
     const lastSubmission = recentSubmissions.get(clientKey) || 0;
@@ -37,12 +39,16 @@ router.post('/public', async (req, res) => {
       customer: { name, company, country, email, whatsapp: clean(req.body.whatsapp, 100) },
       buyerProfile: {
         businessType: clean(req.body.businessType, 100),
-        salesChannels: clean(req.body.salesChannels, 300),
         websiteUrl: clean(req.body.websiteUrl, 300),
-        targetRetailPrice: clean(req.body.targetRetailPrice, 100),
         annualVolume: clean(req.body.annualVolume, 100),
       },
       productCategory: clean(req.body.productCategory, 80),
+      ingredient: {
+        name: ingredientName,
+        inci: clean(req.body.inciName, 300),
+        casNumber: clean(req.body.casNumber, 100),
+        requestedGrade: clean(req.body.requestedGrade, 300),
+      },
       targetCustomerProfile: clean(req.body.targetCustomerProfile),
       specifications: clean(req.body.specifications),
       estimatedQuantity: quantity,

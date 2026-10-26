@@ -156,16 +156,16 @@ function buildRfqAssortmentItems(visitorId) {
 // ─── Support (AI) ────────────────────────────────
 const keywordRules = [
   {
-    keywords: ['inci', 'grade', 'assay', 'purity', 'solubility', 'ph', 'use level', 'active', 'ingredient'],
-    response: 'Ingredient & Formulation Support 🧪\n\nShare the INCI name, target grade, formula format and intended use. We can help check sourcing options and available technical information.'
+    keywords: ['inci', 'cas', 'grade', 'assay', 'purity', 'solubility', 'ph', 'use level', 'active', 'ingredient', 'source', 'sourcing', 'unlisted'],
+    response: 'Any Cosmetic Ingredient Sourcing 🧪\n\nThe material does not need to appear in our featured catalog. Share its name, INCI or CAS number, target grade, formula application, quantity and destination market. We can help investigate sourcing options, samples and available technical documents.'
   },
   {
-    keywords: ['moq', 'minimum order', 'sample', 'quantity', 'private label', 'assortment', 'opening order', 'trial order'],
+    keywords: ['moq', 'minimum order', 'sample', 'quantity', 'pack size', 'commercial supply'],
     response: 'Ingredient Samples & Supply 📦\n\nTell us the ingredient, grade, estimated quantity and destination market. Sample availability, pack size, MOQ and lead time are confirmed against the requested specification.'
   },
   {
     keywords: ['document', 'report', 'customs', 'clearance', 'stability test', 'compatibility test', 'ingredient list', 'compliance'],
-    response: 'Product & Order Documents 📄\n\nIngredients, directions, cautions, packaging specifications and available test documents are confirmed by formula and market.'
+    response: 'Ingredient Technical Documents 📄\n\nAvailable files may include a specification, TDS, SDS, COA, composition and origin information. Exact documents depend on the material, grade, supplier and destination market.'
   },
   {
     keywords: ['price', 'cost', 'how much', 'cheap', 'discount', 'promotion', 'pricing', 'quote'],
@@ -176,7 +176,7 @@ const keywordRules = [
     response: 'Order & Export Support 🚢\n\nShipment planning, carton marks, packing lists, commercial invoices and standard export coordination follow the confirmed order and Incoterms. The buyer’s importer-of-record, customs, duties and U.S. compliance responsibilities are agreed before shipment.'
   },
   {
-    keywords: ['return', 'refund', 'warranty', 'quality', 'damage', 'defect', 'exchange', 'inspect', 'inspection', 'qc', 'fill weight', 'shade', 'packaging'],
+    keywords: ['quality', 'batch', 'coa', 'contamination', 'variance', 'appearance', 'odor', 'color', 'inspection', 'qc'],
     response: 'Material Quality Support 🛡️\n\nQuality review is based on the agreed specification and available batch documents such as COA. Please share the material, grade and test parameters required.'
   },
   {
@@ -571,7 +571,7 @@ async function handleQuoteSubmit(payload, ws) {
 
   if (!market?.trim()) throw new Error('Target market is required');
   if (!targetCustomerProfile?.trim()) throw new Error('Target customer and channel details are required');
-  if (!specifications?.trim()) throw new Error('Formula, shade and packaging details are required');
+  if (!specifications?.trim()) throw new Error('Ingredient grade and technical requirements are required');
   const quantity = Number(estimatedQuantity);
   if (!Number.isInteger(quantity) || quantity < 1) throw new Error('Estimated quantity must be a positive integer');
   const { items } = buildRfqAssortmentItems(ws.visitorId);
@@ -617,7 +617,7 @@ async function handleQuoteSubmit(payload, ws) {
     reference,
     status: quote.status,
     createdAt: quote.createdAt,
-    message: 'Quote request received. Our team will review the products, shades, packaging, quantity and delivery requirements.'
+    message: 'Sourcing request received. Our team will review the ingredients, grades, documents, quantities and delivery requirements.'
   };
 }
 
@@ -994,12 +994,12 @@ function handleSupportStaffList(payload, ws) {
 //返回WebSocket客服常见问题列表
 function handleSupportFAQ() {
   return [
-    { id: 1, question: 'What is the typical opening MOQ?', category: 'MOQ' },
-    { id: 2, question: 'How do samples and pricing work?', category: 'Commercial' },
-    { id: 3, question: 'Which formulas and shades can be sampled?', category: 'Products' },
-    { id: 4, question: 'Which private-label elements can be customized?', category: 'Private Label' },
-    { id: 5, question: 'What is the typical production lead time?', category: 'Production' },
-    { id: 6, question: 'What can pre-shipment QC include?', category: 'Quality' }
+    { id: 1, question: 'Can you source an ingredient that is not listed?', category: 'Sourcing' },
+    { id: 2, question: 'Can you search by INCI or CAS number?', category: 'Sourcing' },
+    { id: 3, question: 'How do samples and technical documents work?', category: 'Samples & Documents' },
+    { id: 4, question: 'What information is needed to confirm the right grade?', category: 'Specifications' },
+    { id: 5, question: 'How are MOQ and lead time confirmed?', category: 'Commercial' },
+    { id: 6, question: 'Which batch and quality documents may be available?', category: 'Quality' }
   ];
 }
 

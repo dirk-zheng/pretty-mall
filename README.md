@@ -1,10 +1,10 @@
 # Aurelia Pretty Ingredients
 
-Aurelia Pretty 是面向化妆品品牌、配方实验室和生产企业的原料目录与 B2B 询盘项目。网站展示原料用途、基础规格和应用方向，支持技术资料、样品与采购需求咨询；不提供消费者零售购物车或在线支付。
+Aurelia Pretty 是面向化妆品品牌、配方实验室和生产企业的化妆品原料寻源与 B2B 询盘项目。网站中的目录是精选示例而非完整供应范围；客户可提交目录内或目录外的任意化妆品原料名称、INCI、CAS、等级和规格，由团队协助核实寻源选项、技术资料、样品与商业供应条件。网站不提供消费者零售购物车或在线支付。
 
 ## 产品目录
 
-当前目录共 17 个原料项目，分为：
+当前精选目录共 17 个原料项目，分为：
 
 - 活性成分：透明质酸、烟酰胺、稳定型维生素 C、神经酰胺复配物
 - 植物提取物与油脂：积雪草、绿茶、霍霍巴油、角鲨烷
@@ -43,7 +43,7 @@ Ubuntu 部署请参阅 [DEPLOY-UBUNTU.md](./DEPLOY-UBUNTU.md)。
 - `/`：原料采购与配方支持入口
 - `/products`：化妆品原料目录及筛选
 - `/products/:slug`：原料图片、描述、规格摘要、用途和询价入口
-- `/services/wholesale-private-label`：原料采购与供应合作
+- `/services/ingredient-sourcing`：目录内外的原料寻源与供应合作
 - `/services/skin-ritual`：配方支持（保留历史 URL）
 - `/services/quality-and-care`：技术资料与质量支持
 - `/news-blog/`：原料与配方技术内容

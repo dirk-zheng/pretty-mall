@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Navigate, Routes, Route, useLocation } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { StoreProvider } from './context/StoreContext';
 import { QuoteModalProvider, useQuoteModal } from './context/QuoteModalContext';
@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage';
 import Products from './pages/Products';
 import About from './pages/About';
 import QuoteRequest from './pages/QuoteRequest';
+import QuoteSuccess from './pages/QuoteSuccess';
 import Admin from './pages/Admin';
 import Login from './pages/Login';
 import NewsBlog from './pages/NewsBlog';
@@ -88,6 +89,7 @@ export function AppContent({ initialProducts = [], initialFaqs = [], initialArti
                 <Route path="/about" element={<About />} />
                 <Route path="/news-blog/" element={<NewsBlog initialArticles={initialArticles} />} />
                 <Route path="/news-blog/:slug" element={<ArticleDetail initialArticles={initialArticles} />} />
+                <Route path="/services/wholesale-private-label" element={<Navigate to="/services/ingredient-sourcing" replace />} />
                 <Route path="/services/:slug" element={<ServicePage />} />
                 <Route path="/faq" element={<FAQ initialFaqs={initialFaqs} />} />
                 <Route path="/contact" element={<Contact />} />
@@ -101,6 +103,14 @@ export function AppContent({ initialProducts = [], initialFaqs = [], initialArti
                   element={
                     <RequireAuth>
                       <QuoteRequest />
+                    </RequireAuth>
+                  }
+                />
+                <Route
+                  path="/quote-success"
+                  element={
+                    <RequireAuth>
+                      <QuoteSuccess />
                     </RequireAuth>
                   }
                 />

@@ -5,10 +5,10 @@ import { supportAPI, wsClient } from '../api';
 import { useAuth } from '../context/AuthContext';
 
 const quickQuestions = [
-  'What is the typical opening MOQ?',
-  'How do samples and pricing work?',
-  'Can I customize shades or packaging?',
-  'Which private-label elements are available?',
+  'Can you source an ingredient that is not listed?',
+  'What details do you need to identify the right grade?',
+  'How do samples and technical documents work?',
+  'Can you source by INCI or CAS number?',
 ];
 
 const statusCopy = {
@@ -121,7 +121,7 @@ export default function FloatingSupport({ isOpen, onClose }) {
       <header className="flex items-center justify-between bg-gradient-to-r from-primary to-secondary px-4 py-3 text-white">
         <div className="flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/20">{humanActive ? <Headphones size={21} /> : <Bot size={21} />}</div>
-          <div><h2 className="text-sm font-bold">{humanActive ? conversation.assignedName : 'Aurelia Pretty Assistant'}</h2><p className="text-xs text-white/80">{humanActive ? 'Beauty Specialist' : waiting ? 'Connecting you with our team' : 'Ritual & partnership support'}</p></div>
+          <div><h2 className="text-sm font-bold">{humanActive ? conversation.assignedName : 'Aurelia Pretty Assistant'}</h2><p className="text-xs text-white/80">{humanActive ? 'Ingredient sourcing specialist' : waiting ? 'Connecting you with our team' : 'Ingredient sourcing support'}</p></div>
         </div>
         <button type="button" onClick={onClose} className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/15 hover:bg-white/25" aria-label="Close support chat"><X size={18} /></button>
       </header>

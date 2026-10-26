@@ -44,7 +44,7 @@ export default function Login() {
   const features = [
     { icon: Shield, text: 'Save wholesale RFQ assortments' },
     { icon: Users, text: 'Connect with the sales team' },
-    { icon: Globe, text: 'For qualified U.S. retailers' },
+    { icon: Globe, text: 'For cosmetic brands, labs and manufacturers' },
   ];
 
   return (
@@ -60,7 +60,7 @@ export default function Login() {
         <div className="hidden lg:flex flex-col items-center lg:items-start max-w-md">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-xl shadow-primary/20">
-              <span className="text-white font-heading font-bold text-3xl">C</span>
+              <span className="text-white font-heading font-bold text-3xl">A</span>
             </div>
             <div>
               <h1 className="font-heading text-3xl font-bold text-dark-900">Aurelia Pretty</h1>

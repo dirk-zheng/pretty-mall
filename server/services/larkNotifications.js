@@ -109,7 +109,7 @@ function notifyQuoteInquiry(quote) {
     : '';
 
   return sendLarkCard(buildCard({
-    title: `New wholesale inquiry · ${quote.reference}`,
+    title: `New ingredient sourcing inquiry · ${quote.reference}`,
     template: 'orange',
     fields: {
       Reference: quote.reference,
@@ -120,14 +120,17 @@ function notifyQuoteInquiry(quote) {
       Email: customer.email || customer.account || customer.account,
       'Phone / WhatsApp': customer.whatsapp,
       'Business type': quote.buyerProfile?.businessType,
-      'Sales channels': quote.buyerProfile?.salesChannels,
       Quantity: quote.estimatedQuantity,
       Market: quote.market,
       'Target delivery': quote.targetDelivery,
       Time: quote.createdAt,
     },
     details: [
-      ['Product category', quote.productCategory],
+      ['Material family', quote.productCategory],
+      ['Ingredient / trade name', quote.ingredient?.name],
+      ['INCI', quote.ingredient?.inci],
+      ['CAS number', quote.ingredient?.casNumber],
+      ['Requested grade', quote.ingredient?.requestedGrade],
       ['Target customer profile', quote.targetCustomerProfile],
       ['Specifications', quote.specifications],
       ['Items', itemSummary],

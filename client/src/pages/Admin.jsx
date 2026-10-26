@@ -345,7 +345,7 @@ export default function Admin() {
                                 //处理页面交互事件
                                 return setForm({ ...form, moq: e.target.value });
                               }}
-                    placeholder="e.g. 500 units / shade"
+                    placeholder="e.g. Confirm by grade and pack size"
                     className="w-full px-4 py-3 rounded-xl bg-white border border-dark-200 focus:border-primary focus:ring-2 focus:ring-primary/10"
                   />
                 </div>
@@ -393,7 +393,7 @@ export default function Admin() {
 
               <div>
                 <label className="block text-sm font-medium mb-2 text-dark-700">Gallery image URLs</label>
-                <textarea value={form.galleryText} onChange={(e) => setForm({ ...form, galleryText: e.target.value })} placeholder={'One image URL per line\n/beauty/product-main.png\n/beauty/product-detail.png'} rows={4} className="w-full px-4 py-3 rounded-xl bg-white border border-dark-200 focus:border-primary focus:ring-2 focus:ring-primary/10" />
+                <textarea value={form.galleryText} onChange={(e) => setForm({ ...form, galleryText: e.target.value })} placeholder={'One image URL per line\n/ingredient-images/material-main.png\n/ingredient-images/material-detail.png'} rows={4} className="w-full px-4 py-3 rounded-xl bg-white border border-dark-200 focus:border-primary focus:ring-2 focus:ring-primary/10" />
                 <p className="mt-1 text-xs text-dark-500">The first image is shown as the default detail image. Keep the primary image URL in this list.</p>
               </div>
 
@@ -414,7 +414,7 @@ export default function Admin() {
 
               <div>
                 <label className="block text-sm font-medium mb-2 text-dark-700">Application requirements</label>
-                <textarea value={form.applications} onChange={(e) => setForm({ ...form, applications: e.target.value })} placeholder="Consumer use direction or application guidance" rows={3} className="w-full px-4 py-3 rounded-xl bg-white border border-dark-200 focus:border-primary focus:ring-2 focus:ring-primary/10 resize-none" />
+                <textarea value={form.applications} onChange={(e) => setForm({ ...form, applications: e.target.value })} placeholder="Formula application, process, pH, solubility or use-level guidance" rows={3} className="w-full px-4 py-3 rounded-xl bg-white border border-dark-200 focus:border-primary focus:ring-2 focus:ring-primary/10 resize-none" />
               </div>
 
               <div className="grid md:grid-cols-2 gap-4">
