@@ -2,7 +2,9 @@
 
 目标：说明样品认可后，如何把确认标准延续到商业批次。
 
-发布：周二 LinkedIn；周四 Instagram；周五 Reel；周六 Facebook。
+发布：周二 LinkedIn；周四 Instagram；周五“中国原料产业链观察 03”；周六 Facebook。
+
+周五观察内容替换原纯技术 Reel，主题为“样品确认后，商业供货如何衔接”，完整文案见 `中国原料产业链观察.md`。
 
 素材：`assets/sample-to-batch.png`；视频成片暂不生成。
 

@@ -8,11 +8,13 @@
 | --- | --- | --- | --- |
 | 周二 10:00 | LinkedIn | A botanical extract is more than a plant name | `assets/centella-extract.png` |
 | 周四 19:00 | Instagram | 6 页轮播：Botanical extract checklist | `centella-extract.png` / `green-tea-extract.png` |
-| 周六 10:30 | Facebook | 提交下一项原料需求 | `assets/sourcing-cta.png` |
+| 周六 10:30 | LinkedIn / Facebook | 中国原料产业链观察 01：同一植物名称背后的不同供应路径 | 脱敏供应路径图或报价字段对比 |
 
 ## 本周 CTA
 
 `Tell us what you need sourced next: https://www.aureliapretty.com/contact`
+
+产业链观察使用专业问题互动，不在正文中直接引导询盘。完整文案见 `中国原料产业链观察.md`。
 
 ## 发布前检查
 

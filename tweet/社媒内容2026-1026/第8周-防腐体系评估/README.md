@@ -2,7 +2,9 @@
 
 目标：说明防腐原料选择必须结合配方、包装和验证计划。
 
-发布：周二 LinkedIn；周四 Instagram；周五 Reel；周六 Facebook。
+发布：周二 LinkedIn；周四 Instagram；周五“中国原料产业链观察 02”；周六 Facebook。
+
+周五观察内容替换原纯技术 Reel，主题为“文件数量多，不代表已经确认到同一等级”，完整文案见 `中国原料产业链观察.md`。
 
 素材：`assets/preservation-system.png`；视频成片暂不生成。
 
