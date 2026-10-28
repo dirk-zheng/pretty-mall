@@ -39,7 +39,7 @@
       "/ingredient-images/niacinamide.png"
     ],
     "imageFit": "contain",
-    "description": "维生素 B3 化妆品原料，可用于面部及身体护理配方。最终添加量与适用 pH 应根据所选等级和供应商技术资料确定。",
+    "description": "高需求维生素 B3 化妆品原料，可用于提亮肤色、油脂管理与屏障护理方向的面部及身体配方。最终添加量、杂质控制和适用 pH 应根据所选等级、供应商资料及成品测试确认。",
     "specs": [
       "外观：白色结晶粉末",
       "水溶性",
@@ -124,15 +124,171 @@
     "imageSource": "Existing AI-generated project image; visual reference only"
   },
   {
+    "id": "ING-ACT-005",
+    "name": "Dipotassium Glycyrrhizate（甘草酸二钾）",
+    "category": "active-ingredients",
+    "image": "/ingredient-images/dipotassium-glycyrrhizate.png",
+    "gallery": [
+      "/ingredient-images/dipotassium-glycyrrhizate.png"
+    ],
+    "imageFit": "contain",
+    "description": "甘草来源的舒缓型化妆品原料，可用于敏感肌、屏障护理、晒后护理及头皮护理等配方方向。溶解方式、添加量、纯度和配方适用性需按具体等级及供应商资料确认。",
+    "specs": [
+      "外观：白色至类白色粉末",
+      "水溶性等级可询",
+      "纯度与检测方法按供应规格确认",
+      "适用于舒缓与屏障护理配方开发"
+    ],
+    "applications": "通常加入水相或预先溶解后加入；需结合配方 pH、温度、防腐体系和成品稳定性进行验证。",
+    "sizes": "Lab sample / 1 kg / 5 kg / commercial pack (confirm by grade)",
+    "benefit": "Soothing and barrier-care formulation support",
+    "badge": "Soothing active",
+    "moq": "Confirm by grade and pack size",
+    "leadTime": "Confirm after grade and quantity review",
+    "price": 0,
+    "stock": 0,
+    "qc": [
+      "身份与含量",
+      "水分与溶解性",
+      "相关杂质及微生物指标"
+    ],
+    "imageSource": "AI-generated catalog image; visual reference only, not an exact commercial batch"
+  },
+  {
+    "id": "ING-ACT-006",
+    "name": "Arbutin（熊果苷，α / β）",
+    "category": "active-ingredients",
+    "image": "/ingredient-images/arbutin.png",
+    "gallery": [
+      "/ingredient-images/arbutin.png"
+    ],
+    "imageFit": "contain",
+    "description": "用于提亮与均匀肤色方向的化妆品活性原料，可按需求评估 α-熊果苷或 β-熊果苷等级。两种类型不可仅按名称或价格直接替代，身份、纯度、杂质、用量及目标市场要求需分别确认。",
+    "specs": [
+      "α-熊果苷与 β-熊果苷等级可询",
+      "外观：白色结晶粉末",
+      "身份、纯度及相关杂质按等级确认",
+      "适用 pH 与工艺条件以 TDS 为准"
+    ],
+    "applications": "根据所选类型和供应商建议进行水相溶解或后段加入；控制温度与 pH，并评估颜色及长期稳定性。",
+    "sizes": "Lab sample / 1 kg / 5 kg / commercial pack (confirm by grade)",
+    "benefit": "Tone-evening formulation concepts",
+    "badge": "Brightening active",
+    "moq": "Confirm by grade and pack size",
+    "leadTime": "Confirm after alpha/beta grade review",
+    "price": 0,
+    "stock": 0,
+    "qc": [
+      "α / β 身份确认",
+      "含量与相关杂质",
+      "水分、颜色及稳定性指标"
+    ],
+    "imageSource": "AI-generated catalog image; visual reference only, not an exact commercial batch"
+  },
+  {
+    "id": "ING-ACT-007",
+    "name": "Tranexamic Acid（传明酸）",
+    "category": "active-ingredients",
+    "image": "/ingredient-images/tranexamic-acid.png",
+    "gallery": [
+      "/ingredient-images/tranexamic-acid.png"
+    ],
+    "imageFit": "contain",
+    "description": "可用于提亮、肤色不均及瑕疵护理方向的化妆品活性原料。采购时需确认化妆品适用等级、纯度、相关杂质、溶解条件、目标市场要求以及成品配方中的稳定性。",
+    "specs": [
+      "外观：白色结晶性粉末",
+      "化妆品适用等级需确认",
+      "纯度与相关杂质按供应规格核对",
+      "溶解性和适用 pH 以 TDS 为准"
+    ],
+    "applications": "依据供应商工艺建议加入水相并控制温度与 pH；需通过成品稳定性、兼容性及目标市场合规评估。",
+    "sizes": "Lab sample / 1 kg / 5 kg / commercial pack (confirm by grade)",
+    "benefit": "Tone-care formulation support",
+    "badge": "Tone-care active",
+    "moq": "Confirm by grade and pack size",
+    "leadTime": "Confirm after grade and quantity review",
+    "price": 0,
+    "stock": 0,
+    "qc": [
+      "身份与含量",
+      "相关杂质",
+      "水分及溶液外观"
+    ],
+    "imageSource": "AI-generated catalog image; visual reference only, not an exact commercial batch"
+  },
+  {
+    "id": "ING-ACT-008",
+    "name": "Phenylethyl Resorcinol（苯乙基间苯二酚 / 377）",
+    "category": "active-ingredients",
+    "image": "/ingredient-images/phenylethyl-resorcinol.png",
+    "gallery": [
+      "/ingredient-images/phenylethyl-resorcinol.png"
+    ],
+    "imageFit": "contain",
+    "description": "常称 377 的高活性提亮类化妆品原料，可用于肤色不均和局部瑕疵护理方向。配方开发需重点确认纯度、溶解体系、添加阶段、光热稳定性、建议用量及目标市场适用要求。",
+    "specs": [
+      "外观：白色至类白色粉末",
+      "纯度及相关杂质按具体等级确认",
+      "溶解体系与载体方案可评估",
+      "光、热与氧化稳定性需验证"
+    ],
+    "applications": "根据所选等级和溶剂体系预溶或分散，并按供应商建议控制加入温度；成品需进行颜色、含量及长期稳定性验证。",
+    "sizes": "Lab sample / 100 g / 1 kg / commercial pack (confirm by grade)",
+    "benefit": "High-performance tone-evening concepts",
+    "badge": "Brightening active",
+    "moq": "Confirm by grade and pack size",
+    "leadTime": "Confirm after grade and quantity review",
+    "price": 0,
+    "stock": 0,
+    "qc": [
+      "身份与纯度",
+      "相关杂质",
+      "颜色及稳定性指标"
+    ],
+    "imageSource": "AI-generated catalog image; visual reference only, not an exact commercial batch"
+  },
+  {
+    "id": "ING-ACT-009",
+    "name": "Salicylic Acid（水杨酸）",
+    "category": "active-ingredients",
+    "image": "/ingredient-images/salicylic-acid.png",
+    "gallery": [
+      "/ingredient-images/salicylic-acid.png"
+    ],
+    "imageFit": "contain",
+    "description": "用于角质调理、油脂管理及洁肤方向的化妆品原料，可应用于面部、身体、头皮和清洁类配方开发。等级、粒径、溶解体系、用量及允许范围必须结合目标市场和成品测试确认。",
+    "specs": [
+      "外观：白色结晶性粉末",
+      "纯度与粒径按具体等级确认",
+      "水中溶解度有限，需评估溶剂或载体",
+      "用量及适用范围按目标市场确认"
+    ],
+    "applications": "依据配方体系选择预溶、增溶或分散方式；需控制 pH，并验证结晶风险、刺激性、稳定性和目标市场合规性。",
+    "sizes": "Lab sample / 1 kg / 5 kg / commercial pack (confirm by grade)",
+    "benefit": "Exfoliation and oil-control formulation support",
+    "badge": "BHA active",
+    "moq": "Confirm by grade and pack size",
+    "leadTime": "Confirm after grade and quantity review",
+    "price": 0,
+    "stock": 0,
+    "qc": [
+      "身份与含量",
+      "粒径与水分",
+      "相关杂质及目标市场要求"
+    ],
+    "imageSource": "AI-generated catalog image; visual reference only, not an exact commercial batch"
+  },
+  {
     "id": "ING-BOT-001",
-    "name": "Centella Asiatica Extract（积雪草提取物）",
+    "name": "Centella Asiatica Extract / Asiaticoside（积雪草提取物 / 积雪草苷）",
+    "slug": "centella-asiatica-extract",
     "category": "botanical-extracts",
     "image": "/ingredient-images/centella-extract.png",
     "gallery": [
       "/ingredient-images/centella-extract.png"
     ],
     "imageFit": "contain",
-    "description": "积雪草来源的植物提取物，可用于舒缓护理类配方开发。提取方式、载体、标志成分和颜色会随规格而异。",
+    "description": "积雪草来源的修护与舒缓型化妆品原料，可评估积雪草提取物或积雪草苷等标准化方案。植物来源、提取方式、载体、标志成分、含量和颜色会随具体等级而异。",
     "specs": [
       "粉体与液体载体规格",
       "颜色因等级而变化",
