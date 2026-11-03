@@ -2,14 +2,10 @@ export const categories = [
   { id: 'all', name: 'All Ingredients' },
   { id: 'active-ingredients', name: 'Active Ingredients' },
   { id: 'botanical-extracts', name: 'Botanicals & Oils' },
-  { id: 'formulation-essentials', name: 'Formulation Essentials' },
-  { id: 'surfactants', name: 'Surfactants' },
 ];
 export const productGroups = [
-  { title: 'Active Ingredients', description: 'Hydration, barrier, antioxidant and tone-care ingredients for cosmetic formulation briefs.', categories: ['active-ingredients'] },
-  { title: 'Botanicals & Oils', description: 'Botanical extracts and emollient oils for sensorial, conditioning and care concepts.', categories: ['botanical-extracts'] },
-  { title: 'Formulation Essentials', description: 'Emulsifiers, preservation systems, pigments and functional bases for formula development.', categories: ['formulation-essentials'] },
-  { title: 'Surfactants', description: 'Surface-active materials for cleansing, foam and viscosity systems, with supplier specifications confirmed by grade.', categories: ['surfactants'] },
+  { title: 'Active Ingredients', description: 'Tone-care, soothing, barrier-support and exfoliating actives for cosmetic formulation briefs.', categories: ['active-ingredients'] },
+  { title: 'Botanicals', description: 'Centella extract and standardized asiaticoside options for soothing and repair-care concepts.', categories: ['botanical-extracts'] },
 ];
 export const categoryNames = Object.fromEntries(categories.filter(({ id }) => id !== 'all').map(({ id, name }) => [id, name]));
 export const categoryThemes = {
