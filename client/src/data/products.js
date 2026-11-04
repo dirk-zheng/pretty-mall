@@ -4,7 +4,7 @@ export const categories = [
   { id: 'botanical-extracts', name: 'Botanicals & Oils' },
 ];
 export const productGroups = [
-  { title: 'Active Ingredients', description: 'Tone-care, soothing, barrier-support and exfoliating actives for cosmetic formulation briefs.', categories: ['active-ingredients'] },
+  { title: 'Active Ingredients', description: 'Tone-care, soothing, barrier-support, peptide, biotech and exfoliating actives for cosmetic formulation briefs.', categories: ['active-ingredients'] },
   { title: 'Botanicals', description: 'Centella extract and standardized asiaticoside options for soothing and repair-care concepts.', categories: ['botanical-extracts'] },
 ];
 export const categoryNames = Object.fromEntries(categories.filter(({ id }) => id !== 'all').map(({ id, name }) => [id, name]));

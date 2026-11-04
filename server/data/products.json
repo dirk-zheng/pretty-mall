@@ -216,5 +216,98 @@
       "微生物与污染物指标"
     ],
     "imageSource": "Existing AI-generated project image; visual reference only"
+  },
+  {
+    "id": "ING-ACT-010",
+    "name": "Recombinant Collagen（重组胶原）",
+    "category": "active-ingredients",
+    "image": "/ingredient-images/recombinant-collagen.png",
+    "gallery": [
+      "/ingredient-images/recombinant-collagen.png"
+    ],
+    "imageFit": "contain",
+    "description": "采用生物技术制备的胶原相关化妆品原料，可用于保湿、成膜及皮肤护理方向的配方开发。不同产品在胶原类型、片段或全长结构、表达体系、分子量、纯度和活性评价方法上可能存在明显差异，采购前需结合目标配方和供应商资料逐项确认。",
+    "specs": [
+      "具体胶原类型及命名需确认",
+      "粉体或溶液规格可询",
+      "分子量、纯度与活性指标按等级确认",
+      "表达体系、载体及防腐体系需核对"
+    ],
+    "applications": "依据所选等级的溶解性、耐温性和供应商工艺建议加入；避免未经验证的高温或强剪切处理，并通过配方兼容性、微生物和长期稳定性测试确认。",
+    "sizes": "Lab sample / 100 g / 1 kg / commercial pack (confirm by grade)",
+    "benefit": "Moisturizing and film-forming formulation support",
+    "badge": "Biotech active",
+    "moq": "Confirm by collagen type, grade and pack size",
+    "leadTime": "Confirm after technical specification review",
+    "price": 0,
+    "stock": 0,
+    "qc": [
+      "身份、胶原类型与分子量",
+      "纯度、蛋白含量或活性指标",
+      "微生物、内毒素及载体相关指标"
+    ],
+    "imageSource": "AI-generated catalog image; visual reference only, not an exact commercial batch"
+  },
+  {
+    "id": "ING-ACT-011",
+    "name": "Cosmetic Peptides（化妆品多肽）",
+    "category": "active-ingredients",
+    "image": "/ingredient-images/cosmetic-peptides.png",
+    "gallery": [
+      "/ingredient-images/cosmetic-peptides.png"
+    ],
+    "imageFit": "contain",
+    "description": "面向紧致、弹性、表情纹护理、屏障支持及头皮护理等不同方向的化妆品多肽寻源入口。多肽并非单一原料，需先确认具体 INCI、肽序列或商品等级、活性物含量、载体、防腐体系和目标应用，再匹配样品与技术资料。",
+    "specs": [
+      "单肽、复配肽及载体型规格可询",
+      "具体 INCI、序列或商品等级需确认",
+      "活性物含量与检测方法按供应规格核对",
+      "粉体或水溶液等剂型可评估"
+    ],
+    "applications": "通常按供应商建议在较低温度阶段加入，并结合具体肽种控制 pH、剪切和防腐条件；需验证与表面活性剂、电解质及其他活性物的兼容性。",
+    "sizes": "Lab sample / 100 g / 1 kg / commercial pack (confirm by peptide)",
+    "benefit": "Targeted peptide sourcing for cosmetic formulations",
+    "badge": "Peptide active",
+    "moq": "Confirm by peptide, concentration and pack size",
+    "leadTime": "Confirm after peptide brief review",
+    "price": 0,
+    "stock": 0,
+    "qc": [
+      "具体肽身份或序列确认",
+      "活性物含量、纯度及相关杂质",
+      "载体、防腐体系与微生物指标"
+    ],
+    "imageSource": "AI-generated catalog image; visual reference only, not an exact commercial batch"
+  },
+  {
+    "id": "ING-ACT-012",
+    "name": "High-Purity Glabridin（高纯度光甘草定）",
+    "category": "active-ingredients",
+    "image": "/ingredient-images/high-purity-glabridin.png",
+    "gallery": [
+      "/ingredient-images/high-purity-glabridin.png"
+    ],
+    "imageFit": "contain",
+    "description": "甘草来源的高纯度光甘草定化妆品原料，可用于提亮、肤色不均及抗氧化护理方向的配方开发。高纯度规格仍需逐批核对含量、相关甘草黄酮杂质、溶解体系、颜色、稳定性和目标市场适用要求。",
+    "specs": [
+      "高纯度规格可按需求匹配",
+      "外观：类白色至淡黄色粉末",
+      "含量与相关杂质按具体等级确认",
+      "油溶性、载体型或预分散方案可评估"
+    ],
+    "applications": "根据所选等级采用适合的油相、溶剂或载体体系预溶或分散，并按技术资料控制加入温度；需重点验证析晶、颜色、光热氧稳定性和包装相容性。",
+    "sizes": "Lab sample / 100 g / 1 kg / commercial pack (confirm by purity)",
+    "benefit": "High-purity tone-care formulation support",
+    "badge": "Botanical active",
+    "moq": "Confirm by purity, carrier and pack size",
+    "leadTime": "Confirm after purity and quantity review",
+    "price": 0,
+    "stock": 0,
+    "qc": [
+      "身份、含量与检测方法",
+      "相关黄酮杂质及溶剂残留",
+      "颜色、水分及稳定性指标"
+    ],
+    "imageSource": "AI-generated catalog image; visual reference only, not an exact commercial batch"
   }
 ]
